@@ -1,0 +1,12 @@
+# Archivo PDF del proyecto
+2024_Proyecto_Innovación_Docente_TFG_y_TFM_UGR-3.pdf
+
+# Carpetas ignoradas
+Notas/
+book/
+prueba1/
+
+# Carpetas de compilación y logs (ROS 2), en cualquier subdirectorio
+build/
+install/
+log/
