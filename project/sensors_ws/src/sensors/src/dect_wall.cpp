@@ -1,3 +1,9 @@
+/*****************************************************************************/
+//  First test with coding the TurtleBot
+//
+//  Make the robot stop before a wall
+/*****************************************************************************/
+
 #include <chrono>
 #include <memory>
 #include <cmath>
@@ -12,14 +18,14 @@
 using namespace std::chrono_literals;
 using std::placeholders::_1;
 
-class ObjectDetecter : public rclcpp::Node
+class ObjectDetecterNode : public rclcpp::Node
 {
 public:
    // Alias
    using Undock = irobot_create_msgs::action::Undock;
    using GoalHandleUndock = rclcpp_action::ClientGoalHandle<Undock>;
 
-   ObjectDetecter()
+   ObjectDetecterNode()
    : Node("object_detecter"),
      current_state_(RobotState::CHECKING_DOCK),
      object_detected_(false)
@@ -40,7 +46,7 @@ public:
       dock_subscriber_ = this->create_subscription<irobot_create_msgs::msg::DockStatus>(
          "/dock_status", 
          qos_profile, 
-         std::bind(&ObjectDetecter::dock_status_callback, this, _1));
+         std::bind(&ObjectDetecterNode::dock_status_callback, this, _1));
 
       // Undock
       undock_client_ = rclcpp_action::create_client<Undock>(this, "/undock");
@@ -49,12 +55,12 @@ public:
       laser_subscriber_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
          "/scan", 
          qos_profile, 
-         std::bind(&ObjectDetecter::scan_callback, this, _1));
+         std::bind(&ObjectDetecterNode::scan_callback, this, _1));
 
       // TImer
       timer_ = this->create_wall_timer(
          100ms, 
-         std::bind(&ObjectDetecter::timer_callback, this));
+         std::bind(&ObjectDetecterNode::timer_callback, this));
       
       RCLCPP_INFO(this->get_logger(), "Node --> scanner_node");
    }
@@ -98,7 +104,7 @@ private:
 
     auto send_goal_options = rclcpp_action::Client<Undock>::SendGoalOptions();
 
-    send_goal_options.result_callback = std::bind(&ObjectDetecter::undock_result_callback, this, _1);
+    send_goal_options.result_callback = std::bind(&ObjectDetecterNode::undock_result_callback, this, _1);
 
     undock_client_->async_send_goal(Undock::Goal(), send_goal_options);
   }
@@ -202,7 +208,7 @@ private:
 int main(int argc, char ** argv)
 {
   rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<ObjectDetecter>());
+  rclcpp::spin(std::make_shared<ObjectDetecterNode>());
   rclcpp::shutdown();
   return 0;
 }
