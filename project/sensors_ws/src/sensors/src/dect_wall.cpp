@@ -141,18 +141,13 @@ private:
          float range = msg->ranges[i];
          
          // Sensor can return infinite
-         if (!std::isfinite(range))
+         if (!std::isfinite(range) || range < 0.15)
          {
-            continue;
-         }
-         else if (range < 0.15)
-         {
-            RCLCPP_INFO(this->get_logger(), "Too short");
             continue;
          }
 
          double angle = msg->angle_min + (i * msg->angle_increment);         
-         angle = atan2(sin(angle), cos(angle)); 
+         angle = atan2(sin(angle), cos(angle));
 
          if (angle >= (M_PI - fov) || angle <= (-M_PI + fov)) 
          {
