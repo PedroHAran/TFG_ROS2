@@ -13,25 +13,29 @@ find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
 find_package(irobot_create_msgs REQUIRED)
+find_package(laser_geometry REQUIRED)
 
 # Create exuctables
-add_executable(nav_v2 src/nav_alone.cpp)
+add_executable(navigation src/nav_alone.cpp)
+add_executable(navigation_prof src/scan_safe_move.cpp)
 
 # Dependencies
 ament_target_dependencies(navigation rclcpp rclcpp_action sensor_msgs geometry_msgs irobot_create_msgs nav_msgs tf2)
-
-# Installs 
-install(TARGETS
-  nav
-  DESTINATION lib/${PROJECT_NAME}
-)
+ament_target_dependencies(navigation_prof rclcpp sensor_msgs geometry_msgs nav_msgs tf2 tf2_ros laser_geometry)
 
 # Installs 
 install(TARGETS
   navigation
   DESTINATION lib/${PROJECT_NAME}
 )
+
+install(TARGETS
+  navigation_prof
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
