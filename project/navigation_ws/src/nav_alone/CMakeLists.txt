@@ -19,11 +19,11 @@ find_package(laser_geometry REQUIRED)
 
 # Create exuctables
 add_executable(navigation src/nav_alone.cpp)
-add_executable(navigation_prof src/scan_safe_move.cpp)
+add_executable(navigation2 src/navigation.cpp)
 
 # Dependencies
 ament_target_dependencies(navigation rclcpp rclcpp_action sensor_msgs geometry_msgs irobot_create_msgs nav_msgs tf2)
-ament_target_dependencies(navigation_prof rclcpp sensor_msgs geometry_msgs nav_msgs tf2 tf2_ros laser_geometry)
+ament_target_dependencies(navigation2 rclcpp rclcpp_action sensor_msgs geometry_msgs irobot_create_msgs nav_msgs tf2 tf2_ros laser_geometry)
 
 # Installs 
 install(TARGETS
@@ -32,7 +32,7 @@ install(TARGETS
 )
 
 install(TARGETS
-  navigation_prof
+  navigation2
   DESTINATION lib/${PROJECT_NAME}
 )
 
