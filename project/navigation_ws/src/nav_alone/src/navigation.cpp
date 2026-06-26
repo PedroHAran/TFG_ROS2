@@ -36,7 +36,6 @@ using std::placeholders::_1;
 #define SIMULATION true
 #define VOZ        false
 
-//Para comando de voz
 #include <cstdlib>
 
 class NavigationNode : public rclcpp::Node
@@ -47,13 +46,20 @@ public:
 
    NavigationNode()
    : Node("navigation_node"),
-     current_state_(RobotState::CHECKING_DOCK)
+     current_state_(RobotState::CHECKING_DOCK),
+     target_angle_degrees_(0.0),
+     target_global_(0.0),
+     scan_data_ready_(false),
+     hazard_detected_(false),
+     dist_max_(0.0),
+     frontal_dist_min_(std::numeric_limits<double>::max())
    {
-      // Create tf buffer and listener
       tf_buffer_ = std::make_unique<tf2_ros::Buffer>(this->get_clock());
       tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
+
+      this->declare_parameter<float>("stop_distance", 0.5);
+      stop_distance_ = this->get_parameter("stop_distance").as_double();
       
-      // QoS Best Effort
       rclcpp::QoS qos_profile = rclcpp::SensorDataQoS();
 
       // Movement
@@ -101,51 +107,48 @@ public:
 
       // Waiting for data
       std::this_thread::sleep_for(std::chrono::seconds(2));
-      RCLCPP_INFO(this->get_logger(), "Node --> Navigation Node");
+      RCLCPP_INFO(this->get_logger(), "Node --> Navigation Node Started");
       
       // Timer
       timer_ = this->create_wall_timer(
-         3min, 
+         100ms, 
          std::bind(&NavigationNode::timer_callback, this));
-      
    }
 
 private:
-   // Robot status
+   // Máquina de estados sin estados intermedios extra
    enum class RobotState 
    {
       CHECKING_DOCK,
       UNDOCKING,
-      SCANNING, // Detectar
-      ROTATING, // Girar
-      WALKING,  // !Detectar y !Girar
-      STOP
+      SCANNING, 
+      ROTATING, 
+      WALKING
    };
    RobotState current_state_;
 
-   double current_yaw, current_yaw_degrees;
-   double target_angle_degrees = 0, target_global = 0;
-   const double angle_min = -180;
-   const double angle_increment = 0.5625;
+   double current_yaw_, current_yaw_degrees_;
+   double target_angle_degrees_, target_global_;
+
+   bool scan_data_ready_;
+   bool hazard_detected_;
+   double dist_max_;
+   double frontal_dist_min_;
+   float stop_distance_;
 
    struct point2D{
       float x;
       float y;
    };
 
-   double calculateAngle(struct point2D point) {
-      // atan2 return radians
+   point2D far_point_ = {0.0, 0.0};
+   point2D close_frontal_point_ = {0.0, 0.0};
+
+   double calculateAngle(struct point2D point) 
+   {
       double rad = std::atan2(point.y, point.x);
-
-      // To degrees
       double degrees = rad * (180.0 / M_PI);
-
-      // Degrees format 0-360 instead of -180 to 180:
-      if (degrees < 0) 
-      {
-         degrees += 360.0;
-      }
-
+      if (degrees < 0) degrees += 360.0;
       return degrees;
    }
 
@@ -161,7 +164,7 @@ private:
          } 
          else 
          {
-            RCLCPP_INFO(this->get_logger(), "Undocked --> Walking");
+            RCLCPP_INFO(this->get_logger(), "Undocked --> Ready to Scan");
             current_state_ = RobotState::SCANNING;
          }
       }
@@ -169,348 +172,196 @@ private:
 
    void send_undock_goal()
    {
-      if (!undock_client_->wait_for_action_server(std::chrono::seconds(5))) 
-      {
+      if (!undock_client_->wait_for_action_server(std::chrono::seconds(5))) {
          RCLCPP_ERROR(this->get_logger(), "Error in /undock");
          return;
       }
-
       auto send_goal_options = rclcpp_action::Client<Undock>::SendGoalOptions();
-
       send_goal_options.result_callback = std::bind(&NavigationNode::undock_result_callback, this, _1);
-
       undock_client_->async_send_goal(Undock::Goal(), send_goal_options);
    }
 
    void undock_result_callback(const GoalHandleUndock::WrappedResult & result)
    {
-      switch (result.code) 
-      {
-         case rclcpp_action::ResultCode::SUCCEEDED:
-            RCLCPP_INFO(this->get_logger(), "Undock completed!");
-            current_state_ = RobotState::SCANNING;
-            break;
-         case rclcpp_action::ResultCode::ABORTED:
-            RCLCPP_ERROR(this->get_logger(), "Undock ABORTED");
-            break;
-         case rclcpp_action::ResultCode::CANCELED:
-            RCLCPP_ERROR(this->get_logger(), "Undock CANCELLED");
-            break;
-         default:
-            RCLCPP_ERROR(this->get_logger(), "???????????????");
-            break;
+      if (result.code == rclcpp_action::ResultCode::SUCCEEDED) {
+         RCLCPP_INFO(this->get_logger(), "Undock completed!");
+         current_state_ = RobotState::SCANNING;
       }
    }
 
    void scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
    {    
-      // Change speed if simulation or not
-      float lineal_velocity_, angular_velocity_, stop_dist_;
-
-      if (SIMULATION){
-         lineal_velocity_  = 3.0;
-         angular_velocity_ = 0.5;
-         stop_dist_        = 0.5;
-      }
-      else
-      {
-         lineal_velocity_  = 0.2;
-         angular_velocity_ = 0.3;
-         stop_dist_        = 0.5;
-      }
-
-      std::string target_frame = "base_link"; // Change between 'odom' or 'map'
+      std::string target_frame = "base_link"; 
       sensor_msgs::msg::PointCloud2 cloud;
 
-      if (!tf_buffer_->canTransform(target_frame, msg->header.frame_id, msg->header.stamp, tf2::Duration(RCL_S_TO_NS(1))))
-      {
-         RCLCPP_WARN(this->get_logger(), "Could not transfrom from %s to %s in time %f. Waiting transformation...",
-                     msg->header.frame_id.c_str(), target_frame.c_str(), rclcpp::Time(msg->header.stamp).seconds());
+      if (!tf_buffer_->canTransform(target_frame, msg->header.frame_id, msg->header.stamp, tf2::Duration(RCL_S_TO_NS(1)))) {
          return;
       }
-      try
-      {
-         // Transform LaserScan to PointCloud2
+      
+      try {
          projector_.transformLaserScanToPointCloud(target_frame, *msg, cloud, *tf_buffer_);
-
          point_cloud_pub_->publish(cloud);
-      }
-      catch (tf2::TransformException &ex)
-      {
-         RCLCPP_ERROR(this->get_logger(), "Error of transformation trying to convert LaserScan to PointCloud2: %s", ex.what());
+      } catch (tf2::TransformException &ex) {
          return;
       }
-
-      struct point2D far_point_={0,0}, close_frontal_point_={0,0};
-
-      std::vector<float> distances;
 
       sensor_msgs::PointCloud2Iterator<float> iter_x(cloud, "x");
       sensor_msgs::PointCloud2Iterator<float> iter_y(cloud, "y");
-      sensor_msgs::PointCloud2Iterator<float> iter_z(cloud, "z");
 
-      //double dist_min = std::numeric_limits<double>::max();
-      double frontal_dist_min_ = std::numeric_limits<double>::max();
-      double dist_max = 0.0;
+      double temp_frontal_min = std::numeric_limits<double>::max();
+      double temp_dist_max = 0.0;
+      point2D temp_far_point = {0.0, 0.0};
+      point2D temp_close_point = {0.0, 0.0};
 
-      for (; iter_x != iter_x.end(); ++iter_x, ++iter_y, ++iter_z) 
+      for (; iter_x != iter_x.end(); ++iter_x, ++iter_y) 
       {
-         // Calculate distance to origin (base_link)
-         double d = std::sqrt(std::pow(*iter_x, 2) + std::pow(*iter_y, 2) + std::pow(*iter_z, 2));
+         if (!std::isfinite(*iter_x) || !std::isfinite(*iter_y)) continue; 
 
-         if (d > dist_max) {
-            far_point_.x = *iter_x;
-            far_point_.y = *iter_y;
-            dist_max     =  d;
+         double d = std::sqrt(std::pow(*iter_x, 2) + std::pow(*iter_y, 2));
+
+         if (*iter_x > 0.0 && std::abs(*iter_y) < 0.25) 
+         {
+            if (d < temp_frontal_min) 
+            {
+               temp_frontal_min   =  d;
+               temp_close_point.x = *iter_x;
+               temp_close_point.y = *iter_y;
+            }
          }
 
-         if (*iter_x > 0.40)
+         if (d > temp_dist_max && d < 8.0 && std::abs(*iter_y) > 0.30) 
          {
-            if(d < frontal_dist_min_)
-            {
-               frontal_dist_min_       =  d;
-               close_frontal_point_.x  = *iter_x;
-               close_frontal_point_.y  = *iter_y;
-            }
+            temp_dist_max = d;
+            temp_far_point.x = *iter_x;
+            temp_far_point.y = *iter_y;
          }
       }
 
-      auto vel_msg = geometry_msgs::msg::TwistStamped();
-      float vel_angular_msg = 0.0;
-      bool rotateLeft = false;
-
-      vel_msg.header.stamp = this->get_clock()->now();
-      vel_msg.header.frame_id = "base_link";
-
-      if(current_state_ == RobotState::SCANNING)
-      {
-         if (VOZ)
-         {
-            std::string comando = "espeak-ng -v es -s 130 \"Detectando espacio libre alrededor\"";
-            std::system(comando.c_str());
-         } 
-
-         target_angle_degrees = calculateAngle(far_point_);
-         target_global = int(target_angle_degrees + current_yaw_degrees)%360;
-
-         RCLCPP_INFO(this->get_logger(), "Free space at %.2fm in %.1f degrees, tar.glob.: %.2f",
-            dist_max, 
-            target_angle_degrees, 
-            target_global);
-         RCLCPP_INFO(this->get_logger(), "Objective: %.2f OG: %.2f Actual: %.2f", 
-            target_angle_degrees, 
-            target_global, 
-            current_yaw_degrees);
-
-         current_state_ = RobotState::ROTATING;
-         RCLCPP_INFO(this->get_logger(), "Scanning --> Rotating");
-
-         if (VOZ) 
-         {
-            char mensaje[300];
-            std::snprintf(mensaje, sizeof(mensaje), "Se ha detectado espacio libre a %d metros en %d grados. Girando.", (int)dist_max, (int)target_angle_degrees);
-            std::string mensajeString("espeak-ng -v es -s 130 ");
-            mensajeString=mensajeString+ "\""+ string(mensaje)+"\"";
-            cout << mensajeString << endl;
-            std::system(mensajeString.c_str());
-         }
+      if (temp_dist_max == 0.0) {
+          temp_dist_max = 3.0;
+          temp_far_point.x = 3.0; 
+          temp_far_point.y = 0.0;
       }
-      else if (current_state_ == RobotState::ROTATING)
-      {         
-         float angle_tolerance = 0.6;
 
-         float difference = target_global - current_yaw_degrees;
-
-         if(fabs(difference) > angle_tolerance)
-         {
-            if(fabs(difference) < 180)
-            {
-               if(difference > 0)
-               {
-                  rotateLeft = true;
-               }
-               else 
-               {
-                  rotateLeft = false;
-               }
-            }
-            else
-            {
-               if(difference > 0)
-               {
-                  rotateLeft = false;
-               }
-               else 
-               {
-                  rotateLeft = true;
-               }
-            }
-      
-            if (rotateLeft)
-            {
-               vel_angular_msg = angular_velocity_;
-            }
-            else
-            {
-               vel_angular_msg = -1 * angular_velocity_;
-            }
-
-            vel_msg.twist.linear.x = 0.0;
-            vel_msg.twist.angular.z = vel_angular_msg;
-            movement_publisher_->publish(vel_msg);
-         }
-         else
-         {
-            // Alined. Stop
-            //RCLCPP_INFO(this->get_logger(), "Aligned");
-            if (VOZ) 
-            {
-               std::string comando = "espeak-ng -v es -s 130 \"Giro realizado. Avanzando hasta detectar distancia de seguridad.\"";
-               std::system(comando.c_str());
-            }
-
-            current_state_ = RobotState::WALKING;
-            RCLCPP_INFO(this->get_logger(), "Scannig --> Walking");
-            vel_msg.twist.linear.x = 0.0;
-            vel_msg.twist.angular.z = 0.0;
-            movement_publisher_->publish(vel_msg);
-         }
-      }
-      else if(current_state_ == RobotState::WALKING)
-      {
-         bool emergency_stop = false;
-         if (frontal_dist_min_ < stop_dist_) 
-         {
-            emergency_stop = true;
-         }
-
-         if (emergency_stop) 
-         {
-            RCLCPP_INFO(this->get_logger(), "Object detected at %.2fm with an angle %.2f", 
-               frontal_dist_min_, 
-               calculateAngle(close_frontal_point_) );
-
-            vel_msg.twist.linear.x = 0.0;
-            vel_msg.twist.angular.z = 0.0;
-            movement_publisher_->publish(vel_msg);
-
-            current_state_ = RobotState::SCANNING;
-            RCLCPP_INFO(this->get_logger(), "Walking--> Scanning");
-
-            if (VOZ)
-            {
-               char mensaje[300];
-               std::snprintf(mensaje, sizeof(mensaje), "Se ha detectado obstaculo a %.1f metros en %d grados.", frontal_dist_min_, (int)calculateAngle(close_frontal_point_));
-               std::string mensajeString("espeak-ng -v es -s 130 ");
-               mensajeString=mensajeString+ "\""+ string(mensaje)+"\"";
-               cout << mensajeString << endl;
-
-               std::system(mensajeString.c_str());
-            }
-         }
-         else
-         {
-            vel_msg.twist.linear.x = lineal_velocity_;
-            vel_msg.twist.angular.z = 0;
-            movement_publisher_->publish(vel_msg);
-         }
-      }
+      dist_max_ = temp_dist_max;
+      frontal_dist_min_ = temp_frontal_min;
+      far_point_ = temp_far_point;
+      close_frontal_point_ = temp_close_point;
+      scan_data_ready_ = true;
    }
 
    void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
    {
-      // Actual yaw 
       double siny_cosp = 2 * (msg->pose.pose.orientation.w * msg->pose.pose.orientation.z +
                               msg->pose.pose.orientation.x * msg->pose.pose.orientation.y);
-
       double cosy_cosp = 1 - 2 * (msg->pose.pose.orientation.y * msg->pose.pose.orientation.y +
                                   msg->pose.pose.orientation.z * msg->pose.pose.orientation.z);
 
-      current_yaw = std::atan2(siny_cosp, cosy_cosp);
-      current_yaw_degrees=current_yaw * (180.0 / M_PI); 
-      
-      if (current_yaw_degrees < 0)
-      { 
-         current_yaw_degrees += 360;
-      }
+      current_yaw_ = std::atan2(siny_cosp, cosy_cosp);
+      current_yaw_degrees_ = current_yaw_ * (180.0 / M_PI); 
+      if (current_yaw_degrees_ < 0) current_yaw_degrees_ += 360;
    }
 
    void hazard_callback(const irobot_create_msgs::msg::HazardDetectionVector::SharedPtr msg)
    {
-      if (!msg->detections.empty()) 
-      {
-         for (const auto& hazard : msg->detections) 
-         {
-               if (hazard.type == irobot_create_msgs::msg::HazardDetection::BUMP) 
-               {
-                  RCLCPP_WARN_THROTTLE(
-                     this->get_logger(), 
-                     *this->get_clock(), 
-                     1000, 
-                     "Bumper Activated"
-                  );
-                  
-                  if (current_state_ == RobotState::WALKING) 
-                  {
-                     auto stop_msg = geometry_msgs::msg::TwistStamped();
-                     stop_msg.header.stamp = this->get_clock()->now();
-                     stop_msg.header.frame_id = "base_link";
-                     stop_msg.twist.linear.x = 0.0;
-                     stop_msg.twist.angular.z = 0.0;
-                     movement_publisher_->publish(stop_msg);
-
-                     current_state_ = RobotState::SCANNING;
-                  }
-               }
-         }
-      }
+      if (current_state_ == RobotState::CHECKING_DOCK || current_state_ == RobotState::UNDOCKING) return;
+      if (!msg->detections.empty()) hazard_detected_ = true;
    }
 
    void ir_callback(const irobot_create_msgs::msg::IrIntensityVector::SharedPtr msg)
    {
-      // Minimal distance
-      const int ir_obstacle_threshold = 200; 
-
-      for (const auto& reading : msg->readings) 
-      {
-         if (reading.value > ir_obstacle_threshold) 
-         {
-            RCLCPP_WARN_THROTTLE(
-               this->get_logger(), 
-               *this->get_clock(), 
-               1000, 
-               "IR activated, object detected by sensor '%s' with intensity %d", 
-               reading.header.frame_id.c_str(), reading.value
-            );
-            
-            if (current_state_ == RobotState::WALKING) 
-            {
-               auto stop_msg = geometry_msgs::msg::TwistStamped();
-               stop_msg.header.stamp = this->get_clock()->now();
-               stop_msg.header.frame_id = "base_link";
-               stop_msg.twist.linear.x = 0.0;
-               stop_msg.twist.angular.z = 0.0;
-               movement_publisher_->publish(stop_msg);
-
-               current_state_ = RobotState::SCANNING;
-            }
-         }
+      if (current_state_ == RobotState::CHECKING_DOCK || current_state_ == RobotState::UNDOCKING) return;
+      for (const auto& reading : msg->readings) {
+         if (reading.value > 200) hazard_detected_ = true;
       }
    }
 
    void timer_callback()
    {
-      RCLCPP_WARN(this->get_logger(), "Time is up! Shutting node...");
-
-      if (VOZ) 
+      if (current_state_ == RobotState::CHECKING_DOCK || current_state_ == RobotState::UNDOCKING || !scan_data_ready_) 
       {
-         std::string comando = "espeak-ng -v es -s 130 \"Se ha alcanzado el tiempo máximo establecido. Fin del programa.\"";
-         std::system(comando.c_str());
+         return;
       }
 
+      float lineal_velocity = SIMULATION ? 3.0 : 0.2;
+      float angular_velocity = SIMULATION ? 0.5 : 0.3;
+
+      auto vel_msg = geometry_msgs::msg::TwistStamped();
+      vel_msg.header.stamp = this->get_clock()->now();
+      vel_msg.header.frame_id = "base_link";
+
+      bool obstacle_ahead = (current_state_ == RobotState::WALKING && frontal_dist_min_ < stop_distance_);
+
+      if (hazard_detected_ || obstacle_ahead) 
+      {
+         vel_msg.twist.linear.x = 0.0;
+         vel_msg.twist.angular.z = 0.0;
+         movement_publisher_->publish(vel_msg);
+         
+         if (current_state_ == RobotState::WALKING || current_state_ == RobotState::ROTATING) 
+         {
+            RCLCPP_INFO(this->get_logger(), "Obstaculo detectado a %.2fm --> Escaneando", frontal_dist_min_);
+            if (VOZ) {
+               char mensaje[300];
+               std::snprintf(mensaje, sizeof(mensaje), "Se ha detectado obstaculo a %.1f metros.", frontal_dist_min_);
+               std::string msj = "espeak-ng -v es -s 130 \"" + std::string(mensaje) + "\"";
+               std::system(msj.c_str());
+            }
+            current_state_ = RobotState::SCANNING;
+         }
+         hazard_detected_ = false; 
+         return;
+      }
+
+      if (current_state_ == RobotState::SCANNING)
+      {
+         target_angle_degrees_ = calculateAngle(far_point_);
+         target_global_ = int(target_angle_degrees_ + current_yaw_degrees_) % 360;
+
+         RCLCPP_INFO(this->get_logger(), "Hueco a %.2fm en %.1fº | Obj global: %.2fº",
+            dist_max_, target_angle_degrees_, target_global_);
+
+         current_state_ = RobotState::ROTATING;
+      }
+      else if (current_state_ == RobotState::ROTATING)
+      {
+         float angle_tolerance = 1.0;
+         float difference = target_global_ - current_yaw_degrees_;
+         bool rotateLeft = false;
+
+         if (std::fabs(difference) > angle_tolerance)
+         {
+            if (std::fabs(difference) < 180) rotateLeft = (difference > 0);
+            else rotateLeft = !(difference > 0);
+      
+            vel_msg.twist.linear.x = 0.0;
+            vel_msg.twist.angular.z = rotateLeft ? angular_velocity : -angular_velocity;
+            movement_publisher_->publish(vel_msg);
+         }
+         else
+         {
+            RCLCPP_INFO(this->get_logger(), "Alineacion conseguida --> Avanzando");
+            vel_msg.twist.linear.x = 0.0;
+            vel_msg.twist.angular.z = 0.0;
+            movement_publisher_->publish(vel_msg);
+            
+            current_state_ = RobotState::WALKING;
+         }
+      }
+      else if (current_state_ == RobotState::WALKING)
+      {
+         vel_msg.twist.linear.x = lineal_velocity;
+         vel_msg.twist.angular.z = 0.0;
+         movement_publisher_->publish(vel_msg);
+      }
+   }
+
+   void shutdown_timer_callback()
+   {
+      RCLCPP_WARN(this->get_logger(), "Tiempo maximo alcanzado. Apagando nodo...");
       rclcpp::shutdown();
    }
-   
+
    rclcpp::Publisher<geometry_msgs::msg::TwistStamped>::SharedPtr movement_publisher_;
    rclcpp::Subscription<irobot_create_msgs::msg::DockStatus>::SharedPtr dock_subscriber_;
    rclcpp_action::Client<Undock>::SharedPtr undock_client_;
@@ -519,7 +370,9 @@ private:
    rclcpp::Subscription<irobot_create_msgs::msg::HazardDetectionVector>::SharedPtr hazard_subscriber_;
    rclcpp::Subscription<irobot_create_msgs::msg::IrIntensityVector>::SharedPtr ir_subscriber_;
    rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr point_cloud_pub_;
+   
    rclcpp::TimerBase::SharedPtr timer_;
+   rclcpp::TimerBase::SharedPtr shutdown_timer_;
 
    std::shared_ptr<tf2_ros::Buffer> tf_buffer_;
    std::shared_ptr<tf2_ros::TransformListener> tf_listener_;
@@ -529,6 +382,7 @@ private:
 int main(int argc, char ** argv)
 {
   rclcpp::init(argc, argv);
+  std::cout << "Iniciando nodo scan_safe_move adaptado..." << std::endl;
   rclcpp::spin(std::make_shared<NavigationNode>());
   rclcpp::shutdown();
   return 0;
