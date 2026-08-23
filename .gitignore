@@ -9,6 +9,11 @@ worlds/
 Others/
 cartographer_config/
 
+log_*
+bag_*/
+
+.vscode
+
 # Carpetas de compilación y logs (ROS 2), en cualquier subdirectorio
 build/
 install/
