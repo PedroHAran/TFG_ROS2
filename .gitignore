@@ -4,7 +4,10 @@
 # Carpetas ignoradas
 Notas/
 book/
-prueba1/
+proyect/
+worlds/
+Others/
+cartographer_config/
 
 # Carpetas de compilación y logs (ROS 2), en cualquier subdirectorio
 build/
