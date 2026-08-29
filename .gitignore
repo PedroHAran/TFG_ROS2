@@ -4,13 +4,18 @@
 # Carpetas ignoradas
 Notas/
 book/
-proyect/
+project/
 worlds/
 Others/
 cartographer_config/
+DataCartographerHector/
+Graphs/
 
 log_*
 bag_*/
+map*
+metrica*
+*.png
 
 .vscode
 
