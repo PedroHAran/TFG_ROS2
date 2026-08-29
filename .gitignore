@@ -16,6 +16,7 @@ bag_*/
 map*
 metrica*
 *.png
+*.tum
 
 .vscode
 
