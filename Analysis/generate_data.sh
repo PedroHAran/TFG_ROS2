@@ -1,131 +1,98 @@
 #!/bin/bash
 
-# ==============================================================================
-# SCRIPT MAESTRO DE EVALUACIÓN SLAM - TFG (CON CRONÓMETRO Y SELECTOR)
-# ==============================================================================
-
-# Función para formatear los segundos en Horas, Minutos y Segundos
-formatear_tiempo() {
+format_time() {
     local T=$1
     local H=$((T/3600))
     local M=$(((T%3600)/60))
     local S=$((T%60))
-    printf "%02d horas, %02d minutos y %02d segundos\n" $H $M $S
+    printf "%02d hours, %02d minutes and %02d seconds\n" $H $M $S
 }
 
-# ---------------------------------------------------------
-# LECTURA DE ARGUMENTOS E INICIO GLOBAL
-# ---------------------------------------------------------
-ALGORITMO=$1
-MAPAS=("maze" "depot" "warehouse")
-TIEMPO_INICIO_GLOBAL=$(date +%s)
+ALGORITHM=$1
+MAPS=("maze" "depot" "warehouse")
+START_TIME_GLOBAL=$(date +%s)
 
-# Inicializamos las duraciones a 0 por si algún algoritmo no se ejecuta
-DURACION_SLAM=0
-DURACION_CART=0
-DURACION_RTAB=0
-DURACION_MRPT=0
-DURACION_LAMA=0
+DUR_SLAM=0
+DUR_CART=0
+DUR_RTAB=0
+DUR_MRPT=0
+DUR_LAMA=0
 
 echo "========================================================"
-if [ -z "$ALGORITMO" ]; then
-    echo " INICIANDO PIPELINE COMPLETO (TODOS LOS ALGORITMOS)"
+if [ -z "$ALGORITHM" ]; then
+    echo " STARTING FULL PIPELINE (ALL ALGORITHMS)"
 else
-    echo " INICIANDO PIPELINE INDIVIDUAL: $ALGORITMO"
+    echo " STARTING INDIVIDUAL PIPELINE: $ALGORITHM"
 fi
-echo " Mapas a procesar: ${MAPAS[*]}"
+echo " Maps to process: ${MAPS[*]}"
 echo "========================================================"
 
-# ---------------------------------------------------------
-# 1. SLAM TOOLBOX
-# ---------------------------------------------------------
-if [ -z "$ALGORITMO" ] || [ "$ALGORITMO" == "slam_toolbox" ]; then
-    TIEMPO_INICIO_SLAM=$(date +%s)
-    for mapa in "${MAPAS[@]}"; do
-        echo ">> [SLAM TOOLBOX] Iniciando evaluación en el mapa: $mapa"
-        bash $HOME/TFG/DataSLAMToolbox/slam_toolbox.sh $mapa
+if [ -z "$ALGORITHM" ] || [ "$ALGORITHM" == "slam_toolbox" ]; then
+    START_TIME=$(date +%s)
+    for map in "${MAPS[@]}"; do
+        echo ">> [SLAM TOOLBOX] Starting evaluation on map: $map"
+        bash $HOME/TFG/DataSLAMToolbox/slam_toolbox.sh $map
     done
-    TIEMPO_FIN_SLAM=$(date +%s)
-    DURACION_SLAM=$((TIEMPO_FIN_SLAM - TIEMPO_INICIO_SLAM))
-    echo ">> [INFO] SLAM Toolbox completado en: $(formatear_tiempo $DURACION_SLAM)"
+    DUR_SLAM=$(( $(date +%s) - START_TIME ))
+    echo ">> [INFO] SLAM Toolbox completed in: $(format_time $DUR_SLAM)"
     echo "---------------------------------------------------------"
 fi
 
-# ---------------------------------------------------------
-# 2. CARTOGRAPHER
-# ---------------------------------------------------------
-if [ -z "$ALGORITMO" ] || [ "$ALGORITMO" == "cartographer" ]; then
-    TIEMPO_INICIO_CART=$(date +%s)
-    for mapa in "${MAPAS[@]}"; do
-        echo ">> [CARTOGRAPHER] Iniciando evaluación en el mapa: $mapa"
-        bash $HOME/TFG/DataCartographer/cartographer.sh $mapa
+if [ -z "$ALGORITHM" ] || [ "$ALGORITHM" == "cartographer" ]; then
+    START_TIME=$(date +%s)
+    for map in "${MAPS[@]}"; do
+        echo ">> [CARTOGRAPHER] Starting evaluation on map: $map"
+        bash $HOME/TFG/DataCartographer/cartographer.sh $map
     done
-    TIEMPO_FIN_CART=$(date +%s)
-    DURACION_CART=$((TIEMPO_FIN_CART - TIEMPO_INICIO_CART))
-    echo ">> [INFO] Cartographer completado en: $(formatear_tiempo $DURACION_CART)"
+    DUR_CART=$(( $(date +%s) - START_TIME ))
+    echo ">> [INFO] Cartographer completed in: $(format_time $DUR_CART)"
     echo "---------------------------------------------------------"
 fi
 
-# ---------------------------------------------------------
-# 3. MRPT SLAM
-# ---------------------------------------------------------
-if [ -z "$ALGORITMO" ] || [ "$ALGORITMO" == "mrpt" ]; then
-    TIEMPO_INICIO_MRPT=$(date +%s)
-    for mapa in "${MAPAS[@]}"; do
-        echo ">> [MRPT SLAM] Iniciando evaluación en el mapa: $mapa"
-        bash $HOME/TFG/DataMrptRbpf/mrpt_rbpf.sh $mapa
+if [ -z "$ALGORITHM" ] || [ "$ALGORITHM" == "mrpt" ]; then
+    START_TIME=$(date +%s)
+    for map in "${MAPS[@]}"; do
+        echo ">> [MRPT SLAM] Starting evaluation on map: $map"
+        bash $HOME/TFG/DataMrptRbpf/mrpt_rbpf.sh $map
     done
-    TIEMPO_FIN_MRPT=$(date +%s)
-    DURACION_MRPT=$((TIEMPO_FIN_MRPT - TIEMPO_INICIO_MRPT))
-    echo ">> [INFO] MRPT SLAM completado en: $(formatear_tiempo $DURACION_MRPT)"
+    DUR_MRPT=$(( $(date +%s) - START_TIME ))
+    echo ">> [INFO] MRPT SLAM completed in: $(format_time $DUR_MRPT)"
     echo "---------------------------------------------------------"
 fi
 
-# ---------------------------------------------------------
-# 4. IRIS LAMA (Filtro de Partículas)
-# ---------------------------------------------------------
-if [ -z "$ALGORITMO" ] || [ "$ALGORITMO" == "lama" ]; then
-    TIEMPO_INICIO_LAMA=$(date +%s)
-    for mapa in "${MAPAS[@]}"; do
-        echo ">> [IRIS LAMA] Iniciando evaluación en el mapa: $mapa"
-        bash $HOME/TFG/DataIrisLama/iris_lama.sh $mapa
+if [ -z "$ALGORITHM" ] || [ "$ALGORITHM" == "lama" ]; then
+    START_TIME=$(date +%s)
+    for map in "${MAPS[@]}"; do
+        echo ">> [IRIS LAMA] Starting evaluation on map: $map"
+        bash $HOME/TFG/DataIrisLama/iris_lama.sh $map
     done
-    TIEMPO_FIN_LAMA=$(date +%s)
-    DURACION_LAMA=$((TIEMPO_FIN_LAMA - TIEMPO_INICIO_LAMA))
-    echo ">> [INFO] Iris LAMA completado en: $(formatear_tiempo $DURACION_LAMA)"
+    DUR_LAMA=$(( $(date +%s) - START_TIME ))
+    echo ">> [INFO] Iris LAMA completed in: $(format_time $DUR_LAMA)"
     echo "---------------------------------------------------------"
 fi
 
-# ---------------------------------------------------------
-# 5. RTAB-MAP
-# ---------------------------------------------------------
-if [ -z "$ALGORITMO" ] || [ "$ALGORITMO" == "rtabmap" ]; then
-    TIEMPO_INICIO_RTAB=$(date +%s)
-    for mapa in "${MAPAS[@]}"; do
-        echo ">> [RTAB-MAP] Iniciando evaluación en el mapa: $mapa"
-        bash $HOME/TFG/DataRTABMap/rtabmap.sh $mapa
+if [ -z "$ALGORITHM" ] || [ "$ALGORITHM" == "rtabmap" ]; then
+    START_TIME=$(date +%s)
+    for map in "${MAPS[@]}"; do
+        echo ">> [RTAB-MAP] Starting evaluation on map: $map"
+        bash $HOME/TFG/DataRTABMap/rtabmap.sh $map
     done
-    TIEMPO_FIN_RTAB=$(date +%s)
-    DURACION_RTAB=$((TIEMPO_FIN_RTAB - TIEMPO_INICIO_RTAB))
-    echo ">> [INFO] RTAB-Map completado en: $(formatear_tiempo $DURACION_RTAB)"
+    DUR_RTAB=$(( $(date +%s) - START_TIME ))
+    echo ">> [INFO] RTAB-Map completed in: $(format_time $DUR_RTAB)"
     echo "---------------------------------------------------------"
 fi
 
-# ---------------------------------------------------------
-# FIN GLOBAL Y RESUMEN
-# ---------------------------------------------------------
-TIEMPO_FIN_GLOBAL=$(date +%s)
-DURACION_TOTAL=$((TIEMPO_FIN_GLOBAL - TIEMPO_INICIO_GLOBAL))
+TOTAL_DUR=$(( $(date +%s) - START_TIME_GLOBAL ))
 
 echo "========================================================"
-echo " PIPELINE FINALIZADO."
+echo " PIPELINE FINISHED."
 echo "========================================================"
-echo " RESUMEN DE TIEMPOS DE EJECUCIÓN:"
-[ $DURACION_SLAM -gt 0 ] && echo "   - SLAM Toolbox : $(formatear_tiempo $DURACION_SLAM)"
-[ $DURACION_CART -gt 0 ] && echo "   - Cartographer : $(formatear_tiempo $DURACION_CART)"
-[ $DURACION_MRPT -gt 0 ] && echo "   - MRPT SLAM    : $(formatear_tiempo $DURACION_MRPT)"
-[ $DURACION_LAMA -gt 0 ] && echo "   - Iris LAMA    : $(formatear_tiempo $DURACION_LAMA)"
-[ $DURACION_RTAB -gt 0 ] && echo "   - RTAB-Map     : $(formatear_tiempo $DURACION_RTAB)"
+echo " SUMMARY OF EXECUTION TIMES:"
+[ $DUR_SLAM -gt 0 ] && echo "   - SLAM Toolbox : $(format_time $DUR_SLAM)"
+[ $DUR_CART -gt 0 ] && echo "   - Cartographer : $(format_time $DUR_CART)"
+[ $DUR_MRPT -gt 0 ] && echo "   - MRPT SLAM    : $(format_time $DUR_MRPT)"
+[ $DUR_LAMA -gt 0 ] && echo "   - Iris LAMA    : $(format_time $DUR_LAMA)"
+[ $DUR_RTAB -gt 0 ] && echo "   - RTAB-Map     : $(format_time $DUR_RTAB)"
 echo " ------------------------------------------------------"
-echo "   - TIEMPO TOTAL : $(formatear_tiempo $DURACION_TOTAL)"
+echo "   - TOTAL TIME   : $(format_time $TOTAL_DUR)"
 echo "========================================================"

@@ -26,27 +26,28 @@ def get_num_enclosed_areas(image):
 script_dir = os.path.dirname(__file__)
 base_path = os.path.abspath(os.path.join(script_dir, '../..'))
 maps_out_dir = os.path.join(script_dir, '../results/maps')
+os.makedirs(maps_out_dir, exist_ok=True)
 
-algoritmos_2d = ['slam_toolbox', 'cartographer', 'mrpt', 'lama']
-metricas_mapas = {'Algoritmo': [], 'Areas_Encerradas': [], 'Esquinas': [], 'Proporcion_Ocupada': []}
+algorithms_2d = ['slam_toolbox', 'cartographer', 'mrpt', 'lama']
+map_metrics = {'Algorithm': [], 'Enclosed_Areas': [], 'Corners': [], 'Occupied_Proportion': []}
 
-for algo in algoritmos_2d:
-    busqueda_mapa = glob.glob(os.path.join(base_path, '**', f"mapa_{algo}*_1.pgm"), recursive=True)
-    if busqueda_mapa:
-        img = cv.imread(busqueda_mapa[0], cv.IMREAD_GRAYSCALE)
-        metricas_mapas['Algoritmo'].append(algo)
-        metricas_mapas['Areas_Encerradas'].append(get_num_enclosed_areas(img))
-        metricas_mapas['Esquinas'].append(get_num_corners(img))
-        metricas_mapas['Proporcion_Ocupada'].append(get_occupied_proportion(img))
+for algo in algorithms_2d:
+    map_search = glob.glob(os.path.join(base_path, '**', f"mapa_{algo}*_1.pgm"), recursive=True)
+    if map_search:
+        img = cv.imread(map_search[0], cv.IMREAD_GRAYSCALE)
+        map_metrics['Algorithm'].append(algo)
+        map_metrics['Enclosed_Areas'].append(get_num_enclosed_areas(img))
+        map_metrics['Corners'].append(get_num_corners(img))
+        map_metrics['Occupied_Proportion'].append(get_occupied_proportion(img))
 
-if metricas_mapas['Algoritmo']:
+if map_metrics['Algorithm']:
     fig, axes = plt.subplots(1, 3, figsize=(18, 5))
-    axes[0].bar(metricas_mapas['Algoritmo'], metricas_mapas['Areas_Encerradas'], color='orange')
-    axes[0].set_title('Número de áreas encerradas')
-    axes[1].bar(metricas_mapas['Algoritmo'], metricas_mapas['Esquinas'], color='green')
-    axes[1].set_title('Número de esquinas detectadas')
-    axes[2].bar(metricas_mapas['Algoritmo'], metricas_mapas['Proporcion_Ocupada'], color='tab:blue')
-    axes[2].set_title('Proporción de píxeles ocupados')
+    axes[0].bar(map_metrics['Algorithm'], map_metrics['Enclosed_Areas'], color='orange')
+    axes[0].set_title('Number of enclosed areas')
+    axes[1].bar(map_metrics['Algorithm'], map_metrics['Corners'], color='green')
+    axes[1].set_title('Number of detected corners')
+    axes[2].bar(map_metrics['Algorithm'], map_metrics['Occupied_Proportion'], color='tab:blue')
+    axes[2].set_title('Occupied pixel proportion')
     
     plt.tight_layout()
-    plt.savefig(os.path.join(maps_out_dir, 'metricas_calidad_mapas.png'))
+    plt.savefig(os.path.join(maps_out_dir, 'map_quality_metrics.png'))

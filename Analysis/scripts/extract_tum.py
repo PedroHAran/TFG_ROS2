@@ -15,17 +15,15 @@ class TrajectoryExtractor(Node):
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
         
-        self.file_slam = open('trayectoria_slam.tum', 'w')
-        self.file_odom = open('trayectoria_odom.tum', 'w')
+        self.file_slam = open('trajectory_slam.tum', 'w')
+        self.file_odom = open('trajectory_odom.tum', 'w')
         
-        # Perfil QoS para leer rosbags de forma fiable
         qos_profile = QoSProfile(
             history=QoSHistoryPolicy.KEEP_LAST,
             depth=100,
             reliability=QoSReliabilityPolicy.BEST_EFFORT
         )
         
-        # Suscripción al Ground Truth con el QoS ajustado
         self.gt_sub_odom = self.create_subscription(
             Odometry, 
             '/sim_ground_truth_pose', 
@@ -33,9 +31,8 @@ class TrajectoryExtractor(Node):
             qos_profile
         )
         
-        # Reducimos el tiempo del timer a 0.05 para ir más rápido (acorde al -r 5)
         self.timer = self.create_timer(0.05, self.timer_callback)
-        self.get_logger().info('Esperando datos del bag...')
+        self.get_logger().info('Waiting for bag data...')
 
     def gt_callback_odom(self, msg):
         time_gt = msg.header.stamp.sec + msg.header.stamp.nanosec * 1e-9
@@ -46,14 +43,12 @@ class TrajectoryExtractor(Node):
 
     def timer_callback(self):
         try:
-            # Intenta primero con 'map' (para SLAM Toolbox, Cartographer, etc.)
             t_slam = self.tf_buffer.lookup_transform('map', 'base_link', rclpy.time.Time())
         except Exception:
             try:
-                # Si falla, intenta con 'odom' (suele ser el caso de RTAB-Map o fallos de tf)
                 t_slam = self.tf_buffer.lookup_transform('odom', 'base_link', rclpy.time.Time())
             except Exception:
-                return # Si ambos fallan, sale sin escribir nada
+                return 
 
         time_slam = t_slam.header.stamp.sec + t_slam.header.stamp.nanosec * 1e-9
         pos = t_slam.transform.translation

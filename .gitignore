@@ -1,12 +1,20 @@
-# Avoid uploading local results
-log_*
+log_*.txt
 bag_*/
-map*
-metrica*
+
+mapa_*
+map_*
+*.pgm
+*.yaml
+
+metrica*.csv
+metrics*.csv
 *.mcap
 *.tum
 *.zip
 *.png
-results/
 
-.vscodeAnalysis/results/
+results/
+Analysis/results/
+
+.vscode/
+__pycache__/
