@@ -1,0 +1,21 @@
+{
+  "package_name": "mrpt_msgs",
+  "non_idl_tuples": [
+    "/home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs:msg/GenericObservation.msg",
+    "/home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs:msg/GraphConstraint.msg",
+    "/home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs:msg/GraphSlamAgent.msg",
+    "/home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs:msg/GraphSlamAgents.msg",
+    "/home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs:msg/GraphSlamStats.msg",
+    "/home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs:msg/NetworkOfPoses.msg",
+    "/home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs:msg/NodeIDWithLaserScan.msg",
+    "/home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs:msg/NodeIDWithPoseVec.msg",
+    "/home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs:msg/NodeIDWithPose.msg",
+    "/home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs:msg/ObservationObject.msg",
+    "/home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs:msg/SingleObjectObservation.msg",
+    "/home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs:msg/ObservationRangeBeacon.msg",
+    "/home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs:msg/ObservationRangeBearing.msg",
+    "/home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs:msg/SingleRangeBeaconObservation.msg",
+    "/home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs:msg/SingleRangeBearingObservation.msg",
+    "/home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs:srv/GetCMGraph.srv"
+  ]
+}

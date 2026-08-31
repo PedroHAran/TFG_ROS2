@@ -1,0 +1,38 @@
+[0.073s] Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam -- -j12 -l12
+[0.235s] [100%] Built target mrpt_rbpf_slam
+[0.248s] Invoked command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam -- -j12 -l12
+[0.260s] Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam
+[0.269s] -- Install configuration: ""
+[0.269s] -- Execute custom install script
+[0.269s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/lib/mrpt_rbpf_slam/mrpt_rbpf_slam
+[0.270s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/config/default.yaml
+[0.270s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/config/rosconsole.config
+[0.270s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/mvsim_slam.launch.py
+[0.270s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/rbpf_slam.launch.py
+[0.271s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/rbpf_slam_rawlog.launch.py
+[0.271s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/rbpf_slam_turtlebot3.launch.py
+[0.271s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/ro_slam.launch.py
+[0.271s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/ro_slam_rawlog.launch.py
+[0.271s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/rviz.launch.py
+[0.271s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/tutorial/RO-SLAM_demo.ini
+[0.271s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/tutorial/RO-SLAM_demo.rawlog
+[0.271s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/tutorial/grid_slam_demo.ini
+[0.272s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/tutorial/grid_slam_demo.rawlog
+[0.272s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/tutorial/grid_slam_demo2.rawlog
+[0.272s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/rviz/rviz_conf.rviz
+[0.272s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/ament_index/resource_index/package_run_dependencies/mrpt_rbpf_slam
+[0.272s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/ament_index/resource_index/parent_prefix_path/mrpt_rbpf_slam
+[0.272s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/environment/ament_prefix_path.sh
+[0.273s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/environment/ament_prefix_path.dsv
+[0.273s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/environment/path.sh
+[0.273s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/environment/path.dsv
+[0.273s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/local_setup.bash
+[0.273s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/local_setup.sh
+[0.273s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/local_setup.zsh
+[0.274s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/local_setup.dsv
+[0.274s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/package.dsv
+[0.285s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/ament_index/resource_index/packages/mrpt_rbpf_slam
+[0.285s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/cmake/mrpt_rbpf_slamConfig.cmake
+[0.285s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/cmake/mrpt_rbpf_slamConfig-version.cmake
+[0.285s] -- Up-to-date symlink: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/package.xml
+[0.288s] Invoked command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam

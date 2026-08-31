@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/pharanguren/TFG/lama_ws/build/iris_lama_ros2/src/loc2d_ros" "/home/pharanguren/TFG/lama_ws/build/iris_lama_ros2/src/pf_slam2d_ros" "/home/pharanguren/TFG/lama_ws/build/iris_lama_ros2/src/slam2d_ros" "TARGETS" "loc2d_ros" "pf_slam2d_ros" "slam2d_ros" "DESTINATION" "lib/iris_lama_ros2")

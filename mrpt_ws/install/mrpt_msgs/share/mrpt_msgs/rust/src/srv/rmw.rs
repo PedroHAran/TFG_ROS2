@@ -1,0 +1,1 @@
+/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_generator_rs/mrpt_msgs/rust/src/srv/rmw.rs

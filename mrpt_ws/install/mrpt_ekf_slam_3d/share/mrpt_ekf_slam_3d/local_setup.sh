@@ -1,0 +1,1 @@
+/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_3d/ament_cmake_environment_hooks/local_setup.sh

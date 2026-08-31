@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mrpt_msgs/msg/NodeIDWithPoseVec.msg
+// generated code does not contain a copyright notice
+
+#include "mrpt_msgs/msg/NodeIDWithPose.idl"
+
+module mrpt_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Vector of NodeIDWithPose msgs")
+    struct NodeIDWithPoseVec {
+      sequence<mrpt_msgs::msg::NodeIDWithPose> vec;
+    };
+  };
+};

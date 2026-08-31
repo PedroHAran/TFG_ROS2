@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "mrpt_msgs__py",
+		"source" : "/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/mrpt_msgs__py"
+	}
+}

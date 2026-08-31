@@ -1,0 +1,704 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "src/libiris_lama.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"target_compile_options",
+			"target_include_directories",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 42,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 73,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 48,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 70,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 69,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wextra"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "/home/pharanguren/TFG/lama_ws/src/iris_lama/src/../include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/pharanguren/TFG/lama_ws/src/iris_lama/src/../vendor/lz4"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/pharanguren/TFG/lama_ws/src/iris_lama/src/../vendor/minisam"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/pharanguren/TFG/lama_ws/src/iris_lama/src/../vendor/moodycamel"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/pharanguren/TFG/lama_ws/src/iris_lama/src/../vendor/nanoflann"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/pharanguren/TFG/lama_ws/src/iris_lama/src/../vendor/stb"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/pharanguren/TFG/lama_ws/src/iris_lama/src/../vendor/zstd"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/pharanguren/TFG/lama_ws/src/iris_lama/src/extern/minisam"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/usr/include/eigen3"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "lz4::@3ada2073ad3460fcf9e3"
+		},
+		{
+			"id" : "minisam::@fce99142fa2268aabe8f"
+		},
+		{
+			"id" : "zstd::@66ccbf997e0376072481"
+		}
+	],
+	"id" : "iris_lama::@145eef247bfb46b6828c",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/home/pharanguren/TFG/lama_ws/install/iris_lama"
+		}
+	},
+	"name" : "iris_lama",
+	"nameOnDisk" : "libiris_lama.a",
+	"paths" : 
+	{
+		"build" : "src",
+		"source" : "src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26
+			]
+		},
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/buffer_compressor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/graph_slam2d.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/image_io.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/loc2d.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/lidar_odometry_2d.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/match_surface_2d.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/pf_slam2d.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/print.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/pose2d.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/pose3d.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/random.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/slam2d.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/thread_pool.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/simple_pgo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nlls/gauss_newton.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nlls/levenberg_marquardt.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nlls/robust_cost.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nlls/solver.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/sdm/container.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/sdm/dynamic_distance_map.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/sdm/export.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/sdm/frequency_occupancy_map.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/sdm/map.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/sdm/marching_cubes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/sdm/probabilistic_occupancy_map.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/sdm/simple_occupancy_map.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/sdm/truncated_signed_distance_map.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/lz4/CMakeFiles/lz4.dir/lz4/lz4.c.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/Factor.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/FactorGraph.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/Key.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/LossFunction.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/SchurComplement.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/VariableOrdering.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/Variables.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/utils/testAssertions.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/utils/Timer.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/linear/ConjugateGradient.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/linear/Covariance.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/linear/DenseCholesky.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/linear/SchurComplementDenseSolver.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/linear/SparseCholesky.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/linear/SquareRootCholesky.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/DoglegOptimizer.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/GaussNewtonOptimizer.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/LevenbergMarquardtOptimizer.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/linearization.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/MarginalCovariance.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/NonlinearOptimizer.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/NumericalFactor.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/SparsityPattern.cpp.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/zstd/CMakeFiles/zstd.dir/zstd/debug.c.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/zstd/CMakeFiles/zstd.dir/zstd/entropy_common.c.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/zstd/CMakeFiles/zstd.dir/zstd/error_private.c.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/zstd/CMakeFiles/zstd.dir/zstd/fse_compress.c.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/zstd/CMakeFiles/zstd.dir/zstd/fse_decompress.c.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/zstd/CMakeFiles/zstd.dir/zstd/hist.c.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/zstd/CMakeFiles/zstd.dir/zstd/huf_compress.c.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/zstd/CMakeFiles/zstd.dir/zstd/huf_decompress.c.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/zstd/CMakeFiles/zstd.dir/zstd/pool.c.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/zstd/CMakeFiles/zstd.dir/zstd/threading.c.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_common.c.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_compress.c.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_ddict.c.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_decompress.c.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_double_fast.c.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_fast.c.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_lazy.c.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_ldm.c.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstdmt_compress.c.o",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/pharanguren/TFG/lama_ws/build/iris_lama/src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_opt.c.o",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

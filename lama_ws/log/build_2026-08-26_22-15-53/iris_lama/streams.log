@@ -1,0 +1,63 @@
+[0.018s] Invoking command in '/home/pharanguren/TFG/lama_ws/build/iris_lama': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pharanguren/TFG/lama_ws/build/iris_lama -- -j12 -l12
+[0.078s] [  1%] Built target lz4
+[0.087s] [ 29%] Built target zstd
+[0.127s] [ 61%] Built target minisam
+[0.208s] [100%] Built target iris_lama
+[0.223s] Invoked command in '/home/pharanguren/TFG/lama_ws/build/iris_lama' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pharanguren/TFG/lama_ws/build/iris_lama -- -j12 -l12
+[0.235s] Invoking command in '/home/pharanguren/TFG/lama_ws/build/iris_lama': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/pharanguren/TFG/lama_ws/build/iris_lama
+[0.245s] -- Install configuration: ""
+[0.245s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include
+[0.246s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama
+[0.246s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/random.h
+[0.246s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/timer.h
+[0.246s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/aabb.h
+[0.246s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/thread_pool.h
+[0.246s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/print.h
+[0.246s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/image_io.h
+[0.246s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus
+[0.246s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus/so2.hpp
+[0.247s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus/se3.hpp
+[0.247s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus/so3.hpp
+[0.247s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus/se2.hpp
+[0.247s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus/sophus.hpp
+[0.247s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/slam2d.h
+[0.247s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/match_surface_2d.h
+[0.247s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/image.h
+[0.247s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls
+[0.247s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/problem.h
+[0.247s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/robust_cost.h
+[0.247s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/strategy.h
+[0.247s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/solver.h
+[0.248s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/gauss_newton.h
+[0.248s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/levenberg_marquardt.h
+[0.248s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm
+[0.248s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/container.h
+[0.248s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/distance_map.h
+[0.248s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/export.h
+[0.248s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/dynamic_distance_map.h
+[0.248s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/map.h
+[0.248s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/marching_cubes.h
+[0.248s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/occupancy_map.h
+[0.248s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/truncated_signed_distance_map.h
+[0.249s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/frequency_occupancy_map.h
+[0.249s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/probabilistic_occupancy_map.h
+[0.249s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/simple_occupancy_map.h
+[0.249s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/cow_ptr.h
+[0.249s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/pose2d.h
+[0.250s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/types.h
+[0.250s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/pose3d.h
+[0.250s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/pf_slam2d.h
+[0.250s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/time.h
+[0.250s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/graph_slam2d.h
+[0.250s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/buffer_compressor.h
+[0.250s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/lidar_odometry_2d.h
+[0.251s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/lie.h
+[0.251s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/simple_pgo.h
+[0.251s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/loc2d.h
+[0.251s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/lib/iris_lama/cmake/iris_lamaTargets.cmake
+[0.251s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/lib/iris_lama/cmake/iris_lamaTargets-noconfig.cmake
+[0.252s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/lib/iris_lama/cmake/iris_lamaConfig.cmake
+[0.252s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/lib/iris_lama/cmake/iris_lamaConfigVersion.cmake
+[0.252s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/share/iris_lama/package.xml
+[0.252s] -- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/lib/libiris_lama.a
+[0.253s] Invoked command in '/home/pharanguren/TFG/lama_ws/build/iris_lama' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/pharanguren/TFG/lama_ws/build/iris_lama

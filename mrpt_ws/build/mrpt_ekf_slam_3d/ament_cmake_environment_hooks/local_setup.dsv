@@ -1,0 +1,2 @@
+source;share/mrpt_ekf_slam_3d/environment/ament_prefix_path.sh
+source;share/mrpt_ekf_slam_3d/environment/path.sh

@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from mrpt_msgs/srv/GetCMGraph.srv
+// generated code does not contain a copyright notice
+
+#include "mrpt_msgs/msg/NetworkOfPoses.idl"
+
+module mrpt_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Compute and return a condensed measurements graph" "\n"
+      "Service is currently used in mrpt_graphslam_2d application" "\n"
+      "Returned graph should, at all cost contain the specified nodes")
+    struct GetCMGraph_Request {
+      sequence<uint64> node_ids;
+    };
+    struct GetCMGraph_Response {
+      mrpt_msgs::msg::NetworkOfPoses cm_graph;
+    };
+  };
+};

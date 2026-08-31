@@ -1,0 +1,50 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mrpt_msgs/msg/GraphSlamAgent.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "std_msgs/msg/Bool.idl"
+#include "std_msgs/msg/String.idl"
+
+module mrpt_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Connection-related properties for a graphSLAM agent in a multi-robot" "\n"
+      "environment." "\n"
+      "" "\n"
+      "Currently used in the mrpt_graphslam_2d ROS application.")
+    struct GraphSlamAgent {
+      std_msgs::msg::String name;
+
+      std_msgs::msg::String hostname;
+
+      @verbatim (language="comment", text=
+        "IPv4 of the corresponding agent")
+      std_msgs::msg::String ip_addr;
+
+      @verbatim (language="comment", text=
+        "Port that the the roscore of the corresponding agent is running under")
+      uint16 port;
+
+      @verbatim (language="comment", text=
+        "True if the SLAM Agent was last reported to be online")
+      std_msgs::msg::Bool is_online;
+
+      @verbatim (language="comment", text=
+        "Timestamp that the SLAM Agent was last seen")
+      builtin_interfaces::msg::Time last_seen_time;
+
+      @verbatim (language="comment", text=
+        "ROS Topics namespace that the agent is running under" "\n"
+        "By definition this is going to be the same as the *name*" "\n"
+        "UPDATE: Previously the topics namespace was <name>_<agent_ID>. However since I'll be using the multimaster for communication, every node is going to have a different")
+      std_msgs::msg::String topic_namespace;
+
+      @verbatim (language="comment", text=
+        "this is the last field of the IPv4 address of the corresponding agent" "\n"
+        "e.g. IP=192.168.100.17" "\n"
+        "agent_ID = 17")
+      int32 agent_id;
+    };
+  };
+};

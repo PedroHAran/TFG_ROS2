@@ -1,0 +1,13 @@
+[0.037s] Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_2d': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_2d -- -j12 -l12
+[0.143s] [ 10%] [32mBuilding CXX object CMakeFiles/mrpt_ekf_slam_2d.dir/src/mrpt_ekf_slam_2d_wrapper.cpp.o[0m
+[0.144s] [ 20%] [32mBuilding CXX object CMakeFiles/mrpt_ekf_slam_2d.dir/src/mrpt_ekf_slam_2d_app.cpp.o[0m
+[0.144s] [ 30%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[0.144s] [ 40%] [32mBuilding CXX object CMakeFiles/mrpt_ekf_slam_2d.dir/src/mrpt_ekf_slam_2d.cpp.o[0m
+[0.162s] [ 60%] Built target gtest_main
+[37.855s] [ 70%] [32m[1mLinking CXX static library libgtest.a[0m
+[38.079s] [ 70%] Built target gtest
+[66.662s] [ 80%] [32m[1mLinking CXX executable mrpt_ekf_slam_2d[0m
+[76.538s] [ 80%] Built target mrpt_ekf_slam_2d
+[76.857s] [ 90%] [32mBuilding CXX object CMakeFiles/test_ekf_slam_core.dir/test/test_ekf_slam_core.cpp.o[0m
+[86.739s] [100%] [32m[1mLinking CXX executable test_ekf_slam_core[0m
+[86.898s] [100%] Built target test_ekf_slam_core

@@ -1,0 +1,1 @@
+/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/ament_cmake_core/mrpt_msgsConfig-version.cmake

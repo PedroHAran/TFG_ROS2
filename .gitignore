@@ -1,26 +1,12 @@
-# Archivo PDF del proyecto
-2024_Proyecto_Innovación_Docente_TFG_y_TFM_UGR-3.pdf
-
-# Carpetas ignoradas
-Notas/
-book/
-project/
-worlds/
-Others/
-cartographer_config/
-DataCartographerHector/
-Graphs/
-
+# Avoid uploading local results
 log_*
 bag_*/
 map*
 metrica*
-*.png
+*.mcap
 *.tum
+*.zip
+*.png
+results/
 
 .vscode
-
-# Carpetas de compilación y logs (ROS 2), en cualquier subdirectorio
-build/
-install/
-log/

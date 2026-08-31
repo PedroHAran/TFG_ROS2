@@ -1,0 +1,18 @@
+[31mCMake Error at /opt/ros/jazzy/share/mrpt_msgs_bridge/cmake/mrpt_msgs_bridgeExport.cmake:61 (set_target_properties):
+  The link interface of target "mrpt_msgs_bridge::mrpt_msgs_bridge" contains:
+
+    mrpt_msgs::mrpt_msgs_library
+
+  but the target was not found.  Possible reasons include:
+
+    * There is a typo in the target name.
+    * A find_package call is missing for an IMPORTED target.
+    * An ALIAS target is missing.
+
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/mrpt_msgs_bridge/cmake/ament_cmake_export_targets-extras.cmake:9 (include)
+  /opt/ros/jazzy/share/mrpt_msgs_bridge/cmake/mrpt_msgs_bridgeConfig.cmake:41 (include)
+  CMakeLists.txt:141 (find_package)
+
+[0m
+[0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m

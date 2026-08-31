@@ -1,0 +1,43 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mrpt_msgs/msg/ObservationRangeBeacon.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+#include "mrpt_msgs/msg/SingleRangeBeaconObservation.idl"
+#include "std_msgs/msg/Header.idl"
+
+module mrpt_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "This message holds an observation of one or more landmarks " "\n"
+      " detected by their range (distance) " "\n"
+      " from some sensor on the robot.")
+    struct ObservationRangeBeacon {
+      @verbatim (language="comment", text=
+        "Time of sensor data acquisition, coordinate frame ID.")
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "The sensor pose on the robot coordinates frame.")
+      geometry_msgs::msg::Pose sensor_pose_on_robot;
+
+      @verbatim (language="comment", text=
+        "Sensor characteristics:" "\n"
+        "In meters (m)")
+      double min_sensor_distance;
+
+      @verbatim (language="comment", text=
+        "(m)")
+      double max_sensor_distance;
+
+      @verbatim (language="comment", text=
+        "Typical sensor noise:" "\n"
+        "(m)")
+      double sensor_std_range;
+
+      @verbatim (language="comment", text=
+        "The vector of individual observations")
+      sequence<mrpt_msgs::msg::SingleRangeBeaconObservation> sensed_data;
+    };
+  };
+};

@@ -1,0 +1,38 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mrpt_msgs/msg/GraphSlamStats.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module mrpt_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Statistics related to the execution of graphSLAM." "\n"
+      "Message is utilized in the mrpt_graphslam ROS package")
+    struct GraphSlamStats {
+      @verbatim (language="comment", text=
+        "Time of message acquisition")
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "node-related stats")
+      int32 nodes_total;
+
+      @verbatim (language="comment", text=
+        "edge-related stats")
+      int32 edges_total;
+
+      int32 edges_icp_2d;
+
+      int32 edges_icp_3d;
+
+      int32 edges_odom;
+
+      int32 loop_closures;
+
+      @verbatim (language="comment", text=
+        "Evaluation metric of the SLAM process")
+      sequence<double> slam_evaluation_metric;
+    };
+  };
+};

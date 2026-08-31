@@ -1,0 +1,663 @@
+[0.000000] (-) TimerEvent: {}
+[0.000240] (mrpt_ekf_slam_2d) JobQueued: {'identifier': 'mrpt_ekf_slam_2d', 'dependencies': OrderedDict()}
+[0.000318] (mrpt_ekf_slam_3d) JobQueued: {'identifier': 'mrpt_ekf_slam_3d', 'dependencies': OrderedDict()}
+[0.000342] (mrpt_icp_slam_2d) JobQueued: {'identifier': 'mrpt_icp_slam_2d', 'dependencies': OrderedDict()}
+[0.000359] (mrpt_msgs) JobQueued: {'identifier': 'mrpt_msgs', 'dependencies': OrderedDict()}
+[0.000374] (mrpt_rbpf_slam) JobQueued: {'identifier': 'mrpt_rbpf_slam', 'dependencies': OrderedDict()}
+[0.000390] (mrpt_graphslam_2d) JobQueued: {'identifier': 'mrpt_graphslam_2d', 'dependencies': OrderedDict({'mrpt_msgs': '/home/pharanguren/TFG/mrpt_ws/install/mrpt_msgs'})}
+[0.000411] (mrpt_slam) JobQueued: {'identifier': 'mrpt_slam', 'dependencies': OrderedDict({'mrpt_ekf_slam_2d': '/home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_2d', 'mrpt_ekf_slam_3d': '/home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d', 'mrpt_icp_slam_2d': '/home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d', 'mrpt_msgs': '/home/pharanguren/TFG/mrpt_ws/install/mrpt_msgs', 'mrpt_rbpf_slam': '/home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam', 'mrpt_graphslam_2d': '/home/pharanguren/TFG/mrpt_ws/install/mrpt_graphslam_2d'})}
+[0.000447] (mrpt_msgs) JobStarted: {'identifier': 'mrpt_msgs'}
+[0.012052] (mrpt_ekf_slam_2d) JobStarted: {'identifier': 'mrpt_ekf_slam_2d'}
+[0.024480] (mrpt_ekf_slam_3d) JobStarted: {'identifier': 'mrpt_ekf_slam_3d'}
+[0.038126] (mrpt_icp_slam_2d) JobStarted: {'identifier': 'mrpt_icp_slam_2d'}
+[0.047159] (mrpt_rbpf_slam) JobStarted: {'identifier': 'mrpt_rbpf_slam'}
+[0.056985] (mrpt_msgs) JobProgress: {'identifier': 'mrpt_msgs', 'progress': 'cmake'}
+[0.058246] (mrpt_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/mrpt_ws/install/mrpt_msgs'], 'cwd': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'pharanguren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/pharanguren', 'OLDPWD': '/home/pharanguren/TFG/mrpt_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2097', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'pharanguren', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pharanguren', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/pharanguren/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/pharanguren/.local/bin:/home/pharanguren/.local/bin', 'SESSION_MANAGER': 'local/pedrocomputer:@/tmp/.ICE-unix/2049,unix/pedrocomputer:/tmp/.ICE-unix/2049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e9748776_680f_4ace_aa2f_c837847dd235', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LY6MU3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation/lib/python3.12/site-packages:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.062897] (mrpt_ekf_slam_2d) JobProgress: {'identifier': 'mrpt_ekf_slam_2d', 'progress': 'cmake'}
+[0.063591] (mrpt_ekf_slam_2d) Command: {'cmd': ['/usr/bin/cmake', '/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_ekf_slam_2d', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_2d'], 'cwd': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_2d', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'pharanguren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/pharanguren', 'OLDPWD': '/home/pharanguren/TFG/mrpt_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2097', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'pharanguren', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pharanguren', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/pharanguren/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/pharanguren/.local/bin:/home/pharanguren/.local/bin', 'SESSION_MANAGER': 'local/pedrocomputer:@/tmp/.ICE-unix/2049,unix/pedrocomputer:/tmp/.ICE-unix/2049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e9748776_680f_4ace_aa2f_c837847dd235', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LY6MU3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_2d', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation/lib/python3.12/site-packages:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.065020] (mrpt_ekf_slam_3d) JobProgress: {'identifier': 'mrpt_ekf_slam_3d', 'progress': 'cmake'}
+[0.065612] (mrpt_ekf_slam_3d) Command: {'cmd': ['/usr/bin/cmake', '/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_ekf_slam_3d', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d'], 'cwd': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_3d', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'pharanguren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/pharanguren', 'OLDPWD': '/home/pharanguren/TFG/mrpt_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2097', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'pharanguren', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pharanguren', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/pharanguren/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/pharanguren/.local/bin:/home/pharanguren/.local/bin', 'SESSION_MANAGER': 'local/pedrocomputer:@/tmp/.ICE-unix/2049,unix/pedrocomputer:/tmp/.ICE-unix/2049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e9748776_680f_4ace_aa2f_c837847dd235', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LY6MU3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_3d', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation/lib/python3.12/site-packages:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.067781] (mrpt_icp_slam_2d) JobProgress: {'identifier': 'mrpt_icp_slam_2d', 'progress': 'cmake'}
+[0.068433] (mrpt_icp_slam_2d) Command: {'cmd': ['/usr/bin/cmake', '/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_icp_slam_2d', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d'], 'cwd': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'pharanguren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/pharanguren', 'OLDPWD': '/home/pharanguren/TFG/mrpt_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2097', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'pharanguren', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pharanguren', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/pharanguren/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/pharanguren/.local/bin:/home/pharanguren/.local/bin', 'SESSION_MANAGER': 'local/pedrocomputer:@/tmp/.ICE-unix/2049,unix/pedrocomputer:/tmp/.ICE-unix/2049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e9748776_680f_4ace_aa2f_c837847dd235', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LY6MU3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation/lib/python3.12/site-packages:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.073461] (mrpt_rbpf_slam) JobProgress: {'identifier': 'mrpt_rbpf_slam', 'progress': 'cmake'}
+[0.074292] (mrpt_rbpf_slam) Command: {'cmd': ['/usr/bin/cmake', '/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_rbpf_slam', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam'], 'cwd': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'pharanguren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/pharanguren', 'OLDPWD': '/home/pharanguren/TFG/mrpt_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2097', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'pharanguren', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pharanguren', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/pharanguren/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/pharanguren/.local/bin:/home/pharanguren/.local/bin', 'SESSION_MANAGER': 'local/pedrocomputer:@/tmp/.ICE-unix/2049,unix/pedrocomputer:/tmp/.ICE-unix/2049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e9748776_680f_4ace_aa2f_c837847dd235', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LY6MU3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation/lib/python3.12/site-packages:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.098504] (-) TimerEvent: {}
+[0.192736] (mrpt_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.193673] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.196174] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.196882] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.198655] (-) TimerEvent: {}
+[0.223533] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.298812] (-) TimerEvent: {}
+[0.316117] (mrpt_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.324146] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.325893] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.326458] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.344998] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.354316] (mrpt_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.363247] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.364575] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.369361] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.384000] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.398958] (-) TimerEvent: {}
+[0.499449] (-) TimerEvent: {}
+[0.537889] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.541280] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.542235] (mrpt_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.558269] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.558665] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.559621] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.559860] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.560284] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.561045] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.562957] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.566985] (mrpt_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.567481] (mrpt_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.568336] (mrpt_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.571504] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.576422] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.576892] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.582595] (mrpt_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.582933] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.583386] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.583963] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.587739] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.588271] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.589083] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.599539] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.599855] (-) TimerEvent: {}
+[0.607285] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.700000] (-) TimerEvent: {}
+[0.764240] (mrpt_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.766607] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.767082] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.782927] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.783312] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.784211] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.784459] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.784742] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.785033] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.785868] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.786187] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.787714] (mrpt_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.788182] (mrpt_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.789140] (mrpt_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.795231] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.795825] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.797739] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.798123] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.798930] (mrpt_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.799291] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.800084] (-) TimerEvent: {}
+[0.806779] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.817895] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.818332] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.819076] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.829953] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.900181] (-) TimerEvent: {}
+[1.000590] (-) TimerEvent: {}
+[1.100874] (-) TimerEvent: {}
+[1.121510] (mrpt_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.122282] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.140119] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.143615] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.161745] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.201003] (-) TimerEvent: {}
+[1.259807] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.272681] (mrpt_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.280281] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.300250] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.300664] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.301078] (-) TimerEvent: {}
+[1.378105] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.385195] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.394896] (mrpt_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[1.399153] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.401226] (-) TimerEvent: {}
+[1.417359] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.422123] (mrpt_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.480869] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.501343] (-) TimerEvent: {}
+[1.504009] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.513674] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.514755] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.539161] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.541439] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.550248] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.552701] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.556868] (mrpt_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.572192] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.583620] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.586867] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.593285] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.601468] (-) TimerEvent: {}
+[1.609985] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.626050] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.630632] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.650859] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.701585] (-) TimerEvent: {}
+[1.730974] (mrpt_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.749930] (mrpt_msgs) StdoutLine: {'line': b'-- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[1.769267] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.781702] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.787677] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.794272] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.796364] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.801715] (-) TimerEvent: {}
+[1.802208] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.843083] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.850790] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.866065] (mrpt_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.8 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[1.901900] (-) TimerEvent: {}
+[1.909143] (mrpt_msgs) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[1.968604] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[1.971300] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[1.982304] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[2.002014] (-) TimerEvent: {}
+[2.016617] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[2.022935] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[2.026440] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[2.027744] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[2.066074] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[2.067571] (mrpt_icp_slam_2d) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.071498] (mrpt_rbpf_slam) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.071959] (mrpt_ekf_slam_3d) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.102154] (-) TimerEvent: {}
+[2.117315] (mrpt_ekf_slam_2d) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.202276] (-) TimerEvent: {}
+[2.256590] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found rclcpp_components: 28.1.21 (/opt/ros/jazzy/share/rclcpp_components/cmake)\n'}
+[2.276597] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found rclcpp_components: 28.1.21 (/opt/ros/jazzy/share/rclcpp_components/cmake)\n'}
+[2.282579] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found rclcpp_components: 28.1.21 (/opt/ros/jazzy/share/rclcpp_components/cmake)\n'}
+[2.302377] (-) TimerEvent: {}
+[2.313039] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found rclcpp_components: 28.1.21 (/opt/ros/jazzy/share/rclcpp_components/cmake)\n'}
+[2.336875] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found tf2: 0.36.21 (/opt/ros/jazzy/share/tf2/cmake)\n'}
+[2.353002] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found tf2: 0.36.21 (/opt/ros/jazzy/share/tf2/cmake)\n'}
+[2.361831] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found tf2: 0.36.21 (/opt/ros/jazzy/share/tf2/cmake)\n'}
+[2.397192] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found tf2: 0.36.21 (/opt/ros/jazzy/share/tf2/cmake)\n'}
+[2.402485] (-) TimerEvent: {}
+[2.413391] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found tf2_ros: 0.36.21 (/opt/ros/jazzy/share/tf2_ros/cmake)\n'}
+[2.435478] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found tf2_ros: 0.36.21 (/opt/ros/jazzy/share/tf2_ros/cmake)\n'}
+[2.441628] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found tf2_ros: 0.36.21 (/opt/ros/jazzy/share/tf2_ros/cmake)\n'}
+[2.479319] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found tf2_ros: 0.36.21 (/opt/ros/jazzy/share/tf2_ros/cmake)\n'}
+[2.502589] (-) TimerEvent: {}
+[2.602956] (-) TimerEvent: {}
+[2.608479] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.36.21 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)\n'}
+[2.629532] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.36.21 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)\n'}
+[2.654892] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.36.21 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)\n'}
+[2.656916] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.1 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[2.658866] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.659244] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.665882] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.36.21 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)\n'}
+[2.666946] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.1 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[2.668695] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.668976] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.671891] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.8 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[2.679611] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.8 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[2.695016] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.1 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[2.696710] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.696967] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.703075] (-) TimerEvent: {}
+[2.703901] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.1 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[2.705055] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.8 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[2.707787] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.708307] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.717918] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.8 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[2.738236] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[2.741889] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[2.764782] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[2.778391] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[2.793282] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found visualization_msgs: 5.3.8 (/opt/ros/jazzy/share/visualization_msgs/cmake)\n'}
+[2.794408] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found visualization_msgs: 5.3.8 (/opt/ros/jazzy/share/visualization_msgs/cmake)\n'}
+[2.803178] (-) TimerEvent: {}
+[2.817068] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found visualization_msgs: 5.3.8 (/opt/ros/jazzy/share/visualization_msgs/cmake)\n'}
+[2.834129] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found visualization_msgs: 5.3.8 (/opt/ros/jazzy/share/visualization_msgs/cmake)\n'}
+[2.866173] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found mrpt_msgs: 0.6.0 (/opt/ros/jazzy/share/mrpt_msgs/cmake)\n'}
+[2.899970] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found mrpt_msgs: 0.6.0 (/opt/ros/jazzy/share/mrpt_msgs/cmake)\n'}
+[2.903292] (-) TimerEvent: {}
+[2.910004] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found mrpt_msgs: 0.6.0 (/opt/ros/jazzy/share/mrpt_msgs/cmake)\n'}
+[2.927453] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found mrpt_libros_bridge: 3.5.3 (/opt/ros/jazzy/share/mrpt_libros_bridge/cmake)\n'}
+[2.940281] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.953689] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found mrpt_libros_bridge: 3.5.3 (/opt/ros/jazzy/share/mrpt_libros_bridge/cmake)\n'}
+[2.971010] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found mrpt_libros_bridge: 3.5.3 (/opt/ros/jazzy/share/mrpt_libros_bridge/cmake)\n'}
+[3.003416] (-) TimerEvent: {}
+[3.103793] (-) TimerEvent: {}
+[3.117611] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.119946] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.203929] (-) TimerEvent: {}
+[3.237515] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found mrpt_libros_bridge: 3.5.3 (/opt/ros/jazzy/share/mrpt_libros_bridge/cmake)\n'}
+[3.304131] (-) TimerEvent: {}
+[3.373392] (mrpt_ekf_slam_3d) StdoutLine: {'line': b"-- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'\n"}
+[3.373835] (mrpt_rbpf_slam) StdoutLine: {'line': b"-- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'\n"}
+[3.373987] (mrpt_ekf_slam_2d) StdoutLine: {'line': b"-- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'\n"}
+[3.404197] (-) TimerEvent: {}
+[3.505314] (mrpt_icp_slam_2d) StdoutLine: {'line': b"-- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'\n"}
+[3.505661] (-) TimerEvent: {}
+[3.526537] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[3.554929] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found ament_cmake_pytest: 2.5.6 (/opt/ros/jazzy/share/ament_cmake_pytest/cmake)\n'}
+[3.589721] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found launch_testing_ament_cmake: 3.4.11 (/opt/ros/jazzy/share/launch_testing_ament_cmake/cmake)\n'}
+[3.605769] (-) TimerEvent: {}
+[3.622918] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[3.660600] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found mrpt_msgs_bridge: 2.5.0 (/opt/ros/jazzy/share/mrpt_msgs_bridge/cmake)\n'}
+[3.664158] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found mrpt_msgs_bridge: 2.5.0 (/opt/ros/jazzy/share/mrpt_msgs_bridge/cmake)\n'}
+[3.667468] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found mrpt_msgs_bridge: 2.5.0 (/opt/ros/jazzy/share/mrpt_msgs_bridge/cmake)\n'}
+[3.667832] (mrpt_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.17.5 (/opt/ros/jazzy/share/ament_cmake_cppcheck/cmake)\n'}
+[3.693257] (mrpt_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.17.5 (/opt/ros/jazzy/share/ament_cmake_cpplint/cmake)\n'}
+[3.693663] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[3.695687] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[3.697507] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[3.702799] (mrpt_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.17.5 (/opt/ros/jazzy/share/ament_cmake_uncrustify/cmake)\n'}
+[3.705124] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found ament_cmake_pytest: 2.5.6 (/opt/ros/jazzy/share/ament_cmake_pytest/cmake)\n'}
+[3.705842] (-) TimerEvent: {}
+[3.706572] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found ament_cmake_pytest: 2.5.6 (/opt/ros/jazzy/share/ament_cmake_pytest/cmake)\n'}
+[3.707214] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found ament_cmake_pytest: 2.5.6 (/opt/ros/jazzy/share/ament_cmake_pytest/cmake)\n'}
+[3.715349] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found launch_testing_ament_cmake: 3.4.11 (/opt/ros/jazzy/share/launch_testing_ament_cmake/cmake)\n'}
+[3.724225] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[3.735089] (mrpt_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[3.749005] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 2.5.6 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)\n'}
+[3.749259] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 2.5.6 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)\n'}
+[3.805987] (-) TimerEvent: {}
+[3.871267] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[3.906131] (-) TimerEvent: {}
+[3.984151] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[4.006237] (-) TimerEvent: {}
+[4.072936] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[4.106383] (-) TimerEvent: {}
+[4.206682] (-) TimerEvent: {}
+[4.308158] (-) TimerEvent: {}
+[4.357257] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[4.408265] (-) TimerEvent: {}
+[4.508672] (-) TimerEvent: {}
+[4.608967] (-) TimerEvent: {}
+[4.709329] (-) TimerEvent: {}
+[4.809607] (-) TimerEvent: {}
+[4.843614] (mrpt_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.909705] (-) TimerEvent: {}
+[5.009959] (-) TimerEvent: {}
+[5.110396] (-) TimerEvent: {}
+[5.210684] (-) TimerEvent: {}
+[5.311093] (-) TimerEvent: {}
+[5.411465] (-) TimerEvent: {}
+[5.512215] (-) TimerEvent: {}
+[5.612743] (-) TimerEvent: {}
+[5.713343] (-) TimerEvent: {}
+[5.813891] (-) TimerEvent: {}
+[5.914311] (-) TimerEvent: {}
+[6.014744] (-) TimerEvent: {}
+[6.115143] (-) TimerEvent: {}
+[6.215499] (-) TimerEvent: {}
+[6.315867] (-) TimerEvent: {}
+[6.392195] (mrpt_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.416060] (-) TimerEvent: {}
+[6.421359] (mrpt_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[6.516208] (-) TimerEvent: {}
+[6.616714] (-) TimerEvent: {}
+[6.694631] (mrpt_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[6.716820] (-) TimerEvent: {}
+[6.817218] (-) TimerEvent: {}
+[6.917590] (-) TimerEvent: {}
+[7.018012] (-) TimerEvent: {}
+[7.118895] (-) TimerEvent: {}
+[7.219277] (-) TimerEvent: {}
+[7.319667] (-) TimerEvent: {}
+[7.344012] (mrpt_ekf_slam_2d) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[7.364775] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[7.384135] (mrpt_ekf_slam_3d) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[7.391048] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[7.407545] (mrpt_ekf_slam_2d) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[7.407863] (mrpt_rbpf_slam) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[7.408036] (mrpt_icp_slam_2d) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[7.408186] (mrpt_ekf_slam_3d) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[7.411572] (mrpt_icp_slam_2d) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.411879] (mrpt_ekf_slam_3d) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.412077] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_ekf_slam_3d/include\n'}
+[7.412247] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.412402] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_icp_slam_2d/include\n'}
+[7.412546] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.414196] (mrpt_ekf_slam_2d) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.414688] (mrpt_rbpf_slam) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.414930] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_ekf_slam_2d/include\n'}
+[7.415070] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.415180] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_rbpf_slam/include\n'}
+[7.415278] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.419789] (-) TimerEvent: {}
+[7.428441] (mrpt_icp_slam_2d) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[7.430207] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[7.430585] (mrpt_ekf_slam_2d) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[7.430895] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[7.431191] (mrpt_ekf_slam_3d) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[7.431469] (mrpt_rbpf_slam) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[7.431775] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[7.432070] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[7.433377] (mrpt_ekf_slam_2d) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[7.433669] (mrpt_ekf_slam_2d) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[7.433913] (mrpt_icp_slam_2d) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[7.434234] (mrpt_icp_slam_2d) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[7.434435] (mrpt_rbpf_slam) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[7.434687] (mrpt_rbpf_slam) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[7.434877] (mrpt_ekf_slam_3d) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[7.435122] (mrpt_ekf_slam_3d) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[7.436635] (mrpt_ekf_slam_2d) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.436853] (mrpt_icp_slam_2d) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.437440] (mrpt_rbpf_slam) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.437843] (mrpt_ekf_slam_3d) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.438920] (mrpt_ekf_slam_2d) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[7.439144] (mrpt_icp_slam_2d) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[7.439736] (mrpt_ekf_slam_3d) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[7.440398] (mrpt_rbpf_slam) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[7.440995] (mrpt_ekf_slam_2d) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.441565] (mrpt_icp_slam_2d) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.441945] (mrpt_ekf_slam_3d) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.442724] (mrpt_rbpf_slam) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.445755] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Configuring done (7.4s)\n'}
+[7.446967] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Configuring done (7.4s)\n'}
+[7.447548] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Configuring done (7.4s)\n'}
+[7.447921] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Configuring done (7.4s)\n'}
+[7.501705] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[7.511814] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[7.513227] (mrpt_rbpf_slam) StdoutLine: {'line': b'-- Build files have been written to: /home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam\n'}
+[7.516639] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[7.519924] (-) TimerEvent: {}
+[7.556327] (mrpt_rbpf_slam) CommandEnded: {'returncode': 0}
+[7.556948] (mrpt_rbpf_slam) JobProgress: {'identifier': 'mrpt_rbpf_slam', 'progress': 'build'}
+[7.557857] (mrpt_rbpf_slam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam', '--', '-j12', '-l12'], 'cwd': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'pharanguren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/pharanguren', 'OLDPWD': '/home/pharanguren/TFG/mrpt_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2097', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'pharanguren', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pharanguren', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/pharanguren/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/pharanguren/.local/bin:/home/pharanguren/.local/bin', 'SESSION_MANAGER': 'local/pedrocomputer:@/tmp/.ICE-unix/2049,unix/pedrocomputer:/tmp/.ICE-unix/2049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e9748776_680f_4ace_aa2f_c837847dd235', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LY6MU3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation/lib/python3.12/site-packages:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[7.582115] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[7.583090] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'-- Build files have been written to: /home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_3d\n'}
+[7.583454] (mrpt_icp_slam_2d) StdoutLine: {'line': b'-- Build files have been written to: /home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d\n'}
+[7.599170] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'-- Build files have been written to: /home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_2d\n'}
+[7.612746] (mrpt_icp_slam_2d) CommandEnded: {'returncode': 0}
+[7.614384] (mrpt_icp_slam_2d) JobProgress: {'identifier': 'mrpt_icp_slam_2d', 'progress': 'build'}
+[7.615464] (mrpt_icp_slam_2d) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d', '--', '-j12', '-l12'], 'cwd': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'pharanguren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/pharanguren', 'OLDPWD': '/home/pharanguren/TFG/mrpt_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2097', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'pharanguren', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pharanguren', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/pharanguren/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/pharanguren/.local/bin:/home/pharanguren/.local/bin', 'SESSION_MANAGER': 'local/pedrocomputer:@/tmp/.ICE-unix/2049,unix/pedrocomputer:/tmp/.ICE-unix/2049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e9748776_680f_4ace_aa2f_c837847dd235', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LY6MU3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation/lib/python3.12/site-packages:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[7.619137] (mrpt_ekf_slam_3d) CommandEnded: {'returncode': 0}
+[7.620175] (mrpt_ekf_slam_3d) JobProgress: {'identifier': 'mrpt_ekf_slam_3d', 'progress': 'build'}
+[7.620251] (-) TimerEvent: {}
+[7.620970] (mrpt_ekf_slam_3d) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_3d', '--', '-j12', '-l12'], 'cwd': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_3d', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'pharanguren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/pharanguren', 'OLDPWD': '/home/pharanguren/TFG/mrpt_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2097', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'pharanguren', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pharanguren', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/pharanguren/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/pharanguren/.local/bin:/home/pharanguren/.local/bin', 'SESSION_MANAGER': 'local/pedrocomputer:@/tmp/.ICE-unix/2049,unix/pedrocomputer:/tmp/.ICE-unix/2049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e9748776_680f_4ace_aa2f_c837847dd235', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LY6MU3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_3d', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation/lib/python3.12/site-packages:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[7.639547] (mrpt_ekf_slam_2d) CommandEnded: {'returncode': 0}
+[7.640559] (mrpt_ekf_slam_2d) JobProgress: {'identifier': 'mrpt_ekf_slam_2d', 'progress': 'build'}
+[7.641588] (mrpt_ekf_slam_2d) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_2d', '--', '-j12', '-l12'], 'cwd': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_2d', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'pharanguren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/pharanguren', 'OLDPWD': '/home/pharanguren/TFG/mrpt_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2097', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'pharanguren', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pharanguren', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/pharanguren/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/pharanguren/.local/bin:/home/pharanguren/.local/bin', 'SESSION_MANAGER': 'local/pedrocomputer:@/tmp/.ICE-unix/2049,unix/pedrocomputer:/tmp/.ICE-unix/2049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e9748776_680f_4ace_aa2f_c837847dd235', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LY6MU3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_2d', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation/lib/python3.12/site-packages:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[7.661573] (mrpt_rbpf_slam) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/mrpt_rbpf_slam.dir/src/mrpt_rbpf_slam.cpp.o\x1b[0m\n'}
+[7.664389] (mrpt_rbpf_slam) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/mrpt_rbpf_slam.dir/src/mrpt_rbpf_slam_node.cpp.o\x1b[0m\n'}
+[7.665158] (mrpt_rbpf_slam) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/mrpt_rbpf_slam.dir/src/mrpt_rbpf_slam_wrapper.cpp.o\x1b[0m\n'}
+[7.665837] (mrpt_rbpf_slam) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/mrpt_rbpf_slam.dir/src/options.cpp.o\x1b[0m\n'}
+[7.722404] (-) TimerEvent: {}
+[7.732010] (mrpt_icp_slam_2d) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/mrpt_icp_slam_2d.dir/src/mrpt_icp_slam_2d_wrapper.cpp.o\x1b[0m\n'}
+[7.732516] (mrpt_icp_slam_2d) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/mrpt_icp_slam_2d.dir/src/mrpt_icp_slam_2d_app.cpp.o\x1b[0m\n'}
+[7.738328] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[7.738803] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[7.739135] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/mrpt_ekf_slam_3d.dir/src/mrpt_ekf_slam_3d.cpp.o\x1b[0m\n'}
+[7.754155] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mrpt_ekf_slam_3d.dir/src/mrpt_ekf_slam_3d_app.cpp.o\x1b[0m\n'}
+[7.754672] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mrpt_ekf_slam_3d.dir/src/mrpt_ekf_slam_3d_wrapper.cpp.o\x1b[0m\n'}
+[7.765199] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/mrpt_ekf_slam_2d.dir/src/mrpt_ekf_slam_2d_app.cpp.o\x1b[0m\n'}
+[7.766455] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/mrpt_ekf_slam_2d.dir/src/mrpt_ekf_slam_2d_wrapper.cpp.o\x1b[0m\n'}
+[7.768033] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/mrpt_ekf_slam_2d.dir/src/mrpt_ekf_slam_2d.cpp.o\x1b[0m\n'}
+[7.771781] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[7.777607] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[7.822501] (-) TimerEvent: {}
+[7.926172] (-) TimerEvent: {}
+[8.026606] (-) TimerEvent: {}
+[8.127181] (-) TimerEvent: {}
+[8.181187] (mrpt_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[8.227306] (-) TimerEvent: {}
+[8.327742] (-) TimerEvent: {}
+[8.428206] (-) TimerEvent: {}
+[8.528611] (-) TimerEvent: {}
+[8.610265] (mrpt_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.17.5 (/opt/ros/jazzy/share/ament_cmake_flake8/cmake)\n'}
+[8.641980] (mrpt_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.17.5 (/opt/ros/jazzy/share/ament_cmake_pep257/cmake)\n'}
+[8.642362] (-) TimerEvent: {}
+[8.742758] (-) TimerEvent: {}
+[8.843145] (-) TimerEvent: {}
+[8.944272] (-) TimerEvent: {}
+[9.048466] (-) TimerEvent: {}
+[9.148978] (-) TimerEvent: {}
+[9.249491] (-) TimerEvent: {}
+[9.350071] (-) TimerEvent: {}
+[9.396204] (mrpt_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[9.450318] (-) TimerEvent: {}
+[9.478281] (mrpt_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[9.554347] (-) TimerEvent: {}
+[9.654904] (-) TimerEvent: {}
+[9.759282] (-) TimerEvent: {}
+[9.859821] (-) TimerEvent: {}
+[9.888812] (mrpt_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[9.903287] (mrpt_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[9.929332] (mrpt_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[9.962375] (-) TimerEvent: {}
+[9.982839] (mrpt_msgs) StdoutLine: {'line': b'-- Configuring done (9.9s)\n'}
+[10.064586] (-) TimerEvent: {}
+[10.165163] (-) TimerEvent: {}
+[10.268296] (-) TimerEvent: {}
+[10.371269] (-) TimerEvent: {}
+[10.472166] (-) TimerEvent: {}
+[10.572806] (-) TimerEvent: {}
+[10.673328] (-) TimerEvent: {}
+[10.773957] (-) TimerEvent: {}
+[10.874596] (-) TimerEvent: {}
+[10.917905] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[10.955336] (mrpt_msgs) StdoutLine: {'line': b'-- Generating done (0.8s)\n'}
+[10.974754] (-) TimerEvent: {}
+[11.070045] (mrpt_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs\n'}
+[11.076229] (-) TimerEvent: {}
+[11.100841] (mrpt_ekf_slam_2d) StdoutLine: {'line': b'[ 60%] Built target gtest_main\n'}
+[11.148452] (mrpt_msgs) CommandEnded: {'returncode': 0}
+[11.149383] (mrpt_msgs) JobProgress: {'identifier': 'mrpt_msgs', 'progress': 'build'}
+[11.149473] (mrpt_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs', '--', '-j12', '-l12'], 'cwd': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'pharanguren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/pharanguren', 'OLDPWD': '/home/pharanguren/TFG/mrpt_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2097', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'pharanguren', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pharanguren', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/pharanguren/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/pharanguren/.local/bin:/home/pharanguren/.local/bin', 'SESSION_MANAGER': 'local/pedrocomputer:@/tmp/.ICE-unix/2049,unix/pedrocomputer:/tmp/.ICE-unix/2049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e9748776_680f_4ace_aa2f_c837847dd235', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LY6MU3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation/lib/python3.12/site-packages:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[11.177011] (-) TimerEvent: {}
+[11.278232] (-) TimerEvent: {}
+[11.379887] (-) TimerEvent: {}
+[11.441325] (mrpt_msgs) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[11.457621] (mrpt_msgs) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[11.470300] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[11.480026] (-) TimerEvent: {}
+[11.502231] (mrpt_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_symlink_mrpt_msgs\n'}
+[11.580192] (-) TimerEvent: {}
+[11.664989] (mrpt_ekf_slam_3d) StdoutLine: {'line': b'[ 60%] Built target gtest_main\n'}
+[11.680288] (-) TimerEvent: {}
+[11.781572] (-) TimerEvent: {}
+[11.882240] (-) TimerEvent: {}
+[11.983391] (-) TimerEvent: {}
+[12.086285] (-) TimerEvent: {}
+[12.186727] (-) TimerEvent: {}
+[12.287169] (-) TimerEvent: {}
+[12.391072] (-) TimerEvent: {}
+[12.491492] (-) TimerEvent: {}
+[12.593338] (-) TimerEvent: {}
+[12.695245] (-) TimerEvent: {}
+[12.798188] (-) TimerEvent: {}
+[12.898761] (-) TimerEvent: {}
+[13.003420] (-) TimerEvent: {}
+[13.103982] (-) TimerEvent: {}
+[13.124474] (mrpt_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[13.133297] (mrpt_msgs) StdoutLine: {'line': b'creating mrpt_msgs.egg-info\n'}
+[13.206246] (-) TimerEvent: {}
+[13.302078] (mrpt_msgs) StdoutLine: {'line': b'writing mrpt_msgs.egg-info/PKG-INFO\n'}
+[13.302405] (mrpt_msgs) StdoutLine: {'line': b'writing dependency_links to mrpt_msgs.egg-info/dependency_links.txt\n'}
+[13.303331] (mrpt_msgs) StdoutLine: {'line': b'writing top-level names to mrpt_msgs.egg-info/top_level.txt\n'}
+[13.304265] (mrpt_msgs) StdoutLine: {'line': b"writing manifest file 'mrpt_msgs.egg-info/SOURCES.txt'\n"}
+[13.310243] (-) TimerEvent: {}
+[13.412191] (-) TimerEvent: {}
+[13.512732] (-) TimerEvent: {}
+[13.613288] (-) TimerEvent: {}
+[13.713748] (-) TimerEvent: {}
+[13.790118] (mrpt_msgs) StdoutLine: {'line': b"reading manifest file 'mrpt_msgs.egg-info/SOURCES.txt'\n"}
+[13.792404] (mrpt_msgs) StdoutLine: {'line': b"writing manifest file 'mrpt_msgs.egg-info/SOURCES.txt'\n"}
+[13.813863] (-) TimerEvent: {}
+[13.924493] (-) TimerEvent: {}
+[14.004478] (mrpt_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_build_mrpt_msgs_egg\n'}
+[14.025198] (-) TimerEvent: {}
+[14.132486] (-) TimerEvent: {}
+[14.233146] (-) TimerEvent: {}
+[14.333685] (-) TimerEvent: {}
+[14.435229] (-) TimerEvent: {}
+[14.538320] (-) TimerEvent: {}
+[14.641562] (-) TimerEvent: {}
+[14.742041] (-) TimerEvent: {}
+[14.842299] (-) TimerEvent: {}
+[14.942657] (-) TimerEvent: {}
+[15.043155] (-) TimerEvent: {}
+[15.143472] (-) TimerEvent: {}
+[15.243960] (-) TimerEvent: {}
+[15.344605] (-) TimerEvent: {}
+[15.445064] (-) TimerEvent: {}
+[15.545612] (-) TimerEvent: {}
+[15.645927] (-) TimerEvent: {}
+[15.746238] (-) TimerEvent: {}
+[15.846755] (-) TimerEvent: {}
+[15.947288] (-) TimerEvent: {}
+[16.047608] (-) TimerEvent: {}
+[16.147977] (-) TimerEvent: {}
+[16.248850] (-) TimerEvent: {}
+[16.349217] (-) TimerEvent: {}
+[16.449777] (-) TimerEvent: {}
+[16.550399] (-) TimerEvent: {}
+[16.651002] (-) TimerEvent: {}
+[16.751445] (-) TimerEvent: {}
+[16.851834] (-) TimerEvent: {}
+[16.952165] (-) TimerEvent: {}
+[17.052639] (-) TimerEvent: {}
+[17.153081] (-) TimerEvent: {}
+[17.253435] (-) TimerEvent: {}
+[17.354090] (-) TimerEvent: {}
+[17.455267] (-) TimerEvent: {}
+[17.555967] (-) TimerEvent: {}
+[17.656634] (-) TimerEvent: {}
+[17.757297] (-) TimerEvent: {}
+[17.857891] (-) TimerEvent: {}
+[17.958294] (-) TimerEvent: {}
+[18.058859] (-) TimerEvent: {}
+[18.159213] (-) TimerEvent: {}
+[18.259564] (-) TimerEvent: {}
+[18.360005] (-) TimerEvent: {}
+[18.460600] (-) TimerEvent: {}
+[18.561026] (-) TimerEvent: {}
+[18.661689] (-) TimerEvent: {}
+[18.762258] (-) TimerEvent: {}
+[18.862671] (-) TimerEvent: {}
+[18.963197] (-) TimerEvent: {}
+[19.063511] (-) TimerEvent: {}
+[19.163864] (-) TimerEvent: {}
+[19.264437] (-) TimerEvent: {}
+[19.365319] (-) TimerEvent: {}
+[19.466315] (-) TimerEvent: {}
+[19.566727] (-) TimerEvent: {}
+[19.667023] (-) TimerEvent: {}
+[19.767373] (-) TimerEvent: {}
+[19.868030] (-) TimerEvent: {}
+[19.970190] (-) TimerEvent: {}
+[20.070591] (-) TimerEvent: {}
+[20.170876] (-) TimerEvent: {}
+[20.271214] (-) TimerEvent: {}
+[20.372196] (-) TimerEvent: {}
+[20.472568] (-) TimerEvent: {}
+[20.572813] (-) TimerEvent: {}
+[20.673197] (-) TimerEvent: {}
+[20.775680] (-) TimerEvent: {}
+[20.876734] (-) TimerEvent: {}
+[20.977462] (-) TimerEvent: {}
+[21.077772] (-) TimerEvent: {}
+[21.178194] (-) TimerEvent: {}
+[21.278837] (-) TimerEvent: {}
+[21.379547] (-) TimerEvent: {}
+[21.480364] (-) TimerEvent: {}
+[21.580836] (-) TimerEvent: {}
+[21.681155] (-) TimerEvent: {}
+[21.781484] (-) TimerEvent: {}
+[21.881928] (-) TimerEvent: {}
+[21.982491] (-) TimerEvent: {}
+[22.091954] (-) TimerEvent: {}
+[22.193314] (-) TimerEvent: {}
+[22.293963] (-) TimerEvent: {}
+[22.394635] (-) TimerEvent: {}
+[22.495319] (-) TimerEvent: {}
+[22.575752] (mrpt_msgs) StdoutLine: {'line': b'[  0%] Built target mrpt_msgs__rosidl_generator_type_description\n'}
+[22.595416] (-) TimerEvent: {}
+[22.695707] (-) TimerEvent: {}
+[22.796040] (-) TimerEvent: {}
+[22.896516] (-) TimerEvent: {}
+[22.997048] (-) TimerEvent: {}
+[23.092822] (mrpt_msgs) StdoutLine: {'line': b'[  0%] Built target mrpt_msgs__rs\n'}
+[23.097171] (-) TimerEvent: {}
+[23.197562] (-) TimerEvent: {}
+[23.297892] (-) TimerEvent: {}
+[23.398789] (-) TimerEvent: {}
+[23.492676] (mrpt_msgs) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[23.495247] (mrpt_msgs) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[23.498884] (-) TimerEvent: {}
+[23.599318] (-) TimerEvent: {}
+[23.699773] (-) TimerEvent: {}
+[23.800087] (-) TimerEvent: {}
+[23.900540] (-) TimerEvent: {}
+[24.001169] (-) TimerEvent: {}
+[24.102015] (-) TimerEvent: {}
+[24.202539] (-) TimerEvent: {}
+[24.302967] (-) TimerEvent: {}
+[24.403391] (-) TimerEvent: {}
+[24.504189] (-) TimerEvent: {}
+[24.604914] (-) TimerEvent: {}
+[24.705311] (-) TimerEvent: {}
+[24.805873] (-) TimerEvent: {}
+[24.906229] (-) TimerEvent: {}
+[25.006939] (-) TimerEvent: {}
+[25.107216] (-) TimerEvent: {}
+[25.207496] (-) TimerEvent: {}
+[25.307813] (-) TimerEvent: {}
+[25.408170] (-) TimerEvent: {}
+[25.508845] (-) TimerEvent: {}
+[25.609503] (-) TimerEvent: {}
+[25.710141] (-) TimerEvent: {}
+[25.810609] (-) TimerEvent: {}
+[25.911137] (-) TimerEvent: {}
+[26.011765] (-) TimerEvent: {}
+[26.112196] (-) TimerEvent: {}
+[26.212484] (-) TimerEvent: {}
+[26.312720] (-) TimerEvent: {}
+[26.413069] (-) TimerEvent: {}
+[26.513360] (-) TimerEvent: {}
+[26.613784] (-) TimerEvent: {}
+[26.714444] (-) TimerEvent: {}
+[26.815122] (-) TimerEvent: {}
+[26.915739] (-) TimerEvent: {}
+[27.016360] (-) TimerEvent: {}
+[27.116670] (-) TimerEvent: {}
+[27.217173] (-) TimerEvent: {}
+[27.317927] (-) TimerEvent: {}
+[27.418584] (-) TimerEvent: {}
+[27.519140] (-) TimerEvent: {}
+[27.619546] (-) TimerEvent: {}
+[27.719929] (-) TimerEvent: {}
+[27.821811] (-) TimerEvent: {}
+[27.922737] (-) TimerEvent: {}
+[28.023333] (-) TimerEvent: {}
+[28.123800] (-) TimerEvent: {}
+[28.224470] (-) TimerEvent: {}
+[28.325110] (-) TimerEvent: {}
+[28.425393] (-) TimerEvent: {}
+[28.525775] (-) TimerEvent: {}
+[28.626355] (-) TimerEvent: {}
+[28.726728] (-) TimerEvent: {}
+[28.827297] (-) TimerEvent: {}
+[28.927595] (-) TimerEvent: {}
+[29.028313] (-) TimerEvent: {}
+[29.129129] (-) TimerEvent: {}
+[29.229529] (-) TimerEvent: {}
+[29.330169] (-) TimerEvent: {}
+[29.430819] (-) TimerEvent: {}
+[29.531314] (-) TimerEvent: {}
+[29.632025] (-) TimerEvent: {}
+[29.733356] (-) TimerEvent: {}
+[29.833900] (-) TimerEvent: {}
+[29.934263] (-) TimerEvent: {}
+[30.034791] (-) TimerEvent: {}
+[30.135229] (-) TimerEvent: {}
+[30.235875] (-) TimerEvent: {}
+[30.336459] (-) TimerEvent: {}
+[30.436938] (-) TimerEvent: {}
+[30.537603] (-) TimerEvent: {}
+[30.638126] (-) TimerEvent: {}
+[30.738775] (-) TimerEvent: {}
+[30.839654] (-) TimerEvent: {}
+[31.826536] (-) TimerEvent: {}
+[33.083013] (-) TimerEvent: {}
+[33.562671] (-) TimerEvent: {}
+[33.939139] (-) TimerEvent: {}
+[35.314602] (-) TimerEvent: {}
+[35.517655] (-) TimerEvent: {}
+[38.249682] (-) TimerEvent: {}

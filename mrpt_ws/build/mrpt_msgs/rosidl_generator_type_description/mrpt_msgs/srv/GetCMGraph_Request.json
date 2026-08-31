@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "mrpt_msgs/srv/GetCMGraph_Request",
+      "fields": [
+        {
+          "name": "node_ids",
+          "type": {
+            "type_id": 153,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "mrpt_msgs/srv/GetCMGraph_Request",
+      "hash_string": "RIHS01_500a79e68f6a9f4fa8f6d41c26794cfac81b50be6408c7ca4636794ac8058091"
+    }
+  ]
+}

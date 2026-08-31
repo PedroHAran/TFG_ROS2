@@ -1,0 +1,32 @@
+[0.014s] Invoking command in '/home/pharanguren/TFG/lama_ws/build/iris_lama_ros': CMAKE_PREFIX_PATH=/home/pharanguren/TFG/lama_ws/install/iris_lama:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PKG_CONFIG_PATH=/home/pharanguren/TFG/lama_ws/install/iris_lama/lib/x86_64-linux-gnu/pkgconfig:/home/pharanguren/TFG/lama_ws/install/iris_lama/lib/pkgconfig /usr/bin/cmake /home/pharanguren/TFG/lama_ws/src/iris_lama_ros -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/lama_ws/install/iris_lama_ros
+[0.225s] -- The C compiler identification is GNU 13.3.0
+[0.286s] -- The CXX compiler identification is GNU 13.3.0
+[0.306s] -- Detecting C compiler ABI info
+[0.402s] -- Detecting C compiler ABI info - done
+[0.413s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.414s] -- Detecting C compile features
+[0.414s] -- Detecting C compile features - done
+[0.424s] -- Detecting CXX compiler ABI info
+[0.567s] -- Detecting CXX compiler ABI info - done
+[0.578s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.578s] -- Detecting CXX compile features
+[0.579s] -- Detecting CXX compile features - done
+[0.611s] [31mCMake Error at CMakeLists.txt:15 (find_package):
+[0.611s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.611s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.611s]   CMake did not find one.
+[0.611s] 
+[0.611s]   Could not find a package configuration file provided by "catkin" with any
+[0.611s]   of the following names:
+[0.611s] 
+[0.611s]     catkinConfig.cmake
+[0.612s]     catkin-config.cmake
+[0.612s] 
+[0.612s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.612s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.612s]   provides a separate development package or SDK, be sure it has been
+[0.612s]   installed.
+[0.612s] 
+[0.612s] [0m
+[0.613s] -- Configuring incomplete, errors occurred!
+[0.615s] Invoked command in '/home/pharanguren/TFG/lama_ws/build/iris_lama_ros' returned '1': CMAKE_PREFIX_PATH=/home/pharanguren/TFG/lama_ws/install/iris_lama:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PKG_CONFIG_PATH=/home/pharanguren/TFG/lama_ws/install/iris_lama/lib/x86_64-linux-gnu/pkgconfig:/home/pharanguren/TFG/lama_ws/install/iris_lama/lib/pkgconfig /usr/bin/cmake /home/pharanguren/TFG/lama_ws/src/iris_lama_ros -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/lama_ws/install/iris_lama_ros

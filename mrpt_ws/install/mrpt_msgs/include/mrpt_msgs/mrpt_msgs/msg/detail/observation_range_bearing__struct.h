@@ -1,0 +1,1 @@
+/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_generator_c/mrpt_msgs/msg/detail/observation_range_bearing__struct.h

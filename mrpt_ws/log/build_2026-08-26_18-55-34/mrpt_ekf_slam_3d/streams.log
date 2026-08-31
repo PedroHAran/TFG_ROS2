@@ -1,0 +1,40 @@
+[0.034s] Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_3d': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_3d -- -j12 -l12
+[0.141s] [ 10%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[0.145s] [ 20%] [32mBuilding CXX object CMakeFiles/mrpt_ekf_slam_3d.dir/src/mrpt_ekf_slam_3d_wrapper.cpp.o[0m
+[0.156s] [ 30%] [32mBuilding CXX object CMakeFiles/mrpt_ekf_slam_3d.dir/src/mrpt_ekf_slam_3d.cpp.o[0m
+[0.161s] [ 50%] Built target gtest_main
+[0.165s] [ 60%] [32mBuilding CXX object CMakeFiles/mrpt_ekf_slam_3d.dir/src/mrpt_ekf_slam_3d_app.cpp.o[0m
+[37.817s] [ 70%] [32m[1mLinking CXX static library libgtest.a[0m
+[38.092s] [ 70%] Built target gtest
+[61.617s] [ 80%] [32m[1mLinking CXX executable mrpt_ekf_slam_3d[0m
+[76.507s] [ 80%] Built target mrpt_ekf_slam_3d
+[76.570s] [ 90%] [32mBuilding CXX object CMakeFiles/test_ekf_slam_3d_core.dir/test/test_ekf_slam_3d_core.cpp.o[0m
+[81.651s] [100%] [32m[1mLinking CXX executable test_ekf_slam_3d_core[0m
+[81.858s] [100%] Built target test_ekf_slam_3d_core
+[81.874s] Invoked command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_3d' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_3d -- -j12 -l12
+[81.920s] Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_3d': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_3d
+[81.938s] -- Install configuration: ""
+[81.948s] -- Execute custom install script
+[81.950s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/lib/mrpt_ekf_slam_3d/mrpt_ekf_slam_3d
+[81.978s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/mrpt_ekf_slam_3d/launch/ekf_slam_3d.launch.py
+[81.995s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/mrpt_ekf_slam_3d/launch/ekf_slam_3d_rawlog.launch.py
+[82.008s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/mrpt_ekf_slam_3d/launch/ekf_slam_3d_wheeled_robot.launch.py
+[82.021s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/mrpt_ekf_slam_3d/tutorial/kf-slam_6D_demo.ini
+[82.031s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/mrpt_ekf_slam_3d/tutorial/kf-slam_6D_demo.rawlog
+[82.045s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/mrpt_ekf_slam_3d/rviz/rviz_conf_ekf_3d.rviz
+[82.055s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/ament_index/resource_index/package_run_dependencies/mrpt_ekf_slam_3d
+[82.068s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/ament_index/resource_index/parent_prefix_path/mrpt_ekf_slam_3d
+[82.082s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/mrpt_ekf_slam_3d/environment/ament_prefix_path.sh
+[82.092s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/mrpt_ekf_slam_3d/environment/ament_prefix_path.dsv
+[82.104s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/mrpt_ekf_slam_3d/environment/path.sh
+[82.114s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/mrpt_ekf_slam_3d/environment/path.dsv
+[82.124s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/mrpt_ekf_slam_3d/local_setup.bash
+[82.135s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/mrpt_ekf_slam_3d/local_setup.sh
+[82.145s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/mrpt_ekf_slam_3d/local_setup.zsh
+[82.156s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/mrpt_ekf_slam_3d/local_setup.dsv
+[82.169s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/mrpt_ekf_slam_3d/package.dsv
+[82.183s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/ament_index/resource_index/packages/mrpt_ekf_slam_3d
+[82.193s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/mrpt_ekf_slam_3d/cmake/mrpt_ekf_slam_3dConfig.cmake
+[82.204s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/mrpt_ekf_slam_3d/cmake/mrpt_ekf_slam_3dConfig-version.cmake
+[82.216s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d/share/mrpt_ekf_slam_3d/package.xml
+[82.244s] Invoked command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_3d' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_3d

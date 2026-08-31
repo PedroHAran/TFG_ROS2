@@ -1,0 +1,271 @@
+[0.130s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.130s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7af9dd9b2450>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7af9dd958200>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7af9dd958200>>, mixin_verb=('build',))
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.171s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/pharanguren/TFG/mrpt_ws'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_msgs) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_msgs) by extension 'ignore_ament_install'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_msgs) by extensions ['colcon_pkg']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_msgs) by extension 'colcon_pkg'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_msgs) by extensions ['colcon_meta']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_msgs) by extension 'colcon_meta'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_msgs) by extensions ['ros']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_msgs) by extension 'ros'
+[0.204s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mrpt_msgs' with type 'ros.ament_cmake' and name 'mrpt_msgs'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam) by extension 'ignore_ament_install'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam) by extensions ['colcon_pkg']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam) by extension 'colcon_pkg'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam) by extensions ['colcon_meta']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam) by extension 'colcon_meta'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam) by extensions ['ros']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam) by extension 'ros'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam) by extensions ['cmake', 'python']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam) by extension 'cmake'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam) by extension 'python'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam) by extensions ['python_setup_py']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam) by extension 'python_setup_py'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_ekf_slam_2d) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_ekf_slam_2d) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_ekf_slam_2d) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_ekf_slam_2d) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_ekf_slam_2d) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_ekf_slam_2d) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_ekf_slam_2d) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_ekf_slam_2d) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_ekf_slam_2d) by extension 'ros'
+[0.207s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mrpt_slam/mrpt_ekf_slam_2d' with type 'ros.ament_cmake' and name 'mrpt_ekf_slam_2d'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_ekf_slam_3d) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_ekf_slam_3d) by extension 'ignore'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_ekf_slam_3d) by extension 'ignore_ament_install'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_ekf_slam_3d) by extensions ['colcon_pkg']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_ekf_slam_3d) by extension 'colcon_pkg'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_ekf_slam_3d) by extensions ['colcon_meta']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_ekf_slam_3d) by extension 'colcon_meta'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_ekf_slam_3d) by extensions ['ros']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_ekf_slam_3d) by extension 'ros'
+[0.209s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mrpt_slam/mrpt_ekf_slam_3d' with type 'ros.ament_cmake' and name 'mrpt_ekf_slam_3d'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_graphslam_2d) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_graphslam_2d) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_graphslam_2d) by extension 'ignore_ament_install'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_graphslam_2d) by extensions ['colcon_pkg']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_graphslam_2d) by extension 'colcon_pkg'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_graphslam_2d) by extensions ['colcon_meta']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_graphslam_2d) by extension 'colcon_meta'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_graphslam_2d) by extensions ['ros']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_graphslam_2d) by extension 'ros'
+[0.211s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mrpt_slam/mrpt_graphslam_2d' with type 'ros.ament_cmake' and name 'mrpt_graphslam_2d'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_icp_slam_2d) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_icp_slam_2d) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_icp_slam_2d) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_icp_slam_2d) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_icp_slam_2d) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_icp_slam_2d) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_icp_slam_2d) by extension 'colcon_meta'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_icp_slam_2d) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_icp_slam_2d) by extension 'ros'
+[0.213s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mrpt_slam/mrpt_icp_slam_2d' with type 'ros.ament_cmake' and name 'mrpt_icp_slam_2d'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_rbpf_slam) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_rbpf_slam) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_rbpf_slam) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_rbpf_slam) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_rbpf_slam) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_rbpf_slam) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_rbpf_slam) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_rbpf_slam) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_rbpf_slam) by extension 'ros'
+[0.215s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mrpt_slam/mrpt_rbpf_slam' with type 'ros.ament_cmake' and name 'mrpt_rbpf_slam'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_slam) by extensions ['ignore', 'ignore_ament_install']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_slam) by extension 'ignore'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_slam) by extension 'ignore_ament_install'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_slam) by extensions ['colcon_pkg']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_slam) by extension 'colcon_pkg'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_slam) by extensions ['colcon_meta']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_slam) by extension 'colcon_meta'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_slam) by extensions ['ros']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/mrpt_slam) by extension 'ros'
+[0.216s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mrpt_slam/mrpt_slam' with type 'ros.ament_cmake' and name 'mrpt_slam'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/scripts) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/scripts) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/scripts) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/scripts) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/scripts) by extensions ['colcon_meta']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/scripts) by extension 'colcon_meta'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/scripts) by extensions ['ros']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/scripts) by extension 'ros'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/scripts) by extensions ['cmake', 'python']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/scripts) by extension 'cmake'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/scripts) by extension 'python'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/scripts) by extensions ['python_setup_py']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/mrpt_slam/scripts) by extension 'python_setup_py'
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.241s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/pharanguren/turtlebot4_ws/install
+[0.243s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 479 installed packages in /opt/ros/jazzy
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.381s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'mrpt_msgs' is in: /opt/ros/jazzy
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding mrpt_msgs
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.384s] Level 5:colcon.colcon_core.verb:set package 'mrpt_ekf_slam_2d' build argument 'cmake_args' from command line to 'None'
+[0.384s] Level 5:colcon.colcon_core.verb:set package 'mrpt_ekf_slam_2d' build argument 'cmake_target' from command line to 'None'
+[0.384s] Level 5:colcon.colcon_core.verb:set package 'mrpt_ekf_slam_2d' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.384s] Level 5:colcon.colcon_core.verb:set package 'mrpt_ekf_slam_2d' build argument 'cmake_clean_cache' from command line to 'False'
+[0.384s] Level 5:colcon.colcon_core.verb:set package 'mrpt_ekf_slam_2d' build argument 'cmake_clean_first' from command line to 'False'
+[0.385s] Level 5:colcon.colcon_core.verb:set package 'mrpt_ekf_slam_2d' build argument 'cmake_force_configure' from command line to 'False'
+[0.385s] Level 5:colcon.colcon_core.verb:set package 'mrpt_ekf_slam_2d' build argument 'ament_cmake_args' from command line to 'None'
+[0.385s] Level 5:colcon.colcon_core.verb:set package 'mrpt_ekf_slam_2d' build argument 'catkin_cmake_args' from command line to 'None'
+[0.385s] Level 5:colcon.colcon_core.verb:set package 'mrpt_ekf_slam_2d' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.385s] DEBUG:colcon.colcon_core.verb:Building package 'mrpt_ekf_slam_2d' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_2d', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_2d', 'merge_install': False, 'path': '/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_ekf_slam_2d', 'symlink_install': True, 'test_result_base': None}
+[0.385s] Level 5:colcon.colcon_core.verb:set package 'mrpt_ekf_slam_3d' build argument 'cmake_args' from command line to 'None'
+[0.385s] Level 5:colcon.colcon_core.verb:set package 'mrpt_ekf_slam_3d' build argument 'cmake_target' from command line to 'None'
+[0.385s] Level 5:colcon.colcon_core.verb:set package 'mrpt_ekf_slam_3d' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.385s] Level 5:colcon.colcon_core.verb:set package 'mrpt_ekf_slam_3d' build argument 'cmake_clean_cache' from command line to 'False'
+[0.385s] Level 5:colcon.colcon_core.verb:set package 'mrpt_ekf_slam_3d' build argument 'cmake_clean_first' from command line to 'False'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'mrpt_ekf_slam_3d' build argument 'cmake_force_configure' from command line to 'False'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'mrpt_ekf_slam_3d' build argument 'ament_cmake_args' from command line to 'None'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'mrpt_ekf_slam_3d' build argument 'catkin_cmake_args' from command line to 'None'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'mrpt_ekf_slam_3d' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.386s] DEBUG:colcon.colcon_core.verb:Building package 'mrpt_ekf_slam_3d' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_3d', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d', 'merge_install': False, 'path': '/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_ekf_slam_3d', 'symlink_install': True, 'test_result_base': None}
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'mrpt_icp_slam_2d' build argument 'cmake_args' from command line to 'None'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'mrpt_icp_slam_2d' build argument 'cmake_target' from command line to 'None'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'mrpt_icp_slam_2d' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'mrpt_icp_slam_2d' build argument 'cmake_clean_cache' from command line to 'False'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'mrpt_icp_slam_2d' build argument 'cmake_clean_first' from command line to 'False'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'mrpt_icp_slam_2d' build argument 'cmake_force_configure' from command line to 'False'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'mrpt_icp_slam_2d' build argument 'ament_cmake_args' from command line to 'None'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'mrpt_icp_slam_2d' build argument 'catkin_cmake_args' from command line to 'None'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'mrpt_icp_slam_2d' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.386s] DEBUG:colcon.colcon_core.verb:Building package 'mrpt_icp_slam_2d' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d', 'merge_install': False, 'path': '/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_icp_slam_2d', 'symlink_install': True, 'test_result_base': None}
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'mrpt_msgs' build argument 'cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'mrpt_msgs' build argument 'cmake_target' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'mrpt_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'mrpt_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'mrpt_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'mrpt_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'mrpt_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'mrpt_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'mrpt_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.387s] DEBUG:colcon.colcon_core.verb:Building package 'mrpt_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pharanguren/TFG/mrpt_ws/install/mrpt_msgs', 'merge_install': False, 'path': '/home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'mrpt_rbpf_slam' build argument 'cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'mrpt_rbpf_slam' build argument 'cmake_target' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'mrpt_rbpf_slam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'mrpt_rbpf_slam' build argument 'cmake_clean_cache' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'mrpt_rbpf_slam' build argument 'cmake_clean_first' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'mrpt_rbpf_slam' build argument 'cmake_force_configure' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'mrpt_rbpf_slam' build argument 'ament_cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'mrpt_rbpf_slam' build argument 'catkin_cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'mrpt_rbpf_slam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.388s] DEBUG:colcon.colcon_core.verb:Building package 'mrpt_rbpf_slam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam', 'merge_install': False, 'path': '/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_rbpf_slam', 'symlink_install': True, 'test_result_base': None}
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'mrpt_graphslam_2d' build argument 'cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'mrpt_graphslam_2d' build argument 'cmake_target' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'mrpt_graphslam_2d' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'mrpt_graphslam_2d' build argument 'cmake_clean_cache' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'mrpt_graphslam_2d' build argument 'cmake_clean_first' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'mrpt_graphslam_2d' build argument 'cmake_force_configure' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'mrpt_graphslam_2d' build argument 'ament_cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'mrpt_graphslam_2d' build argument 'catkin_cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'mrpt_graphslam_2d' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.388s] DEBUG:colcon.colcon_core.verb:Building package 'mrpt_graphslam_2d' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_graphslam_2d', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pharanguren/TFG/mrpt_ws/install/mrpt_graphslam_2d', 'merge_install': False, 'path': '/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_graphslam_2d', 'symlink_install': True, 'test_result_base': None}
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'mrpt_slam' build argument 'cmake_args' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'mrpt_slam' build argument 'cmake_target' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'mrpt_slam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'mrpt_slam' build argument 'cmake_clean_cache' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'mrpt_slam' build argument 'cmake_clean_first' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'mrpt_slam' build argument 'cmake_force_configure' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'mrpt_slam' build argument 'ament_cmake_args' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'mrpt_slam' build argument 'catkin_cmake_args' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'mrpt_slam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.389s] DEBUG:colcon.colcon_core.verb:Building package 'mrpt_slam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pharanguren/TFG/mrpt_ws/build/mrpt_slam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pharanguren/TFG/mrpt_ws/install/mrpt_slam', 'merge_install': False, 'path': '/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_slam', 'symlink_install': True, 'test_result_base': None}
+[0.389s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.390s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.391s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs' with build type 'ament_cmake'
+[0.391s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs'
+[0.394s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.394s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.394s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.403s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_ekf_slam_2d' with build type 'ament_cmake'
+[0.404s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_ekf_slam_2d'
+[0.404s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.404s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.416s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_ekf_slam_3d' with build type 'ament_cmake'
+[0.416s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_ekf_slam_3d'
+[0.418s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.418s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.429s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_icp_slam_2d' with build type 'ament_cmake'
+[0.429s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_icp_slam_2d'
+[0.429s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.429s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.437s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_rbpf_slam' with build type 'ament_cmake'
+[0.437s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_rbpf_slam'
+[0.438s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.438s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.453s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/mrpt_ws/install/mrpt_msgs
+[0.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_2d': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_ekf_slam_2d -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_2d
+[0.459s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_3d': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_ekf_slam_3d -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d
+[0.461s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_icp_slam_2d -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d
+[0.470s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_rbpf_slam -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam
+[7.948s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_rbpf_slam -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam
+[7.950s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam -- -j12 -l12
+[8.005s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_icp_slam_2d -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d
+[8.008s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d -- -j12 -l12
+[8.011s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_3d' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_ekf_slam_3d -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_3d
+[8.014s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_3d': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_3d -- -j12 -l12
+[8.031s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_2d' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_ekf_slam_2d -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/mrpt_ws/install/mrpt_ekf_slam_2d
+[8.033s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_2d': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pharanguren/TFG/mrpt_ws/build/mrpt_ekf_slam_2d -- -j12 -l12
+[11.541s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/mrpt_ws/install/mrpt_msgs
+[11.542s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs -- -j12 -l12

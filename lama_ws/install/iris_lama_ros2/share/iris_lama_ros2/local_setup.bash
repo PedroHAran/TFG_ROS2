@@ -1,0 +1,1 @@
+/home/pharanguren/TFG/lama_ws/build/iris_lama_ros2/ament_cmake_environment_hooks/local_setup.bash

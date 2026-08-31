@@ -1,0 +1,60 @@
+[0.060s] Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/mrpt_ws/install/mrpt_msgs
+[0.192s] -- The C compiler identification is GNU 13.3.0
+[0.316s] -- The CXX compiler identification is GNU 13.3.0
+[0.354s] -- Detecting C compiler ABI info
+[0.542s] -- Detecting C compiler ABI info - done
+[0.567s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.567s] -- Detecting C compile features
+[0.568s] -- Detecting C compile features - done
+[0.582s] -- Detecting CXX compiler ABI info
+[0.764s] -- Detecting CXX compiler ABI info - done
+[0.787s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.788s] -- Detecting CXX compile features
+[0.789s] -- Detecting CXX compile features - done
+[0.799s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.121s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.272s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.395s] -- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.422s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.557s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.731s] -- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.750s] -- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.866s] -- Found geometry_msgs: 5.3.8 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.909s] -- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[3.667s] -- Found ament_cmake_cppcheck: 0.17.5 (/opt/ros/jazzy/share/ament_cmake_cppcheck/cmake)
+[3.693s] -- Found ament_cmake_cpplint: 0.17.5 (/opt/ros/jazzy/share/ament_cmake_cpplint/cmake)
+[3.703s] -- Found ament_cmake_uncrustify: 0.17.5 (/opt/ros/jazzy/share/ament_cmake_uncrustify/cmake)
+[3.735s] -- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[4.843s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.392s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.421s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[6.694s] -- Found PythonExtra: /usr/bin/python3  
+[8.181s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[8.610s] -- Found ament_cmake_flake8: 0.17.5 (/opt/ros/jazzy/share/ament_cmake_flake8/cmake)
+[8.642s] -- Found ament_cmake_pep257: 0.17.5 (/opt/ros/jazzy/share/ament_cmake_pep257/cmake)
+[9.396s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[9.478s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[9.889s] -- Added test 'copyright' to check source files copyright and LICENSE
+[9.903s] -- Added test 'lint_cmake' to check CMake code style
+[9.929s] -- Added test 'xmllint' to check XML markup files
+[9.983s] -- Configuring done (9.9s)
+[10.955s] -- Generating done (0.8s)
+[11.070s] -- Build files have been written to: /home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs
+[11.148s] Invoked command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pharanguren/TFG/mrpt_ws/src/mrpt_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/mrpt_ws/install/mrpt_msgs
+[11.150s] Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs -- -j12 -l12
+[11.441s] [  0%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[11.458s] [  0%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[11.502s] [  0%] Built target ament_cmake_python_symlink_mrpt_msgs
+[13.124s] running egg_info
+[13.133s] creating mrpt_msgs.egg-info
+[13.302s] writing mrpt_msgs.egg-info/PKG-INFO
+[13.302s] writing dependency_links to mrpt_msgs.egg-info/dependency_links.txt
+[13.303s] writing top-level names to mrpt_msgs.egg-info/top_level.txt
+[13.304s] writing manifest file 'mrpt_msgs.egg-info/SOURCES.txt'
+[13.790s] reading manifest file 'mrpt_msgs.egg-info/SOURCES.txt'
+[13.792s] writing manifest file 'mrpt_msgs.egg-info/SOURCES.txt'
+[14.004s] [  0%] Built target ament_cmake_python_build_mrpt_msgs_egg
+[22.576s] [  0%] Built target mrpt_msgs__rosidl_generator_type_description
+[23.093s] [  0%] Built target mrpt_msgs__rs
+[23.492s] [  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[23.495s] [  0%] [34m[1mGenerating C code for ROS interfaces[0m

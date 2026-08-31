@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_generator_py/mrpt_msgs/mrpt_msgs_s__rosidl_typesupport_introspection_c.so" "TARGETS" "mrpt_msgs_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.12/site-packages/mrpt_msgs")

@@ -1,0 +1,1 @@
+/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_generator_c/mrpt_msgs/msg/node_id_with_pose_vec.h

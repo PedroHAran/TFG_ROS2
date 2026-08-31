@@ -1,0 +1,152 @@
+[0.015s] Invoking command in '/home/pharanguren/TFG/lama_ws/build/iris_lama': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pharanguren/TFG/lama_ws/src/iris_lama -DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/lama_ws/install/iris_lama
+[0.089s] -- The CXX compiler identification is GNU 13.3.0
+[0.141s] -- The C compiler identification is GNU 13.3.0
+[0.159s] -- Detecting CXX compiler ABI info
+[0.272s] -- Detecting CXX compiler ABI info - done
+[0.283s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.284s] -- Detecting CXX compile features
+[0.284s] -- Detecting CXX compile features - done
+[0.295s] -- Detecting C compiler ABI info
+[0.399s] -- Detecting C compiler ABI info - done
+[0.415s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.415s] -- Detecting C compile features
+[0.416s] -- Detecting C compile features - done
+[0.479s] -- Configuring done (0.5s)
+[0.502s] -- Generating done (0.0s)
+[0.507s] -- Build files have been written to: /home/pharanguren/TFG/lama_ws/build/iris_lama
+[0.514s] Invoked command in '/home/pharanguren/TFG/lama_ws/build/iris_lama' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pharanguren/TFG/lama_ws/src/iris_lama -DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/lama_ws/install/iris_lama
+[0.515s] Invoking command in '/home/pharanguren/TFG/lama_ws/build/iris_lama': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pharanguren/TFG/lama_ws/build/iris_lama -- -j12 -l12
+[0.586s] [  1%] [32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/debug.c.o[0m
+[0.587s] [  2%] [32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/error_private.c.o[0m
+[0.587s] [  5%] [32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/huf_compress.c.o[0m
+[0.587s] [  5%] [32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/fse_compress.c.o[0m
+[0.587s] [  8%] [32mBuilding C object src/vendor/lz4/CMakeFiles/lz4.dir/lz4/lz4.c.o[0m
+[0.588s] [  8%] [32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/fse_decompress.c.o[0m
+[0.589s] [ 11%] [32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/entropy_common.c.o[0m
+[0.590s] [ 11%] [32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/huf_decompress.c.o[0m
+[0.590s] [ 12%] [32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/hist.c.o[0m
+[0.591s] [ 13%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/Factor.cpp.o[0m
+[0.591s] [ 15%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/FactorGraph.cpp.o[0m
+[0.594s] [ 16%] [32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/pool.c.o[0m
+[0.634s] [ 18%] [32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/threading.c.o[0m
+[0.670s] [ 19%] [32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_common.c.o[0m
+[0.701s] [ 20%] [32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_compress.c.o[0m
+[0.728s] [ 22%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/Key.cpp.o[0m
+[0.742s] [ 23%] [32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_ddict.c.o[0m
+[0.751s] [ 25%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/LossFunction.cpp.o[0m
+[0.770s] [ 26%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/SchurComplement.cpp.o[0m
+[0.791s] [ 27%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/VariableOrdering.cpp.o[0m
+[0.822s] [ 29%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/Variables.cpp.o[0m
+[0.905s] [ 30%] [32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_decompress.c.o[0m
+[0.927s] [ 31%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/utils/testAssertions.cpp.o[0m
+[1.295s] [ 33%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/utils/Timer.cpp.o[0m
+[1.500s] [ 34%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/linear/ConjugateGradient.cpp.o[0m
+[1.580s] [ 36%] [32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_double_fast.c.o[0m
+[1.727s] [ 37%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/linear/Covariance.cpp.o[0m
+[2.044s] [ 38%] [32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_fast.c.o[0m
+[2.271s] [ 38%] Built target lz4
+[2.309s] [ 40%] [32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_lazy.c.o[0m
+[2.361s] [ 41%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/linear/DenseCholesky.cpp.o[0m
+[2.492s] [ 43%] [32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_ldm.c.o[0m
+[2.792s] [ 44%] [32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstdmt_compress.c.o[0m
+[2.889s] [ 45%] [32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_opt.c.o[0m
+[3.009s] [ 47%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/linear/SchurComplementDenseSolver.cpp.o[0m
+[3.411s] [ 48%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/linear/SparseCholesky.cpp.o[0m
+[5.359s] [ 50%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/linear/SquareRootCholesky.cpp.o[0m
+[5.381s] [ 50%] Built target zstd
+[5.393s] [ 51%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/DoglegOptimizer.cpp.o[0m
+[6.100s] [ 52%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/GaussNewtonOptimizer.cpp.o[0m
+[6.114s] [ 54%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/LevenbergMarquardtOptimizer.cpp.o[0m
+[7.302s] [ 55%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/linearization.cpp.o[0m
+[7.479s] [ 56%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/MarginalCovariance.cpp.o[0m
+[7.509s] [ 58%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/NonlinearOptimizer.cpp.o[0m
+[8.755s] [ 59%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/NumericalFactor.cpp.o[0m
+[11.208s] [ 61%] [32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/SparsityPattern.cpp.o[0m
+[19.659s] [ 61%] Built target minisam
+[19.766s] [ 62%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/buffer_compressor.cpp.o[0m
+[19.766s] [ 63%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/match_surface_2d.cpp.o[0m
+[19.767s] [ 66%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/pf_slam2d.cpp.o[0m
+[19.767s] [ 66%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/lidar_odometry_2d.cpp.o[0m
+[19.771s] [ 69%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/pose2d.cpp.o[0m
+[19.771s] [ 69%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/graph_slam2d.cpp.o[0m
+[19.771s] [ 70%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/image_io.cpp.o[0m
+[19.774s] [ 72%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/loc2d.cpp.o[0m
+[19.776s] [ 73%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/print.cpp.o[0m
+[19.777s] [ 75%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/random.cpp.o[0m
+[19.782s] [ 76%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/pose3d.cpp.o[0m
+[19.787s] [ 77%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/slam2d.cpp.o[0m
+[20.620s] [ 79%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/thread_pool.cpp.o[0m
+[23.381s] [ 80%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/simple_pgo.cpp.o[0m
+[23.922s] [ 81%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/nlls/gauss_newton.cpp.o[0m
+[25.607s] [ 83%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/nlls/levenberg_marquardt.cpp.o[0m
+[25.665s] [ 84%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/nlls/robust_cost.cpp.o[0m
+[25.817s] [ 86%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/nlls/solver.cpp.o[0m
+[26.543s] [ 87%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/sdm/container.cpp.o[0m
+[28.986s] [ 88%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/sdm/dynamic_distance_map.cpp.o[0m
+[30.169s] [ 90%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/sdm/export.cpp.o[0m
+[30.278s] [ 91%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/sdm/frequency_occupancy_map.cpp.o[0m
+[31.435s] [ 93%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/sdm/map.cpp.o[0m
+[32.285s] [ 94%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/sdm/marching_cubes.cpp.o[0m
+[32.592s] [ 95%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/sdm/probabilistic_occupancy_map.cpp.o[0m
+[32.898s] [ 97%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/sdm/simple_occupancy_map.cpp.o[0m
+[33.686s] [ 98%] [32mBuilding CXX object src/CMakeFiles/iris_lama.dir/sdm/truncated_signed_distance_map.cpp.o[0m
+[42.527s] [100%] [32m[1mLinking CXX static library libiris_lama.a[0m
+[44.145s] [100%] Built target iris_lama
+[44.162s] Invoked command in '/home/pharanguren/TFG/lama_ws/build/iris_lama' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pharanguren/TFG/lama_ws/build/iris_lama -- -j12 -l12
+[44.172s] Invoking command in '/home/pharanguren/TFG/lama_ws/build/iris_lama': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/pharanguren/TFG/lama_ws/build/iris_lama
+[44.181s] -- Install configuration: ""
+[44.181s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include
+[44.181s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama
+[44.181s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/random.h
+[44.182s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/timer.h
+[44.182s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/aabb.h
+[44.182s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/thread_pool.h
+[44.182s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/print.h
+[44.182s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/image_io.h
+[44.182s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus
+[44.182s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus/so2.hpp
+[44.183s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus/se3.hpp
+[44.183s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus/so3.hpp
+[44.183s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus/se2.hpp
+[44.183s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus/sophus.hpp
+[44.183s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/slam2d.h
+[44.183s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/match_surface_2d.h
+[44.183s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/image.h
+[44.184s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls
+[44.184s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/problem.h
+[44.184s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/robust_cost.h
+[44.184s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/strategy.h
+[44.184s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/solver.h
+[44.184s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/gauss_newton.h
+[44.184s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/levenberg_marquardt.h
+[44.184s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm
+[44.185s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/container.h
+[44.185s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/distance_map.h
+[44.185s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/export.h
+[44.185s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/dynamic_distance_map.h
+[44.185s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/map.h
+[44.185s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/marching_cubes.h
+[44.185s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/occupancy_map.h
+[44.186s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/truncated_signed_distance_map.h
+[44.186s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/frequency_occupancy_map.h
+[44.186s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/probabilistic_occupancy_map.h
+[44.186s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/simple_occupancy_map.h
+[44.186s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/cow_ptr.h
+[44.186s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/pose2d.h
+[44.186s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/types.h
+[44.186s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/pose3d.h
+[44.186s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/pf_slam2d.h
+[44.186s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/time.h
+[44.187s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/graph_slam2d.h
+[44.187s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/buffer_compressor.h
+[44.187s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/lidar_odometry_2d.h
+[44.187s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/lie.h
+[44.187s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/simple_pgo.h
+[44.187s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/loc2d.h
+[44.187s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/lib/iris_lama/cmake/iris_lamaTargets.cmake
+[44.187s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/lib/iris_lama/cmake/iris_lamaTargets-noconfig.cmake
+[44.187s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/lib/iris_lama/cmake/iris_lamaConfig.cmake
+[44.187s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/lib/iris_lama/cmake/iris_lamaConfigVersion.cmake
+[44.187s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/share/iris_lama/package.xml
+[44.234s] -- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/lib/libiris_lama.a
+[44.318s] Invoked command in '/home/pharanguren/TFG/lama_ws/build/iris_lama' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/pharanguren/TFG/lama_ws/build/iris_lama

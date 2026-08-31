@@ -1,0 +1,39 @@
+[ 20%] [32mBuilding CXX object CMakeFiles/mrpt_rbpf_slam.dir/src/mrpt_rbpf_slam_wrapper.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/mrpt_rbpf_slam.dir/src/options.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/mrpt_rbpf_slam.dir/src/mrpt_rbpf_slam.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/mrpt_rbpf_slam.dir/src/mrpt_rbpf_slam_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable mrpt_rbpf_slam[0m
+[100%] Built target mrpt_rbpf_slam
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/lib/mrpt_rbpf_slam/mrpt_rbpf_slam
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/config/default.yaml
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/config/rosconsole.config
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/mvsim_slam.launch.py
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/rbpf_slam.launch.py
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/rbpf_slam_rawlog.launch.py
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/rbpf_slam_turtlebot3.launch.py
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/ro_slam.launch.py
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/ro_slam_rawlog.launch.py
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/rviz.launch.py
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/tutorial/RO-SLAM_demo.ini
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/tutorial/RO-SLAM_demo.rawlog
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/tutorial/grid_slam_demo.ini
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/tutorial/grid_slam_demo.rawlog
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/tutorial/grid_slam_demo2.rawlog
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/rviz/rviz_conf.rviz
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/ament_index/resource_index/package_run_dependencies/mrpt_rbpf_slam
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/ament_index/resource_index/parent_prefix_path/mrpt_rbpf_slam
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/environment/ament_prefix_path.sh
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/environment/ament_prefix_path.dsv
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/environment/path.sh
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/environment/path.dsv
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/local_setup.bash
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/local_setup.sh
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/local_setup.zsh
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/local_setup.dsv
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/package.dsv
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/ament_index/resource_index/packages/mrpt_rbpf_slam
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/cmake/mrpt_rbpf_slamConfig.cmake
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/cmake/mrpt_rbpf_slamConfig-version.cmake
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/package.xml

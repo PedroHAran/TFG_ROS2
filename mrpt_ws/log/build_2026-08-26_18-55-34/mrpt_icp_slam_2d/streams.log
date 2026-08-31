@@ -1,0 +1,34 @@
+[0.032s] Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d -- -j12 -l12
+[0.143s] [ 33%] [32mBuilding CXX object CMakeFiles/mrpt_icp_slam_2d.dir/src/mrpt_icp_slam_2d_app.cpp.o[0m
+[0.143s] [ 66%] [32mBuilding CXX object CMakeFiles/mrpt_icp_slam_2d.dir/src/mrpt_icp_slam_2d_wrapper.cpp.o[0m
+[66.641s] [100%] [32m[1mLinking CXX executable mrpt_icp_slam_2d[0m
+[76.490s] [100%] Built target mrpt_icp_slam_2d
+[76.505s] Invoked command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d -- -j12 -l12
+[76.827s] Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d
+[76.828s] -- Install configuration: ""
+[76.948s] -- Execute custom install script
+[76.988s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/lib/mrpt_icp_slam_2d/mrpt_icp_slam_2d
+[77.036s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/config/rosconsole.config
+[77.067s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/launch/icp_slam.launch.py
+[77.080s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/launch/icp_slam_gui.launch.py
+[77.092s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/launch/icp_slam_rawlog.launch.py
+[77.107s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/launch/mvsim_icp_slam.launch.py
+[77.120s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/tutorial/icp_slam_demo.ini
+[77.132s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/tutorial/icp_slam_demo.rawlog
+[77.143s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/rviz/rviz_conf.rviz
+[77.159s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/ament_index/resource_index/package_run_dependencies/mrpt_icp_slam_2d
+[77.171s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/ament_index/resource_index/parent_prefix_path/mrpt_icp_slam_2d
+[77.183s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/environment/ament_prefix_path.sh
+[77.195s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/environment/ament_prefix_path.dsv
+[77.204s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/environment/path.sh
+[77.215s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/environment/path.dsv
+[77.226s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/local_setup.bash
+[77.239s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/local_setup.sh
+[77.250s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/local_setup.zsh
+[77.265s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/local_setup.dsv
+[77.275s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/package.dsv
+[77.285s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/ament_index/resource_index/packages/mrpt_icp_slam_2d
+[77.295s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/cmake/mrpt_icp_slam_2dConfig.cmake
+[77.305s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/cmake/mrpt_icp_slam_2dConfig-version.cmake
+[77.315s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/package.xml
+[77.326s] Invoked command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d

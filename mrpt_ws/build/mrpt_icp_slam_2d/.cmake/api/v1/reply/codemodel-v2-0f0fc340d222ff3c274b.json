@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-5a9bc330f7bc9d95f28f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mrpt_icp_slam_2d",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "mrpt_icp_slam_2d::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mrpt_icp_slam_2d-a27996c1ce6df722b49d.json",
+					"name" : "mrpt_icp_slam_2d",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mrpt_icp_slam_2d_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mrpt_icp_slam_2d_uninstall-1441398e9674da0b1a8f.json",
+					"name" : "mrpt_icp_slam_2d_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-588178162d0139bbfe5a.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d",
+		"source" : "/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_icp_slam_2d"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

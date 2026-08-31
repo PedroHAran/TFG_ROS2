@@ -1,0 +1,1 @@
+/home/pharanguren/TFG/mrpt_ws/build/mrpt_icp_slam_2d/ament_cmake_core/mrpt_icp_slam_2dConfig-version.cmake

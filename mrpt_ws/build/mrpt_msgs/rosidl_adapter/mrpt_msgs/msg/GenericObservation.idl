@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mrpt_msgs/msg/GenericObservation.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module mrpt_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "This message holds an mrpt::obs::CObservation polymorphic object" "\n"
+      "serialized into a binary stream via mrpt::serialization methods.")
+    struct GenericObservation {
+      @verbatim (language="comment", text=
+        "Time of sensor data acquisition, coordinate frame ID.")
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "Generalized serialized observation data")
+      sequence<uint8> data;
+    };
+  };
+};

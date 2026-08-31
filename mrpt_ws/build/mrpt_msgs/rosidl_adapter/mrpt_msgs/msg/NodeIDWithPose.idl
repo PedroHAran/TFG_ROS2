@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mrpt_msgs/msg/NodeIDWithPose.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+#include "std_msgs/msg/String.idl"
+
+module mrpt_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "NodeID along with its corresponding 2D/3D pose estimation." "\n"
+      "Message also contains the following optional fields:" "\n"
+      "- str_ID: string identifier of the robot agent that initially registered this node in" "\n"
+      "its graph" "\n"
+      "- nodeID_loc: ID of the current node in the graph it was initially registered in." "\n"
+      "" "\n"
+      "note: Additional fields correspond to the fields of the" "\n"
+      "mrpt::graphs::detail::TMRSlamNodeAnnotations struct" "\n"
+      "" "\n"
+      "Currently used in the mrpt_graphslam_2d ROS application.")
+    struct NodeIDWithPose {
+      uint64 node_id;
+
+      geometry_msgs::msg::Pose pose;
+
+      std_msgs::msg::String str_id;
+
+      uint64 node_id_loc;
+    };
+  };
+};

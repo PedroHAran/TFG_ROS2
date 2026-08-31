@@ -1,0 +1,1 @@
+/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_rbpf_slam/launch/ro_slam.launch.py

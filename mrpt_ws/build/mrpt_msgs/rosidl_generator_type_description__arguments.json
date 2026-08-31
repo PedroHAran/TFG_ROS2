@@ -1,0 +1,29 @@
+{
+  "package_name": "mrpt_msgs",
+  "output_dir": "/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_generator_type_description/mrpt_msgs",
+  "idl_tuples": [
+    "/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_adapter/mrpt_msgs:msg/GenericObservation.idl",
+    "/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_adapter/mrpt_msgs:msg/GraphConstraint.idl",
+    "/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_adapter/mrpt_msgs:msg/GraphSlamAgent.idl",
+    "/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_adapter/mrpt_msgs:msg/GraphSlamAgents.idl",
+    "/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_adapter/mrpt_msgs:msg/GraphSlamStats.idl",
+    "/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_adapter/mrpt_msgs:msg/NetworkOfPoses.idl",
+    "/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_adapter/mrpt_msgs:msg/NodeIDWithLaserScan.idl",
+    "/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_adapter/mrpt_msgs:msg/NodeIDWithPoseVec.idl",
+    "/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_adapter/mrpt_msgs:msg/NodeIDWithPose.idl",
+    "/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_adapter/mrpt_msgs:msg/ObservationObject.idl",
+    "/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_adapter/mrpt_msgs:msg/SingleObjectObservation.idl",
+    "/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_adapter/mrpt_msgs:msg/ObservationRangeBeacon.idl",
+    "/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_adapter/mrpt_msgs:msg/ObservationRangeBearing.idl",
+    "/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_adapter/mrpt_msgs:msg/SingleRangeBeaconObservation.idl",
+    "/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_adapter/mrpt_msgs:msg/SingleRangeBearingObservation.idl",
+    "/home/pharanguren/TFG/mrpt_ws/build/mrpt_msgs/rosidl_adapter/mrpt_msgs:srv/GetCMGraph.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs",
+    "sensor_msgs:/opt/ros/jazzy/share/sensor_msgs",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs"
+  ]
+}

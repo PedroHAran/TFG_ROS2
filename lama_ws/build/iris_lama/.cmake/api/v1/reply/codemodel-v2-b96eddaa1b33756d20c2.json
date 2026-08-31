@@ -1,0 +1,156 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-b58a48da329a7353e93f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src-bd92d26089a2bcd0fc4d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "src/vendor/lz4",
+					"jsonFile" : "directory-src.vendor.lz4-0401211ab26dc660a853.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "vendor/lz4",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "src/vendor/minisam",
+					"jsonFile" : "directory-src.vendor.minisam-7a9bcb52b6a7db3e469a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "vendor/minisam",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "src/vendor/zstd",
+					"jsonFile" : "directory-src.vendor.zstd-5f2e5b1e32aed2b2b17b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "vendor/zstd",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"name" : "iris_lama",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "iris_lama::@145eef247bfb46b6828c",
+					"jsonFile" : "target-iris_lama-be95b63fca8a1f5a8833.json",
+					"name" : "iris_lama",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "lz4::@3ada2073ad3460fcf9e3",
+					"jsonFile" : "target-lz4-696f8a564d5b8df1f610.json",
+					"name" : "lz4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "minisam::@fce99142fa2268aabe8f",
+					"jsonFile" : "target-minisam-f98b85fc2b717ec37518.json",
+					"name" : "minisam",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "zstd::@66ccbf997e0376072481",
+					"jsonFile" : "target-zstd-4e1a3211b1463776357a.json",
+					"name" : "zstd",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/pharanguren/TFG/lama_ws/build/iris_lama",
+		"source" : "/home/pharanguren/TFG/lama_ws/src/iris_lama"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

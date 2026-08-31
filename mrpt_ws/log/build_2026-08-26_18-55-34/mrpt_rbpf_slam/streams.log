@@ -1,0 +1,50 @@
+[0.032s] Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam -- -j12 -l12
+[0.167s] [ 20%] [32mBuilding CXX object CMakeFiles/mrpt_rbpf_slam.dir/src/mrpt_rbpf_slam_wrapper.cpp.o[0m
+[0.170s] [ 40%] [32mBuilding CXX object CMakeFiles/mrpt_rbpf_slam.dir/src/options.cpp.o[0m
+[0.179s] [ 60%] [32mBuilding CXX object CMakeFiles/mrpt_rbpf_slam.dir/src/mrpt_rbpf_slam.cpp.o[0m
+[0.196s] [ 80%] [32mBuilding CXX object CMakeFiles/mrpt_rbpf_slam.dir/src/mrpt_rbpf_slam_node.cpp.o[0m
+[32.202s] [01m[K/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_rbpf_slam/src/mrpt_rbpf_slam_wrapper.cpp:[m[K In member function ‘[01m[Kbool mrpt_rbpf_slam::PFslamWrapper::[01;32m[KwaitForTransform[m[K(mrpt::poses::CPose3D&, const std::string&, const std::string&, const rclcpp::Time&, const rclcpp::Duration&, const rclcpp::Duration&)[m[K’:
+[32.202s] [01m[K/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_rbpf_slam/src/mrpt_rbpf_slam_wrapper.cpp:177:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[32.202s]   177 |   const std::string & source_frame, [01;35m[Kconst rclcpp::Time & time[m[K,
+[32.203s]       |                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[32.203s] [01m[K/home/pharanguren/TFG/mrpt_ws/src/mrpt_slam/mrpt_rbpf_slam/src/mrpt_rbpf_slam_wrapper.cpp:178:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpolling_sleep_duration[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[32.203s]   178 |   const rclcpp::Duration & timeout, [01;35m[Kconst rclcpp::Duration & polling_sleep_duration[m[K)
+[32.203s]       |                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[65.293s] [100%] [32m[1mLinking CXX executable mrpt_rbpf_slam[0m
+[76.429s] [100%] Built target mrpt_rbpf_slam
+[76.468s] Invoked command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam -- -j12 -l12
+[76.498s] Invoking command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam
+[76.518s] -- Install configuration: ""
+[76.542s] -- Execute custom install script
+[76.543s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/lib/mrpt_rbpf_slam/mrpt_rbpf_slam
+[76.740s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/config/default.yaml
+[76.755s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/config/rosconsole.config
+[76.823s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/mvsim_slam.launch.py
+[76.837s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/rbpf_slam.launch.py
+[76.853s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/rbpf_slam_rawlog.launch.py
+[76.863s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/rbpf_slam_turtlebot3.launch.py
+[76.873s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/ro_slam.launch.py
+[76.883s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/ro_slam_rawlog.launch.py
+[76.893s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/launch/rviz.launch.py
+[76.942s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/tutorial/RO-SLAM_demo.ini
+[76.959s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/tutorial/RO-SLAM_demo.rawlog
+[76.970s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/tutorial/grid_slam_demo.ini
+[76.982s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/tutorial/grid_slam_demo.rawlog
+[76.994s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/tutorial/grid_slam_demo2.rawlog
+[77.030s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/rviz/rviz_conf.rviz
+[77.041s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/ament_index/resource_index/package_run_dependencies/mrpt_rbpf_slam
+[77.055s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/ament_index/resource_index/parent_prefix_path/mrpt_rbpf_slam
+[77.065s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/environment/ament_prefix_path.sh
+[77.077s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/environment/ament_prefix_path.dsv
+[77.090s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/environment/path.sh
+[77.103s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/environment/path.dsv
+[77.116s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/local_setup.bash
+[77.127s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/local_setup.sh
+[77.138s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/local_setup.zsh
+[77.156s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/local_setup.dsv
+[77.167s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/package.dsv
+[77.178s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/ament_index/resource_index/packages/mrpt_rbpf_slam
+[77.189s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/cmake/mrpt_rbpf_slamConfig.cmake
+[77.198s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/cmake/mrpt_rbpf_slamConfig-version.cmake
+[77.209s] -- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_rbpf_slam/share/mrpt_rbpf_slam/package.xml
+[77.223s] Invoked command in '/home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/pharanguren/TFG/mrpt_ws/build/mrpt_rbpf_slam

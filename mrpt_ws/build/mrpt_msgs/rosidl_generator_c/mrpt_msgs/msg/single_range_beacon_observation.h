@@ -1,0 +1,12 @@
+// generated from rosidl_generator_c/resource/idl.h.em
+// with input from mrpt_msgs:msg/SingleRangeBeaconObservation.idl
+// generated code does not contain a copyright notice
+
+#ifndef MRPT_MSGS__MSG__SINGLE_RANGE_BEACON_OBSERVATION_H_
+#define MRPT_MSGS__MSG__SINGLE_RANGE_BEACON_OBSERVATION_H_
+
+#include "mrpt_msgs/msg/detail/single_range_beacon_observation__struct.h"
+#include "mrpt_msgs/msg/detail/single_range_beacon_observation__functions.h"
+#include "mrpt_msgs/msg/detail/single_range_beacon_observation__type_support.h"
+
+#endif  // MRPT_MSGS__MSG__SINGLE_RANGE_BEACON_OBSERVATION_H_

@@ -1,0 +1,59 @@
+[  1%] Built target lz4
+[ 29%] Built target zstd
+[ 61%] Built target minisam
+[100%] Built target iris_lama
+-- Install configuration: ""
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/random.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/timer.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/aabb.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/thread_pool.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/print.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/image_io.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus/so2.hpp
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus/se3.hpp
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus/so3.hpp
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus/se2.hpp
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus/sophus.hpp
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/slam2d.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/match_surface_2d.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/image.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/problem.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/robust_cost.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/strategy.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/solver.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/gauss_newton.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/levenberg_marquardt.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/container.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/distance_map.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/export.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/dynamic_distance_map.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/map.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/marching_cubes.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/occupancy_map.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/truncated_signed_distance_map.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/frequency_occupancy_map.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/probabilistic_occupancy_map.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/simple_occupancy_map.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/cow_ptr.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/pose2d.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/types.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/pose3d.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/pf_slam2d.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/time.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/graph_slam2d.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/buffer_compressor.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/lidar_odometry_2d.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/lie.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/simple_pgo.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/loc2d.h
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/lib/iris_lama/cmake/iris_lamaTargets.cmake
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/lib/iris_lama/cmake/iris_lamaTargets-noconfig.cmake
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/lib/iris_lama/cmake/iris_lamaConfig.cmake
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/lib/iris_lama/cmake/iris_lamaConfigVersion.cmake
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/share/iris_lama/package.xml
+-- Up-to-date: /home/pharanguren/TFG/lama_ws/install/iris_lama/lib/libiris_lama.a

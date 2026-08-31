@@ -1,0 +1,641 @@
+[0.000000] (-) TimerEvent: {}
+[0.000120] (iris_lama) JobQueued: {'identifier': 'iris_lama', 'dependencies': OrderedDict()}
+[0.000159] (iris_lama_ros) JobQueued: {'identifier': 'iris_lama_ros', 'dependencies': OrderedDict({'iris_lama': '/home/pharanguren/TFG/lama_ws/install/iris_lama'})}
+[0.000935] (iris_lama) JobStarted: {'identifier': 'iris_lama'}
+[0.013951] (iris_lama) JobProgress: {'identifier': 'iris_lama', 'progress': 'cmake'}
+[0.014749] (iris_lama) Command: {'cmd': ['/usr/bin/cmake', '/home/pharanguren/TFG/lama_ws/src/iris_lama', '-DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/lama_ws/install/iris_lama'], 'cwd': '/home/pharanguren/TFG/lama_ws/build/iris_lama', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'pharanguren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/pharanguren', 'OLDPWD': '/home/pharanguren/TFG/lama_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2097', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'pharanguren', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pharanguren', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/pharanguren/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/pharanguren/.local/bin:/home/pharanguren/.local/bin', 'SESSION_MANAGER': 'local/pedrocomputer:@/tmp/.ICE-unix/2049,unix/pedrocomputer:/tmp/.ICE-unix/2049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e0da55ef_8d65_4320_a441_5b2867189ae9', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LY6MU3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.269', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/pharanguren/TFG/lama_ws/build/iris_lama', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation/lib/python3.12/site-packages:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.089894] (iris_lama) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.099813] (-) TimerEvent: {}
+[0.142105] (iris_lama) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.160149] (iris_lama) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199946] (-) TimerEvent: {}
+[0.272989] (iris_lama) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.284286] (iris_lama) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.284636] (iris_lama) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.285157] (iris_lama) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.295445] (iris_lama) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300054] (-) TimerEvent: {}
+[0.399956] (iris_lama) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.400198] (-) TimerEvent: {}
+[0.415734] (iris_lama) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.416019] (iris_lama) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.416530] (iris_lama) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.479429] (iris_lama) StdoutLine: {'line': b'-- Configuring done (0.5s)\n'}
+[0.500369] (-) TimerEvent: {}
+[0.502593] (iris_lama) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.508124] (iris_lama) StdoutLine: {'line': b'-- Build files have been written to: /home/pharanguren/TFG/lama_ws/build/iris_lama\n'}
+[0.514291] (iris_lama) CommandEnded: {'returncode': 0}
+[0.514957] (iris_lama) JobProgress: {'identifier': 'iris_lama', 'progress': 'build'}
+[0.515864] (iris_lama) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pharanguren/TFG/lama_ws/build/iris_lama', '--', '-j12', '-l12'], 'cwd': '/home/pharanguren/TFG/lama_ws/build/iris_lama', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'pharanguren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/pharanguren', 'OLDPWD': '/home/pharanguren/TFG/lama_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2097', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'pharanguren', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pharanguren', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/pharanguren/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/pharanguren/.local/bin:/home/pharanguren/.local/bin', 'SESSION_MANAGER': 'local/pedrocomputer:@/tmp/.ICE-unix/2049,unix/pedrocomputer:/tmp/.ICE-unix/2049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e0da55ef_8d65_4320_a441_5b2867189ae9', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LY6MU3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.269', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/pharanguren/TFG/lama_ws/build/iris_lama', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation/lib/python3.12/site-packages:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.586401] (iris_lama) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/debug.c.o\x1b[0m\n'}
+[0.587347] (iris_lama) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/error_private.c.o\x1b[0m\n'}
+[0.587654] (iris_lama) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/huf_compress.c.o\x1b[0m\n'}
+[0.587908] (iris_lama) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/fse_compress.c.o\x1b[0m\n'}
+[0.588146] (iris_lama) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object src/vendor/lz4/CMakeFiles/lz4.dir/lz4/lz4.c.o\x1b[0m\n'}
+[0.588334] (iris_lama) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/fse_decompress.c.o\x1b[0m\n'}
+[0.589964] (iris_lama) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/entropy_common.c.o\x1b[0m\n'}
+[0.590342] (iris_lama) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/huf_decompress.c.o\x1b[0m\n'}
+[0.591053] (iris_lama) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/hist.c.o\x1b[0m\n'}
+[0.591349] (iris_lama) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/Factor.cpp.o\x1b[0m\n'}
+[0.591587] (iris_lama) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/FactorGraph.cpp.o\x1b[0m\n'}
+[0.594937] (iris_lama) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/pool.c.o\x1b[0m\n'}
+[0.601535] (-) TimerEvent: {}
+[0.634358] (iris_lama) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/threading.c.o\x1b[0m\n'}
+[0.670548] (iris_lama) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_common.c.o\x1b[0m\n'}
+[0.701366] (iris_lama) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_compress.c.o\x1b[0m\n'}
+[0.701804] (-) TimerEvent: {}
+[0.728534] (iris_lama) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/Key.cpp.o\x1b[0m\n'}
+[0.742735] (iris_lama) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_ddict.c.o\x1b[0m\n'}
+[0.751873] (iris_lama) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/LossFunction.cpp.o\x1b[0m\n'}
+[0.770299] (iris_lama) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/SchurComplement.cpp.o\x1b[0m\n'}
+[0.791525] (iris_lama) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/VariableOrdering.cpp.o\x1b[0m\n'}
+[0.802019] (-) TimerEvent: {}
+[0.822274] (iris_lama) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/core/Variables.cpp.o\x1b[0m\n'}
+[0.902187] (-) TimerEvent: {}
+[0.905731] (iris_lama) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_decompress.c.o\x1b[0m\n'}
+[0.926454] (iris_lama) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/utils/testAssertions.cpp.o\x1b[0m\n'}
+[1.002305] (-) TimerEvent: {}
+[1.103469] (-) TimerEvent: {}
+[1.203872] (-) TimerEvent: {}
+[1.295339] (iris_lama) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/utils/Timer.cpp.o\x1b[0m\n'}
+[1.304007] (-) TimerEvent: {}
+[1.404503] (-) TimerEvent: {}
+[1.500194] (iris_lama) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/linear/ConjugateGradient.cpp.o\x1b[0m\n'}
+[1.505505] (-) TimerEvent: {}
+[1.580602] (iris_lama) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_double_fast.c.o\x1b[0m\n'}
+[1.606190] (-) TimerEvent: {}
+[1.707683] (-) TimerEvent: {}
+[1.727532] (iris_lama) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/linear/Covariance.cpp.o\x1b[0m\n'}
+[1.807813] (-) TimerEvent: {}
+[1.908215] (-) TimerEvent: {}
+[2.008795] (-) TimerEvent: {}
+[2.044998] (iris_lama) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_fast.c.o\x1b[0m\n'}
+[2.108951] (-) TimerEvent: {}
+[2.209455] (-) TimerEvent: {}
+[2.271630] (iris_lama) StdoutLine: {'line': b'[ 38%] Built target lz4\n'}
+[2.309185] (iris_lama) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_lazy.c.o\x1b[0m\n'}
+[2.309557] (-) TimerEvent: {}
+[2.361867] (iris_lama) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/linear/DenseCholesky.cpp.o\x1b[0m\n'}
+[2.410481] (-) TimerEvent: {}
+[2.492883] (iris_lama) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_ldm.c.o\x1b[0m\n'}
+[2.511484] (-) TimerEvent: {}
+[2.611966] (-) TimerEvent: {}
+[2.712398] (-) TimerEvent: {}
+[2.792433] (iris_lama) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstdmt_compress.c.o\x1b[0m\n'}
+[2.812479] (-) TimerEvent: {}
+[2.890165] (iris_lama) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object src/vendor/zstd/CMakeFiles/zstd.dir/zstd/zstd_opt.c.o\x1b[0m\n'}
+[2.912621] (-) TimerEvent: {}
+[3.010019] (iris_lama) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/linear/SchurComplementDenseSolver.cpp.o\x1b[0m\n'}
+[3.012771] (-) TimerEvent: {}
+[3.113279] (-) TimerEvent: {}
+[3.219277] (-) TimerEvent: {}
+[3.319830] (-) TimerEvent: {}
+[3.411588] (iris_lama) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/linear/SparseCholesky.cpp.o\x1b[0m\n'}
+[3.419949] (-) TimerEvent: {}
+[3.520370] (-) TimerEvent: {}
+[3.625733] (-) TimerEvent: {}
+[3.726212] (-) TimerEvent: {}
+[3.826448] (-) TimerEvent: {}
+[3.926819] (-) TimerEvent: {}
+[4.027046] (-) TimerEvent: {}
+[4.127295] (-) TimerEvent: {}
+[4.227613] (-) TimerEvent: {}
+[4.327877] (-) TimerEvent: {}
+[4.428121] (-) TimerEvent: {}
+[4.528355] (-) TimerEvent: {}
+[4.628623] (-) TimerEvent: {}
+[4.728988] (-) TimerEvent: {}
+[4.829531] (-) TimerEvent: {}
+[4.930013] (-) TimerEvent: {}
+[5.030501] (-) TimerEvent: {}
+[5.130765] (-) TimerEvent: {}
+[5.230997] (-) TimerEvent: {}
+[5.331307] (-) TimerEvent: {}
+[5.359826] (iris_lama) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/linear/SquareRootCholesky.cpp.o\x1b[0m\n'}
+[5.381736] (iris_lama) StdoutLine: {'line': b'[ 50%] Built target zstd\n'}
+[5.394196] (iris_lama) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/DoglegOptimizer.cpp.o\x1b[0m\n'}
+[5.431443] (-) TimerEvent: {}
+[5.531797] (-) TimerEvent: {}
+[5.632188] (-) TimerEvent: {}
+[5.732472] (-) TimerEvent: {}
+[5.832831] (-) TimerEvent: {}
+[5.933147] (-) TimerEvent: {}
+[6.055563] (-) TimerEvent: {}
+[6.100647] (iris_lama) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/GaussNewtonOptimizer.cpp.o\x1b[0m\n'}
+[6.114395] (iris_lama) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/LevenbergMarquardtOptimizer.cpp.o\x1b[0m\n'}
+[6.155688] (-) TimerEvent: {}
+[6.260693] (-) TimerEvent: {}
+[6.361122] (-) TimerEvent: {}
+[6.461564] (-) TimerEvent: {}
+[6.562902] (-) TimerEvent: {}
+[6.667712] (-) TimerEvent: {}
+[6.768315] (-) TimerEvent: {}
+[6.868837] (-) TimerEvent: {}
+[6.969298] (-) TimerEvent: {}
+[7.070165] (-) TimerEvent: {}
+[7.173732] (-) TimerEvent: {}
+[7.274111] (-) TimerEvent: {}
+[7.302672] (iris_lama) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/linearization.cpp.o\x1b[0m\n'}
+[7.376521] (-) TimerEvent: {}
+[7.477048] (-) TimerEvent: {}
+[7.479905] (iris_lama) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/MarginalCovariance.cpp.o\x1b[0m\n'}
+[7.509920] (iris_lama) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/NonlinearOptimizer.cpp.o\x1b[0m\n'}
+[7.577185] (-) TimerEvent: {}
+[7.678509] (-) TimerEvent: {}
+[7.779056] (-) TimerEvent: {}
+[7.879478] (-) TimerEvent: {}
+[7.980466] (-) TimerEvent: {}
+[8.080898] (-) TimerEvent: {}
+[8.184750] (-) TimerEvent: {}
+[8.285232] (-) TimerEvent: {}
+[8.385738] (-) TimerEvent: {}
+[8.486325] (-) TimerEvent: {}
+[8.586705] (-) TimerEvent: {}
+[8.687139] (-) TimerEvent: {}
+[8.755307] (iris_lama) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/NumericalFactor.cpp.o\x1b[0m\n'}
+[8.787294] (-) TimerEvent: {}
+[8.887605] (-) TimerEvent: {}
+[8.987943] (-) TimerEvent: {}
+[9.088671] (-) TimerEvent: {}
+[9.190757] (-) TimerEvent: {}
+[9.290986] (-) TimerEvent: {}
+[9.391318] (-) TimerEvent: {}
+[9.491664] (-) TimerEvent: {}
+[9.592158] (-) TimerEvent: {}
+[9.692592] (-) TimerEvent: {}
+[9.793132] (-) TimerEvent: {}
+[9.893668] (-) TimerEvent: {}
+[9.994094] (-) TimerEvent: {}
+[10.094346] (-) TimerEvent: {}
+[10.194580] (-) TimerEvent: {}
+[10.294836] (-) TimerEvent: {}
+[10.395059] (-) TimerEvent: {}
+[10.495408] (-) TimerEvent: {}
+[10.595703] (-) TimerEvent: {}
+[10.695955] (-) TimerEvent: {}
+[10.796221] (-) TimerEvent: {}
+[10.896497] (-) TimerEvent: {}
+[10.996843] (-) TimerEvent: {}
+[11.097138] (-) TimerEvent: {}
+[11.197385] (-) TimerEvent: {}
+[11.209214] (iris_lama) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object src/vendor/minisam/CMakeFiles/minisam.dir/minisam/nonlinear/SparsityPattern.cpp.o\x1b[0m\n'}
+[11.297470] (-) TimerEvent: {}
+[11.397719] (-) TimerEvent: {}
+[11.497992] (-) TimerEvent: {}
+[11.598276] (-) TimerEvent: {}
+[11.698521] (-) TimerEvent: {}
+[11.798777] (-) TimerEvent: {}
+[11.899144] (-) TimerEvent: {}
+[11.999570] (-) TimerEvent: {}
+[12.099935] (-) TimerEvent: {}
+[12.200277] (-) TimerEvent: {}
+[12.300566] (-) TimerEvent: {}
+[12.400841] (-) TimerEvent: {}
+[12.501141] (-) TimerEvent: {}
+[12.601558] (-) TimerEvent: {}
+[12.702999] (-) TimerEvent: {}
+[12.806262] (-) TimerEvent: {}
+[12.906935] (-) TimerEvent: {}
+[13.008510] (-) TimerEvent: {}
+[13.109145] (-) TimerEvent: {}
+[13.211101] (-) TimerEvent: {}
+[13.311785] (-) TimerEvent: {}
+[13.415526] (-) TimerEvent: {}
+[13.517714] (-) TimerEvent: {}
+[13.622797] (-) TimerEvent: {}
+[13.723515] (-) TimerEvent: {}
+[13.829836] (-) TimerEvent: {}
+[13.933248] (-) TimerEvent: {}
+[14.033963] (-) TimerEvent: {}
+[14.138061] (-) TimerEvent: {}
+[14.238782] (-) TimerEvent: {}
+[14.339342] (-) TimerEvent: {}
+[14.439943] (-) TimerEvent: {}
+[14.540504] (-) TimerEvent: {}
+[14.646309] (-) TimerEvent: {}
+[14.747266] (-) TimerEvent: {}
+[14.849688] (-) TimerEvent: {}
+[14.954372] (-) TimerEvent: {}
+[15.058547] (-) TimerEvent: {}
+[15.159318] (-) TimerEvent: {}
+[15.261282] (-) TimerEvent: {}
+[15.367631] (-) TimerEvent: {}
+[15.468653] (-) TimerEvent: {}
+[15.569946] (-) TimerEvent: {}
+[15.671670] (-) TimerEvent: {}
+[15.777447] (-) TimerEvent: {}
+[15.880014] (-) TimerEvent: {}
+[15.980681] (-) TimerEvent: {}
+[16.081513] (-) TimerEvent: {}
+[16.182061] (-) TimerEvent: {}
+[16.283319] (-) TimerEvent: {}
+[16.383822] (-) TimerEvent: {}
+[16.484755] (-) TimerEvent: {}
+[16.585910] (-) TimerEvent: {}
+[16.686501] (-) TimerEvent: {}
+[16.787225] (-) TimerEvent: {}
+[16.890503] (-) TimerEvent: {}
+[16.991100] (-) TimerEvent: {}
+[17.095503] (-) TimerEvent: {}
+[17.196066] (-) TimerEvent: {}
+[17.297239] (-) TimerEvent: {}
+[17.397621] (-) TimerEvent: {}
+[17.498004] (-) TimerEvent: {}
+[17.598299] (-) TimerEvent: {}
+[17.698712] (-) TimerEvent: {}
+[17.799097] (-) TimerEvent: {}
+[17.899581] (-) TimerEvent: {}
+[17.999903] (-) TimerEvent: {}
+[18.100270] (-) TimerEvent: {}
+[18.200524] (-) TimerEvent: {}
+[18.300758] (-) TimerEvent: {}
+[18.401044] (-) TimerEvent: {}
+[18.501303] (-) TimerEvent: {}
+[18.601608] (-) TimerEvent: {}
+[18.701883] (-) TimerEvent: {}
+[18.802172] (-) TimerEvent: {}
+[18.902520] (-) TimerEvent: {}
+[19.002965] (-) TimerEvent: {}
+[19.103288] (-) TimerEvent: {}
+[19.203650] (-) TimerEvent: {}
+[19.304023] (-) TimerEvent: {}
+[19.404547] (-) TimerEvent: {}
+[19.504930] (-) TimerEvent: {}
+[19.605471] (-) TimerEvent: {}
+[19.659513] (iris_lama) StdoutLine: {'line': b'[ 61%] Built target minisam\n'}
+[19.705497] (-) TimerEvent: {}
+[19.766497] (iris_lama) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/buffer_compressor.cpp.o\x1b[0m\n'}
+[19.766987] (iris_lama) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/match_surface_2d.cpp.o\x1b[0m\n'}
+[19.767622] (iris_lama) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/pf_slam2d.cpp.o\x1b[0m\n'}
+[19.767950] (iris_lama) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/lidar_odometry_2d.cpp.o\x1b[0m\n'}
+[19.769994] (iris_lama) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/pose2d.cpp.o\x1b[0m\n'}
+[19.771863] (iris_lama) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/graph_slam2d.cpp.o\x1b[0m\n'}
+[19.772163] (iris_lama) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/image_io.cpp.o\x1b[0m\n'}
+[19.774261] (iris_lama) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/loc2d.cpp.o\x1b[0m\n'}
+[19.776442] (iris_lama) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/print.cpp.o\x1b[0m\n'}
+[19.777982] (iris_lama) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/random.cpp.o\x1b[0m\n'}
+[19.783070] (iris_lama) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/pose3d.cpp.o\x1b[0m\n'}
+[19.788126] (iris_lama) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/slam2d.cpp.o\x1b[0m\n'}
+[19.805609] (-) TimerEvent: {}
+[19.906202] (-) TimerEvent: {}
+[20.006590] (-) TimerEvent: {}
+[20.107275] (-) TimerEvent: {}
+[20.207990] (-) TimerEvent: {}
+[20.308392] (-) TimerEvent: {}
+[20.412708] (-) TimerEvent: {}
+[20.513102] (-) TimerEvent: {}
+[20.613956] (-) TimerEvent: {}
+[20.620550] (iris_lama) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/thread_pool.cpp.o\x1b[0m\n'}
+[20.714097] (-) TimerEvent: {}
+[20.814486] (-) TimerEvent: {}
+[20.914927] (-) TimerEvent: {}
+[21.015736] (-) TimerEvent: {}
+[21.116236] (-) TimerEvent: {}
+[21.217472] (-) TimerEvent: {}
+[21.317896] (-) TimerEvent: {}
+[21.418541] (-) TimerEvent: {}
+[21.518961] (-) TimerEvent: {}
+[21.620691] (-) TimerEvent: {}
+[21.721125] (-) TimerEvent: {}
+[21.821586] (-) TimerEvent: {}
+[21.922041] (-) TimerEvent: {}
+[22.024654] (-) TimerEvent: {}
+[22.125112] (-) TimerEvent: {}
+[22.225565] (-) TimerEvent: {}
+[22.325995] (-) TimerEvent: {}
+[22.426472] (-) TimerEvent: {}
+[22.529767] (-) TimerEvent: {}
+[22.630161] (-) TimerEvent: {}
+[22.730610] (-) TimerEvent: {}
+[22.831086] (-) TimerEvent: {}
+[22.931469] (-) TimerEvent: {}
+[23.031926] (-) TimerEvent: {}
+[23.133566] (-) TimerEvent: {}
+[23.233973] (-) TimerEvent: {}
+[23.337732] (-) TimerEvent: {}
+[23.381479] (iris_lama) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/simple_pgo.cpp.o\x1b[0m\n'}
+[23.437895] (-) TimerEvent: {}
+[23.543521] (-) TimerEvent: {}
+[23.644097] (-) TimerEvent: {}
+[23.744585] (-) TimerEvent: {}
+[23.844995] (-) TimerEvent: {}
+[23.922525] (iris_lama) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/nlls/gauss_newton.cpp.o\x1b[0m\n'}
+[23.945152] (-) TimerEvent: {}
+[24.045639] (-) TimerEvent: {}
+[24.146574] (-) TimerEvent: {}
+[24.247040] (-) TimerEvent: {}
+[24.347824] (-) TimerEvent: {}
+[24.448255] (-) TimerEvent: {}
+[24.550711] (-) TimerEvent: {}
+[24.651151] (-) TimerEvent: {}
+[24.751622] (-) TimerEvent: {}
+[24.852102] (-) TimerEvent: {}
+[24.956491] (-) TimerEvent: {}
+[25.057328] (-) TimerEvent: {}
+[25.157859] (-) TimerEvent: {}
+[25.259473] (-) TimerEvent: {}
+[25.359923] (-) TimerEvent: {}
+[25.460415] (-) TimerEvent: {}
+[25.560929] (-) TimerEvent: {}
+[25.607693] (iris_lama) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/nlls/levenberg_marquardt.cpp.o\x1b[0m\n'}
+[25.661078] (-) TimerEvent: {}
+[25.666038] (iris_lama) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/nlls/robust_cost.cpp.o\x1b[0m\n'}
+[25.761216] (-) TimerEvent: {}
+[25.817648] (iris_lama) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/nlls/solver.cpp.o\x1b[0m\n'}
+[25.861369] (-) TimerEvent: {}
+[25.961810] (-) TimerEvent: {}
+[26.062468] (-) TimerEvent: {}
+[26.167666] (-) TimerEvent: {}
+[26.268069] (-) TimerEvent: {}
+[26.368482] (-) TimerEvent: {}
+[26.468918] (-) TimerEvent: {}
+[26.543958] (iris_lama) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/sdm/container.cpp.o\x1b[0m\n'}
+[26.569065] (-) TimerEvent: {}
+[26.669580] (-) TimerEvent: {}
+[26.772711] (-) TimerEvent: {}
+[26.873204] (-) TimerEvent: {}
+[26.973723] (-) TimerEvent: {}
+[27.074467] (-) TimerEvent: {}
+[27.175485] (-) TimerEvent: {}
+[27.276990] (-) TimerEvent: {}
+[27.377456] (-) TimerEvent: {}
+[27.481012] (-) TimerEvent: {}
+[27.581454] (-) TimerEvent: {}
+[27.681862] (-) TimerEvent: {}
+[27.782265] (-) TimerEvent: {}
+[27.882755] (-) TimerEvent: {}
+[27.984797] (-) TimerEvent: {}
+[28.088787] (-) TimerEvent: {}
+[28.192893] (-) TimerEvent: {}
+[28.293326] (-) TimerEvent: {}
+[28.393779] (-) TimerEvent: {}
+[28.494204] (-) TimerEvent: {}
+[28.594614] (-) TimerEvent: {}
+[28.695003] (-) TimerEvent: {}
+[28.795420] (-) TimerEvent: {}
+[28.895896] (-) TimerEvent: {}
+[28.986162] (iris_lama) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/sdm/dynamic_distance_map.cpp.o\x1b[0m\n'}
+[28.996029] (-) TimerEvent: {}
+[29.096457] (-) TimerEvent: {}
+[29.197171] (-) TimerEvent: {}
+[29.299682] (-) TimerEvent: {}
+[29.400076] (-) TimerEvent: {}
+[29.500500] (-) TimerEvent: {}
+[29.601477] (-) TimerEvent: {}
+[29.701931] (-) TimerEvent: {}
+[29.802600] (-) TimerEvent: {}
+[29.902979] (-) TimerEvent: {}
+[30.003475] (-) TimerEvent: {}
+[30.104498] (-) TimerEvent: {}
+[30.169566] (iris_lama) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/sdm/export.cpp.o\x1b[0m\n'}
+[30.204633] (-) TimerEvent: {}
+[30.279044] (iris_lama) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/sdm/frequency_occupancy_map.cpp.o\x1b[0m\n'}
+[30.305681] (-) TimerEvent: {}
+[30.406105] (-) TimerEvent: {}
+[30.508550] (-) TimerEvent: {}
+[30.608955] (-) TimerEvent: {}
+[30.709393] (-) TimerEvent: {}
+[30.809836] (-) TimerEvent: {}
+[30.910293] (-) TimerEvent: {}
+[31.010925] (-) TimerEvent: {}
+[31.111477] (-) TimerEvent: {}
+[31.212790] (-) TimerEvent: {}
+[31.313521] (-) TimerEvent: {}
+[31.415489] (-) TimerEvent: {}
+[31.436074] (iris_lama) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/sdm/map.cpp.o\x1b[0m\n'}
+[31.515664] (-) TimerEvent: {}
+[31.616078] (-) TimerEvent: {}
+[31.716478] (-) TimerEvent: {}
+[31.816884] (-) TimerEvent: {}
+[31.918155] (-) TimerEvent: {}
+[32.020858] (-) TimerEvent: {}
+[32.121231] (-) TimerEvent: {}
+[32.222496] (-) TimerEvent: {}
+[32.285310] (iris_lama) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/sdm/marching_cubes.cpp.o\x1b[0m\n'}
+[32.322659] (-) TimerEvent: {}
+[32.423518] (-) TimerEvent: {}
+[32.527516] (-) TimerEvent: {}
+[32.592790] (iris_lama) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/sdm/probabilistic_occupancy_map.cpp.o\x1b[0m\n'}
+[32.627630] (-) TimerEvent: {}
+[32.728084] (-) TimerEvent: {}
+[32.831698] (-) TimerEvent: {}
+[32.898523] (iris_lama) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/sdm/simple_occupancy_map.cpp.o\x1b[0m\n'}
+[32.931846] (-) TimerEvent: {}
+[33.032397] (-) TimerEvent: {}
+[33.132849] (-) TimerEvent: {}
+[33.233291] (-) TimerEvent: {}
+[33.333726] (-) TimerEvent: {}
+[33.435721] (-) TimerEvent: {}
+[33.536087] (-) TimerEvent: {}
+[33.636492] (-) TimerEvent: {}
+[33.686878] (iris_lama) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding CXX object src/CMakeFiles/iris_lama.dir/sdm/truncated_signed_distance_map.cpp.o\x1b[0m\n'}
+[33.736662] (-) TimerEvent: {}
+[33.837464] (-) TimerEvent: {}
+[33.941729] (-) TimerEvent: {}
+[34.042141] (-) TimerEvent: {}
+[34.142637] (-) TimerEvent: {}
+[34.243470] (-) TimerEvent: {}
+[34.347653] (-) TimerEvent: {}
+[34.448032] (-) TimerEvent: {}
+[34.548588] (-) TimerEvent: {}
+[34.648982] (-) TimerEvent: {}
+[34.749500] (-) TimerEvent: {}
+[34.849923] (-) TimerEvent: {}
+[34.951708] (-) TimerEvent: {}
+[35.052222] (-) TimerEvent: {}
+[35.156308] (-) TimerEvent: {}
+[35.256845] (-) TimerEvent: {}
+[35.361165] (-) TimerEvent: {}
+[35.462222] (-) TimerEvent: {}
+[35.563139] (-) TimerEvent: {}
+[35.664636] (-) TimerEvent: {}
+[35.764954] (-) TimerEvent: {}
+[35.865355] (-) TimerEvent: {}
+[35.965774] (-) TimerEvent: {}
+[36.066072] (-) TimerEvent: {}
+[36.166462] (-) TimerEvent: {}
+[36.266954] (-) TimerEvent: {}
+[36.367419] (-) TimerEvent: {}
+[36.467902] (-) TimerEvent: {}
+[36.568359] (-) TimerEvent: {}
+[36.668739] (-) TimerEvent: {}
+[36.769069] (-) TimerEvent: {}
+[36.869423] (-) TimerEvent: {}
+[36.969793] (-) TimerEvent: {}
+[37.070088] (-) TimerEvent: {}
+[37.170409] (-) TimerEvent: {}
+[37.270748] (-) TimerEvent: {}
+[37.371041] (-) TimerEvent: {}
+[37.471319] (-) TimerEvent: {}
+[37.571660] (-) TimerEvent: {}
+[37.671893] (-) TimerEvent: {}
+[37.772178] (-) TimerEvent: {}
+[37.872474] (-) TimerEvent: {}
+[37.972777] (-) TimerEvent: {}
+[38.073061] (-) TimerEvent: {}
+[38.173325] (-) TimerEvent: {}
+[38.273603] (-) TimerEvent: {}
+[38.373920] (-) TimerEvent: {}
+[38.474254] (-) TimerEvent: {}
+[38.574537] (-) TimerEvent: {}
+[38.674811] (-) TimerEvent: {}
+[38.775114] (-) TimerEvent: {}
+[38.875355] (-) TimerEvent: {}
+[38.975595] (-) TimerEvent: {}
+[39.075851] (-) TimerEvent: {}
+[39.176117] (-) TimerEvent: {}
+[39.276373] (-) TimerEvent: {}
+[39.376615] (-) TimerEvent: {}
+[39.476857] (-) TimerEvent: {}
+[39.577126] (-) TimerEvent: {}
+[39.677393] (-) TimerEvent: {}
+[39.777596] (-) TimerEvent: {}
+[39.877835] (-) TimerEvent: {}
+[39.978099] (-) TimerEvent: {}
+[40.078340] (-) TimerEvent: {}
+[40.178551] (-) TimerEvent: {}
+[40.278817] (-) TimerEvent: {}
+[40.379214] (-) TimerEvent: {}
+[40.479582] (-) TimerEvent: {}
+[40.579818] (-) TimerEvent: {}
+[40.680072] (-) TimerEvent: {}
+[40.780323] (-) TimerEvent: {}
+[40.880608] (-) TimerEvent: {}
+[40.980922] (-) TimerEvent: {}
+[41.081169] (-) TimerEvent: {}
+[41.181430] (-) TimerEvent: {}
+[41.281682] (-) TimerEvent: {}
+[41.381908] (-) TimerEvent: {}
+[41.482144] (-) TimerEvent: {}
+[41.582360] (-) TimerEvent: {}
+[41.682581] (-) TimerEvent: {}
+[41.782845] (-) TimerEvent: {}
+[41.883101] (-) TimerEvent: {}
+[41.983410] (-) TimerEvent: {}
+[42.083712] (-) TimerEvent: {}
+[42.183974] (-) TimerEvent: {}
+[42.284236] (-) TimerEvent: {}
+[42.384487] (-) TimerEvent: {}
+[42.484752] (-) TimerEvent: {}
+[42.527327] (iris_lama) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX static library libiris_lama.a\x1b[0m\n'}
+[42.584866] (-) TimerEvent: {}
+[42.685162] (-) TimerEvent: {}
+[42.785498] (-) TimerEvent: {}
+[42.885825] (-) TimerEvent: {}
+[42.986121] (-) TimerEvent: {}
+[43.086531] (-) TimerEvent: {}
+[43.187072] (-) TimerEvent: {}
+[43.287591] (-) TimerEvent: {}
+[43.388133] (-) TimerEvent: {}
+[43.488408] (-) TimerEvent: {}
+[43.588658] (-) TimerEvent: {}
+[43.688995] (-) TimerEvent: {}
+[43.789316] (-) TimerEvent: {}
+[43.889944] (-) TimerEvent: {}
+[43.990650] (-) TimerEvent: {}
+[44.091251] (-) TimerEvent: {}
+[44.145616] (iris_lama) StdoutLine: {'line': b'[100%] Built target iris_lama\n'}
+[44.162323] (iris_lama) CommandEnded: {'returncode': 0}
+[44.163037] (iris_lama) JobProgress: {'identifier': 'iris_lama', 'progress': 'install'}
+[44.173021] (iris_lama) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pharanguren/TFG/lama_ws/build/iris_lama'], 'cwd': '/home/pharanguren/TFG/lama_ws/build/iris_lama', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'pharanguren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/pharanguren', 'OLDPWD': '/home/pharanguren/TFG/lama_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2097', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'pharanguren', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pharanguren', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/pharanguren/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/pharanguren/.local/bin:/home/pharanguren/.local/bin', 'SESSION_MANAGER': 'local/pedrocomputer:@/tmp/.ICE-unix/2049,unix/pedrocomputer:/tmp/.ICE-unix/2049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e0da55ef_8d65_4320_a441_5b2867189ae9', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LY6MU3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.269', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/pharanguren/TFG/lama_ws/build/iris_lama', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation/lib/python3.12/site-packages:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[44.181555] (iris_lama) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[44.181939] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include\n'}
+[44.182119] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama\n'}
+[44.182275] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/random.h\n'}
+[44.182420] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/timer.h\n'}
+[44.182570] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/aabb.h\n'}
+[44.182704] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/thread_pool.h\n'}
+[44.182852] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/print.h\n'}
+[44.182983] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/image_io.h\n'}
+[44.183129] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus\n'}
+[44.183271] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus/so2.hpp\n'}
+[44.183420] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus/se3.hpp\n'}
+[44.183552] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus/so3.hpp\n'}
+[44.183681] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus/se2.hpp\n'}
+[44.183835] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sophus/sophus.hpp\n'}
+[44.183978] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/slam2d.h\n'}
+[44.184111] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/match_surface_2d.h\n'}
+[44.184255] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/image.h\n'}
+[44.184403] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls\n'}
+[44.184536] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/problem.h\n'}
+[44.184675] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/robust_cost.h\n'}
+[44.184801] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/strategy.h\n'}
+[44.184925] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/solver.h\n'}
+[44.185065] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/gauss_newton.h\n'}
+[44.185205] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/nlls/levenberg_marquardt.h\n'}
+[44.185333] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm\n'}
+[44.185467] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/container.h\n'}
+[44.185606] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/distance_map.h\n'}
+[44.185751] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/export.h\n'}
+[44.185862] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/dynamic_distance_map.h\n'}
+[44.185987] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/map.h\n'}
+[44.186114] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/marching_cubes.h\n'}
+[44.186242] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/occupancy_map.h\n'}
+[44.186366] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/truncated_signed_distance_map.h\n'}
+[44.186513] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/frequency_occupancy_map.h\n'}
+[44.186627] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/probabilistic_occupancy_map.h\n'}
+[44.186734] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/sdm/simple_occupancy_map.h\n'}
+[44.186841] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/cow_ptr.h\n'}
+[44.186948] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/pose2d.h\n'}
+[44.187055] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/types.h\n'}
+[44.187162] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/pose3d.h\n'}
+[44.187269] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/pf_slam2d.h\n'}
+[44.187376] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/time.h\n'}
+[44.187470] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/graph_slam2d.h\n'}
+[44.187537] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/buffer_compressor.h\n'}
+[44.187599] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/lidar_odometry_2d.h\n'}
+[44.187660] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/lie.h\n'}
+[44.187721] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/simple_pgo.h\n'}
+[44.187788] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/include/lama/loc2d.h\n'}
+[44.187848] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/lib/iris_lama/cmake/iris_lamaTargets.cmake\n'}
+[44.187910] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/lib/iris_lama/cmake/iris_lamaTargets-noconfig.cmake\n'}
+[44.187971] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/lib/iris_lama/cmake/iris_lamaConfig.cmake\n'}
+[44.188040] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/lib/iris_lama/cmake/iris_lamaConfigVersion.cmake\n'}
+[44.188102] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/share/iris_lama/package.xml\n'}
+[44.191352] (-) TimerEvent: {}
+[44.234478] (iris_lama) StdoutLine: {'line': b'-- Installing: /home/pharanguren/TFG/lama_ws/install/iris_lama/lib/libiris_lama.a\n'}
+[44.291451] (-) TimerEvent: {}
+[44.318848] (iris_lama) CommandEnded: {'returncode': 0}
+[44.334399] (iris_lama) JobEnded: {'identifier': 'iris_lama', 'rc': 0}
+[44.334920] (iris_lama_ros) JobStarted: {'identifier': 'iris_lama_ros'}
+[44.346069] (iris_lama_ros) JobProgress: {'identifier': 'iris_lama_ros', 'progress': 'cmake'}
+[44.347185] (iris_lama_ros) Command: {'cmd': ['/usr/bin/cmake', '/home/pharanguren/TFG/lama_ws/src/iris_lama_ros', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/home/pharanguren/TFG/lama_ws/install/iris_lama_ros'], 'cwd': '/home/pharanguren/TFG/lama_ws/build/iris_lama_ros', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'pharanguren', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/pharanguren', 'OLDPWD': '/home/pharanguren/TFG/lama_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2097', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'pharanguren', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'PKG_CONFIG_PATH': '/home/pharanguren/TFG/lama_ws/install/iris_lama/lib/x86_64-linux-gnu/pkgconfig:/home/pharanguren/TFG/lama_ws/install/iris_lama/lib/pkgconfig', 'USERNAME': 'pharanguren', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/pharanguren/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/pharanguren/.local/bin:/home/pharanguren/.local/bin', 'SESSION_MANAGER': 'local/pedrocomputer:@/tmp/.ICE-unix/2049,unix/pedrocomputer:/tmp/.ICE-unix/2049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e0da55ef_8d65_4320_a441_5b2867189ae9', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', '__NV_PRIME_RENDER_OFFLOAD': '1', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LY6MU3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.269', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/pharanguren/TFG/lama_ws/build/iris_lama_ros', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation/lib/python3.12/site-packages:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/pharanguren/TFG/lama_ws/install/iris_lama:/home/pharanguren/turtlebot4_ws/install/turtlebot4_simulator:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_bringup:/home/pharanguren/turtlebot4_ws/install/turtlebot4_node:/home/pharanguren/turtlebot4_ws/install/turtlebot4_navigation:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_toolbox:/home/pharanguren/turtlebot4_ws/install/turtlebot4_msgs:/home/pharanguren/turtlebot4_ws/install/turtlebot4_gz_gui_plugins:/home/pharanguren/turtlebot4_ws/install/turtlebot4_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[44.391554] (-) TimerEvent: {}
+[44.491816] (-) TimerEvent: {}
+[44.559532] (iris_lama_ros) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[44.591944] (-) TimerEvent: {}
+[44.621145] (iris_lama_ros) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[44.640740] (iris_lama_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[44.692085] (-) TimerEvent: {}
+[44.736702] (iris_lama_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[44.748163] (iris_lama_ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[44.748455] (iris_lama_ros) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[44.748983] (iris_lama_ros) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[44.758373] (iris_lama_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[44.792196] (-) TimerEvent: {}
+[44.892441] (-) TimerEvent: {}
+[44.901453] (iris_lama_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[44.912767] (iris_lama_ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[44.913123] (iris_lama_ros) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[44.913780] (iris_lama_ros) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[44.945241] (iris_lama_ros) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:15 (find_package):\n'}
+[44.945521] (iris_lama_ros) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[44.945678] (iris_lama_ros) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[44.945794] (iris_lama_ros) StderrLine: {'line': b'  CMake did not find one.\n'}
+[44.945913] (iris_lama_ros) StderrLine: {'line': b'\n'}
+[44.946015] (iris_lama_ros) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[44.946115] (iris_lama_ros) StderrLine: {'line': b'  of the following names:\n'}
+[44.946231] (iris_lama_ros) StderrLine: {'line': b'\n'}
+[44.946332] (iris_lama_ros) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[44.946449] (iris_lama_ros) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[44.946572] (iris_lama_ros) StderrLine: {'line': b'\n'}
+[44.946693] (iris_lama_ros) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[44.946805] (iris_lama_ros) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[44.946924] (iris_lama_ros) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[44.947047] (iris_lama_ros) StderrLine: {'line': b'  installed.\n'}
+[44.947156] (iris_lama_ros) StderrLine: {'line': b'\n'}
+[44.947280] (iris_lama_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[44.947443] (iris_lama_ros) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[44.949454] (iris_lama_ros) CommandEnded: {'returncode': 1}
+[44.966307] (iris_lama_ros) JobEnded: {'identifier': 'iris_lama_ros', 'rc': 1}
+[44.977251] (-) EventReactorShutdown: {}

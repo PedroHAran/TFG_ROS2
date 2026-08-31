@@ -1,0 +1,30 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/mrpt_icp_slam_2d.dir/src/mrpt_icp_slam_2d_app.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/mrpt_icp_slam_2d.dir/src/mrpt_icp_slam_2d_wrapper.cpp.o[0m
+[100%] [32m[1mLinking CXX executable mrpt_icp_slam_2d[0m
+[100%] Built target mrpt_icp_slam_2d
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/lib/mrpt_icp_slam_2d/mrpt_icp_slam_2d
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/config/rosconsole.config
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/launch/icp_slam.launch.py
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/launch/icp_slam_gui.launch.py
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/launch/icp_slam_rawlog.launch.py
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/launch/mvsim_icp_slam.launch.py
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/tutorial/icp_slam_demo.ini
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/tutorial/icp_slam_demo.rawlog
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/rviz/rviz_conf.rviz
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/ament_index/resource_index/package_run_dependencies/mrpt_icp_slam_2d
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/ament_index/resource_index/parent_prefix_path/mrpt_icp_slam_2d
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/environment/ament_prefix_path.sh
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/environment/ament_prefix_path.dsv
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/environment/path.sh
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/environment/path.dsv
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/local_setup.bash
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/local_setup.sh
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/local_setup.zsh
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/local_setup.dsv
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/package.dsv
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/ament_index/resource_index/packages/mrpt_icp_slam_2d
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/cmake/mrpt_icp_slam_2dConfig.cmake
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/cmake/mrpt_icp_slam_2dConfig-version.cmake
+-- Symlinking: /home/pharanguren/TFG/mrpt_ws/install/mrpt_icp_slam_2d/share/mrpt_icp_slam_2d/package.xml

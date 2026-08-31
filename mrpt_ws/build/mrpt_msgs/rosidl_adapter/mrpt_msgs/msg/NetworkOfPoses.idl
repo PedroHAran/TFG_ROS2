@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mrpt_msgs/msg/NetworkOfPoses.msg
+// generated code does not contain a copyright notice
+
+#include "mrpt_msgs/msg/GraphConstraint.idl"
+#include "mrpt_msgs/msg/NodeIDWithPoseVec.idl"
+
+module mrpt_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Represents a 2D/3D Directed Graph of Constraints" "\n"
+      "" "\n"
+      "Graph consists of:" "\n"
+      "- NodeIDs with their corresponding poses" "\n"
+      "- Directed Constraints that connect 2 nodes with each other" "\n"
+      "- Root node marking the start of the graph")
+    struct NetworkOfPoses {
+      uint64 root;
+
+      mrpt_msgs::msg::NodeIDWithPoseVec nodes;
+
+      sequence<mrpt_msgs::msg::GraphConstraint> constraints;
+    };
+  };
+};
