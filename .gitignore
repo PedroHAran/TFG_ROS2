@@ -9,4 +9,4 @@ metrica*
 *.png
 results/
 
-.vscode
+.vscodeAnalysis/results/
