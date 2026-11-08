@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import glob
 import os
 
-script_dir = os.path.dirname(__file__)
+script_dir = os.path.dirname(os.path.abspath(__file__))
 base_path = os.path.abspath(os.path.join(script_dir, '../..'))
 perf_out_dir = os.path.join(script_dir, '../results/performance')
 os.makedirs(perf_out_dir, exist_ok=True)
@@ -32,30 +32,58 @@ for algo in algorithms_all:
 if cpu_ram_results:
     df_final = pd.concat(cpu_ram_results)
     
-    fig1, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 5))
-    for algo in algorithms_all:
-        data = df_final[df_final['Algorithm'] == algo]
-        if not data.empty:
-            ax1.plot(data['Time_s'], data['CPU(%)'], label=algo)
-            ax2.plot(data['Time_s'], data['RAM(MB)'], label=algo)
-            
-    ax1.set_title('CPU Usage (%) - All Algorithms')
-    ax2.set_title('RAM Usage (MB) - All Algorithms')
-    ax1.legend()
-    ax2.legend()
-    plt.tight_layout()
-    plt.savefig(os.path.join(perf_out_dir, 'global_performance_metrics.png'))
-
-    fig2, (ax3, ax4) = plt.subplots(1, 2, figsize=(15, 5))
+    plt.figure(figsize=(8, 5))
     for algo in algorithms_2d:
         data = df_final[df_final['Algorithm'] == algo]
         if not data.empty:
-            ax3.plot(data['Time_s'], data['CPU(%)'], label=algo)
-            ax4.plot(data['Time_s'], data['RAM(MB)'], label=algo)
-            
-    ax3.set_title('CPU Usage (%) - 2D Algorithms')
-    ax4.set_title('RAM Usage (MB) - 2D Algorithms')
-    ax3.legend()
-    ax4.legend()
+            plt.plot(data['Time_s'], data['CPU(%)'], label=algo)
+    plt.title('Evolución CPU (%) - Algoritmos 2D')
+    plt.xlabel('Tiempo (s)')
+    plt.ylabel('Uso de CPU (%)')
+    plt.legend()
+    plt.grid(True, linestyle='--', alpha=0.6)
     plt.tight_layout()
-    plt.savefig(os.path.join(perf_out_dir, '2d_performance_metrics.png'))
+    plt.savefig(os.path.join(perf_out_dir, '2d_cpu_metrics.pdf'), bbox_inches='tight')
+    plt.close()
+
+    plt.figure(figsize=(8, 5))
+    for algo in algorithms_2d:
+        data = df_final[df_final['Algorithm'] == algo]
+        if not data.empty:
+            plt.plot(data['Time_s'], data['RAM(MB)'], label=algo)
+    plt.title('Evolución RAM (MB) - Algoritmos 2D')
+    plt.xlabel('Tiempo (s)')
+    plt.ylabel('Consumo de RAM (MB)')
+    plt.legend()
+    plt.grid(True, linestyle='--', alpha=0.6)
+    plt.tight_layout()
+    plt.savefig(os.path.join(perf_out_dir, '2d_ram_metrics.pdf'), bbox_inches='tight')
+    plt.close()
+
+    plt.figure(figsize=(8, 5))
+    for algo in algorithms_all:
+        data = df_final[df_final['Algorithm'] == algo]
+        if not data.empty:
+            plt.plot(data['Time_s'], data['CPU(%)'], label=algo)
+    plt.title('Evolución CPU (%) - Todos los algoritmos')
+    plt.xlabel('Tiempo (s)')
+    plt.ylabel('Uso de CPU (%)')
+    plt.legend()
+    plt.grid(True, linestyle='--', alpha=0.6)
+    plt.tight_layout()
+    plt.savefig(os.path.join(perf_out_dir, 'global_cpu_metrics.pdf'), bbox_inches='tight')
+    plt.close()
+
+    plt.figure(figsize=(8, 5))
+    for algo in algorithms_all:
+        data = df_final[df_final['Algorithm'] == algo]
+        if not data.empty:
+            plt.plot(data['Time_s'], data['RAM(MB)'], label=algo)
+    plt.title('Evolución RAM (MB) - Todos los algoritmos')
+    plt.xlabel('Tiempo (s)')
+    plt.ylabel('Consumo de RAM (MB)')
+    plt.legend()
+    plt.grid(True, linestyle='--', alpha=0.6)
+    plt.tight_layout()
+    plt.savefig(os.path.join(perf_out_dir, 'global_ram_metrics.pdf'), bbox_inches='tight')
+    plt.close()

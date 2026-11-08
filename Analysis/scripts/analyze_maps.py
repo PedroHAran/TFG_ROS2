@@ -13,41 +13,87 @@ def get_occupied_proportion(image):
     return np.sum(image_float == occupied_value) / image_float.size
 
 def get_num_corners(image):
-    _, binary_image = cv.threshold(image, unknown_value, free_value, cv.THRESH_BINARY)
-    gray_float = np.float32(binary_image)
-    dst = cv.cornerHarris(gray_float, blockSize=3, ksize=3, k=0.04)
-    return len(np.where(dst > 0.01 * dst.max())[0])
+    _, binary = cv.threshold(image, 200, 255, cv.THRESH_BINARY_INV)
+    kernel = np.ones((3, 3), np.uint8)
+    binary = cv.morphologyEx(binary, cv.MORPH_CLOSE, kernel)
+    
+    corners = cv.goodFeaturesToTrack(
+        image=binary,
+        maxCorners=1000,
+        qualityLevel=0.08,
+        minDistance=10,
+        blockSize=3,
+        useHarrisDetector=True,
+        k=0.04
+    )
+    return len(corners) if corners is not None else 0
 
 def get_num_enclosed_areas(image):
     _, binary_image = cv.threshold(image, unknown_value, free_value, cv.THRESH_BINARY)
-    num_labels, _ = cv.connectedComponents(np.uint8(binary_image))
-    return num_labels
+    binary_image = np.uint8(binary_image)
+    
+    kernel = np.ones((3, 3), np.uint8)
+    cleaned = cv.morphologyEx(binary_image, cv.MORPH_CLOSE, kernel)
+    
+    num_labels, _, stats, _ = cv.connectedComponentsWithStats(cleaned)
+    valid_areas = 0
+    for i in range(1, num_labels):
+        if stats[i, cv.CC_STAT_AREA] >= 20:
+            valid_areas += 1
+            
+    return valid_areas
 
-script_dir = os.path.dirname(__file__)
+script_dir = os.path.dirname(os.path.abspath(__file__))
 base_path = os.path.abspath(os.path.join(script_dir, '../..'))
 maps_out_dir = os.path.join(script_dir, '../results/maps')
 os.makedirs(maps_out_dir, exist_ok=True)
 
 algorithms_2d = ['slam_toolbox', 'cartographer', 'mrpt', 'lama']
-map_metrics = {'Algorithm': [], 'Enclosed_Areas': [], 'Corners': [], 'Occupied_Proportion': []}
+environments = ['maze', 'depot', 'warehouse']
 
-for algo in algorithms_2d:
-    map_search = glob.glob(os.path.join(base_path, '**', f"mapa_{algo}*_1.pgm"), recursive=True)
-    if map_search:
-        img = cv.imread(map_search[0], cv.IMREAD_GRAYSCALE)
-        map_metrics['Algorithm'].append(algo)
-        map_metrics['Enclosed_Areas'].append(get_num_enclosed_areas(img))
-        map_metrics['Corners'].append(get_num_corners(img))
-        map_metrics['Occupied_Proportion'].append(get_occupied_proportion(img))
+map_metrics = {
+    env: {'Enclosed_Areas': [], 'Corners': [], 'Occupied_Proportion': []}
+    for env in environments
+}
 
-if map_metrics['Algorithm']:
-    fig, axes = plt.subplots(1, 3, figsize=(18, 5))
-    axes[0].bar(map_metrics['Algorithm'], map_metrics['Enclosed_Areas'], color='orange')
-    axes[0].set_title('Number of enclosed areas')
-    axes[1].bar(map_metrics['Algorithm'], map_metrics['Corners'], color='green')
-    axes[1].set_title('Number of detected corners')
-    axes[2].bar(map_metrics['Algorithm'], map_metrics['Occupied_Proportion'], color='tab:blue')
-    axes[2].set_title('Occupied pixel proportion')
+for env in environments:
+    for algo in algorithms_2d:
+        map_search = glob.glob(os.path.join(base_path, '**', f"mapa_{algo}_{env}_*.pgm"), recursive=True)
+        if map_search:
+            areas, corners, occ = [], [], []
+            for map_path in map_search:
+                img = cv.imread(map_path, cv.IMREAD_GRAYSCALE)
+                if img is not None:
+                    areas.append(get_num_enclosed_areas(img))
+                    corners.append(get_num_corners(img))
+                    occ.append(get_occupied_proportion(img))
+            
+            map_metrics[env]['Enclosed_Areas'].append(np.mean(areas))
+            map_metrics[env]['Corners'].append(np.mean(corners))
+            map_metrics[env]['Occupied_Proportion'].append(np.mean(occ))
+        else:
+            map_metrics[env]['Enclosed_Areas'].append(0)
+            map_metrics[env]['Corners'].append(0)
+            map_metrics[env]['Occupied_Proportion'].append(0)
+
+x = np.arange(len(algorithms_2d))
+width = 0.25
+colors = {'maze': 'tab:blue', 'depot': 'tab:orange', 'warehouse': 'tab:green'}
+
+def save_grouped_plot(metric_key, title, filename):
+    plt.figure(figsize=(8, 5))
+    for i, env in enumerate(environments):
+        offset = (i - 1) * width
+        plt.bar(x + offset, map_metrics[env][metric_key], width, label=env.capitalize(), color=colors[env])
     
+    plt.title(title)
+    plt.xticks(x, algorithms_2d)
+    plt.legend(title='Environment')
+    plt.grid(axis='y', linestyle='--', alpha=0.4)
     plt.tight_layout()
-    plt.savefig(os.path.join(maps_out_dir, 'map_quality_metrics.png'))
+    plt.savefig(os.path.join(maps_out_dir, filename))
+    plt.close()
+
+save_grouped_plot('Enclosed_Areas', 'Number of enclosed areas', 'metrics_enclosed_areas.pdf')
+save_grouped_plot('Corners', 'Number of detected corners', 'metrics_corners.pdf')
+save_grouped_plot('Occupied_Proportion', 'Occupied pixel proportion', 'metrics_occupied_proportion.pdf')
